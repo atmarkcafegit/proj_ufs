@@ -168,7 +168,7 @@ footer .back-to-top img {
 
 /* Begin homepage */
 .carousel {
-    margin-bottom: 70px;
+    margin-bottom: 45px;
 }
 
 .carousel .carousel-indicators {
@@ -255,7 +255,7 @@ footer .back-to-top img {
     margin-top: 30px;
 }
 
-#recruit-container, #business-container, #brand-container, #business-2-container, #contact-container  {
+#business-container, #brand-container, #business-2-container, #contact-container  {
     margin: 100px auto;
 }
 
@@ -349,6 +349,27 @@ footer .back-to-top img {
 .contact-text.text-1-line {
     padding-top: 15px;
 }
+
+.register-member {
+    width: 130px;
+    display: inline-block;
+    padding: 20px;
+    background: #4cb77c;
+    position: fixed;
+    right: 0;
+    top: 180px;
+    display: none;
+}
+
+.register-member img {
+    margin: 0 0 10px 0;
+}
+
+.register-member a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* End homepage */
 
 /* Begin page 39 */
@@ -357,6 +378,7 @@ footer .back-to-top img {
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 5px;
+    margin: 100px 0 10px 0;
 }
 
 .block-note {
@@ -411,6 +433,7 @@ footer .back-to-top img {
     line-height: 32px;
 }
 
+.block-view-all .btn-view-all .arrow-item-detail img,
 .block-item .arrow-item-detail img {
     width: 10px;
 }
@@ -426,9 +449,21 @@ footer .back-to-top img {
     border: 1px solid #009844;
 }
 
+.block-view-all .btn-view-all .arrow-item-white {
+    display: none;
+}
+
 .block-green .block-view-all .btn-view-all:hover {
     color: #ffffff !important;
     background: #009844 !important;
+}
+
+.block-green .block-view-all .btn-view-all:hover .arrow-item-white {
+    display: block;
+}
+
+.block-green .block-view-all .btn-view-all:hover .arrow-item-green {
+    display: none;
 }
 
 .block-view-all .btn-view-all .arrow-item-detail {
@@ -456,6 +491,14 @@ footer .back-to-top img {
     .block-list .block-item {
         padding: 20px 35px 10px 35px;
         border-top: 1px solid #cccccc;
+        position: relative;
+    }
+
+    .block-list .block-item .link-arrow {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .block-list li:last-child {
@@ -470,6 +513,7 @@ footer .back-to-top img {
     .block-title {
         font-size: 24px;
         letter-spacing: 2px;
+        margin-top: 55px;
     }
 
     .block-list .block-item .block-item-title,
@@ -486,9 +530,8 @@ footer .back-to-top img {
         min-width: 150px;
     }
 
-    .block-item .arrow-item-detail img {
-        position: absolute;
-        right: 20px;
+    .block-item .label-item-time {
+        padding: 0 10px;
     }
 
     .block-note {
@@ -743,6 +786,10 @@ footer .back-to-top img {
     .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .register-member {
+        display: none !important;
     }
 }
 

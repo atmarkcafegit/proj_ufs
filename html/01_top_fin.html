@@ -15,17 +15,26 @@
             $(document).on('click', '.back-to-top', function() {
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
                 return false;
-            })
+            });
 
             $(document).on('mouseover', '.share-button', function() {
                 $('.share-button .btn-social').css('display', 'block');
                 return false;
-            })
+            });
 
             $(document).on('mouseout', '.share-button', function() {
                 $('.share-button .btn-social').css('display', 'none');
                 return false;
-            })
+            });
+
+            $(window).scroll(function (event) {
+                var scroll = $(document).scrollTop(); console.log(scroll);
+                if (scroll >= 900) {
+                    $('#register-member').css('display', 'block');
+                } else {
+                    $('#register-member').css('display', 'none');
+                }
+            });
         })
     </script>
 </head>
@@ -176,36 +185,39 @@
                                 <span class="label-item-info text-center">新商品情報</span>
                                 <span class="label-item-time">2017.9.1</span>
                                 <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
-                                <a href="#"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
+                                <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                             </li>
                             <li class="block-item">
                                 <span class="label-item-info text-center">親店情報</span>
                                 <span class="label-item-time">2017.9.1</span>
                                 <div class="block-item-title"><a href="#">【お客様窓口　受付について】8月14日（月）はお休みをいただきます。</a></div>
-                                <a href="#"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
+                                <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                             </li>
                             <li class="block-item">
                                 <span class="label-item-info text-center">キャンペーン＆イベン</span>
                                 <span class="label-item-time">2017.9.1</span>
                                 <div class="block-item-title"><a href="#">プレシャスカード入金ポイント2倍キャンペーン</a></div>
-                                <a href="#"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
+                                <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                             </li>
                             <li class="block-item">
                                 <span class="label-item-info text-center">プレスリリース</span>
                                 <span class="label-item-time">2017.9.1</span>
                                 <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
-                                <a href="#"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
+                                <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                             </li>
                         </ul>
                         <div class="block-view-all text-center">
-                            <a href="#" class="btn-view-all">ニュースページ <span class="pull-right arrow-item-detail hidden-xs"><img src="image/icon_arrow_white.png"></span><span class="pull-right arrow-item-detail visible-xs"><img src="image/icon_arrow_green.png"></span></a>
+                            <a href="#" class="btn-view-all">ニュースページ
+                                <span class="pull-right arrow-item-detail arrow-item-white"><img src="image/icon_arrow_white.png"></span>
+                                <span class="pull-right arrow-item-detail arrow-item-green"><img src="image/icon_arrow_green.png"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container" id="recruit-container">
+        <div class="container">
             <div class="">
                 <div class="block-green">
                     <h3 class="block-title text-center">RECRUIT</h3>
@@ -375,7 +387,10 @@
         </div>
     </div>
 
-
+    <div class="register-member text-center" id="register-member">
+        <a href="#"><img src="image/icon_user.png" /></a>
+        <div><a href="#">プレシャスメンバーズの新規登録</a></div>
+    </div>
 
     <footer>
         <div class="container">
