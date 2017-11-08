@@ -4,7 +4,6 @@
 }
 
 body {
-    height: 5000px;
     font-family: "Yu Gothic";
 }
 
@@ -25,6 +24,11 @@ header {
 
 #bs-navbar {
     margin-top: 15px;
+}
+
+.small-gutter > [class*='col-'] {
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 .navbar-nav li>a {
@@ -51,22 +55,35 @@ header {
 }
 
 .btn-menu {
-    background-color: #009844;
+    background-color: #fff;
+    border: 1px solid #009844;
     width: 135px;
     text-align: center;
     padding: 3px;
 }
 
 .btn-menu a {
-    color: #fff !important;
+    color: #009844;
     text-decoration: none;
     font-size: 12px !important;
     text-transform: uppercase;
+    width: 100%;
+    display: block;
+}
+
+.btn-menu:hover {
+    background-color: #009844;
+
+}
+
+.btn-menu:hover a {
+    color: #fff !important;
 }
 
 .btn-social {
     margin-top: 5px;
     text-align: center;
+    display: none;
 }
 
 .btn-social a {
@@ -147,6 +164,9 @@ footer .back-to-top img {
     margin-bottom: 20px;
 }
 /* End footer */
+
+
+/* Begin homepage */
 .carousel {
     margin-bottom: 70px;
 }
@@ -202,6 +222,134 @@ footer .back-to-top img {
 .carousel-caption p {
     font-size: 23px;
 }
+
+.recruit-block {
+    text-align: center;
+    border: 1px solid #666666;
+    padding: 0;
+}
+
+.recruit-text {
+    padding: 40px;
+}
+
+.recruit-image img {
+    width: 100%;
+}
+
+.recruit-block h3 {
+    height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #009844;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.recruit-block p {
+    font-size: 24px;
+    color: #666666;
+    margin-top: 30px;
+}
+
+#recruit-container, #business-container, #brand-container, #business-2-container, #contact-container  {
+    margin: 100px auto;
+}
+
+.business-block img.img-responsive {
+    width: 1920px !important;
+    height: 500px !important;
+    overflow-x: hidden;
+}
+
+.business-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.business-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.business-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px 177px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.business-btn.btn-small {
+    padding: 10px 195px;
+}
+
+.business-btn a {
+    font-size: 26px;
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.business-btn p {
+    margin-bottom: 0;
+}
+
+.business-block {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image-arrow {
+    margin-top: 40px;
+}
+
+.brand-block .col-md-4 {
+    border: 1px solid #666666;
+    padding: 35px;
+    text-align: center;
+}
+
+.contact-block .col-md-3, .contact-block .col-md-6 {
+    text-align: center;
+}
+
+.contact-block .contact-content {
+    border: 1px solid #666666;
+    padding: 35px;
+
+}
+
+.contact-block .contact-content .fa-lg {
+    font-size: 45px;
+    color: #999999;
+    margin: 0 10px;
+}
+
+.contact-block .contact-content .fa-custom {
+    font-size: 90px;
+    color: #999999;
+}
+
+.contact-text {
+    font-size: 24px;
+    height: 60px;
+    margin-top: 20px;
+    color: #666666;
+}
+
+.contact-text.text-1-line {
+    padding-top: 15px;
+}
+/* End homepage */
 
 @media screen and (max-width: 1200px) {
     header {
@@ -347,6 +495,55 @@ footer .back-to-top img {
     .carousel-caption {
         top: 10%;
     }
+
+    .recruit-block {
+        margin-bottom: 20px;
+    }
+
+    .recruit-text, .recruit-image {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .recruit-image {
+        width: 50%;
+    }
+
+    .recruit-block h3 {
+        font-size: 24px;
+        display: block;
+    }
+
+    .carousel-indicators li {
+        margin-right: 10px;
+    }
+
+    .carousel-indicators .active {
+        margin-right: 10px;
+    }
+
+    #recruit-container, #business-container, #brand-container, #business-2-container, #contact-container {
+        margin: 50px auto;
+    }
+
+    #recruit-container {
+        padding: 30px;
+    }
+
+    #business-container img.img-responsive {
+        width: 1000px !important;
+        height: 400px !important;
+        max-width: none !important;
+    }
+
+    .business-btn {
+        padding: 20px 50px;
+    }
+
+    .business-btn.btn-small {
+        padding: 10px 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -398,4 +595,42 @@ footer .back-to-top img {
     .menu-xs .pull-right {
         margin-right: 20px;
     }
+
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
+
+    .carousel-caption p.text-large .large {
+        font-size: 24px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .recruit-text {
+        width: 48%;
+    }
+
+    .recruit-image {
+        width: 50%;
+    }
+
+    .recruit-block h3 {
+        height: 50px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .recruit-block p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .recruit-text {
+        padding: 10px;
+    }
+    #recruit-container {
+        padding: 10px;
+    }
+
 }
