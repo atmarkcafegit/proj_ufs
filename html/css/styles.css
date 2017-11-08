@@ -1,0 +1,343 @@
+@font-face {
+    font-family: "Yu Gothic";
+    src: url("../fonts/YuGothic-Medium.ttf");
+}
+
+body {
+    height: 5000px;
+    font-family: "Yu Gothic";
+}
+
+header {
+    width: 100%;
+    max-width: 1300px;
+    height: 125px;
+    margin: 0 auto;
+    padding: 25px 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    height: auto;
+    padding: 5px 0;
+}
+
+#bs-navbar {
+    margin-top: 15px;
+}
+
+.navbar-nav li>a {
+    color: #666666;
+    font-size: 18px;
+    font-family: "Yu Gothic";
+    background-color: transparent !important;
+    padding: 10px 30px;
+}
+
+.navbar-nav li a:hover, .navbar-nav li a:active, .navbar-nav li a:visited  {
+    background-color: transparent !important;
+}
+
+.navbar-nav li.share-button {
+    margin-top: 6px;
+    font-family: "Yu Gothic";
+}
+
+.navbar-nav li.login-button {
+    margin-top: -23px;
+    margin-left: 10px;
+    font-family: "Yu Gothic";
+}
+
+.btn-menu {
+    background-color: #009844;
+    width: 135px;
+    text-align: center;
+    padding: 3px;
+}
+
+.btn-menu a {
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 12px !important;
+    text-transform: uppercase;
+}
+
+.btn-social {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.btn-social a {
+    color: #009844 !important;
+    margin-top: 10px;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.btn-language {
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+.btn-language a {
+    font-size: 10px;
+    color: #999999;
+}
+
+.btn-language a.active {
+    color: #666666;
+    border-bottom: 2px solid #b3b3b3;
+}
+.btn-language a:hover {
+    text-decoration: none;
+}
+
+.icon-cup {
+    display: inline-block;
+    margin-top: -3px;
+}
+
+/* Begin footer */
+footer {
+    background-color: #472c00;
+    padding: 50px;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 25px;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+footer .copyright {
+    margin-top: 75px;
+}
+
+footer .text-cp {
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+footer .back-to-top {
+    text-align: center;
+}
+
+footer .back-to-top a {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .back-to-top img {
+    margin-bottom: 20px;
+}
+/* End footer */
+
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 25px 20px;
+    }
+
+    .navbar-nav li>a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .btn-menu {
+        width: 110px;
+    }
+
+    .btn-menu a {
+        font-size: 10px !important;
+    }
+
+    .btn-social a {
+        font-size: 16px;
+    }
+
+    .btn-language a {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-nav li>a {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .btn-menu {
+        width: 100px;
+    }
+
+    .btn-menu a {
+        font-size: 9px !important;
+    }
+
+    .btn-social a {
+        font-size: 14px;
+    }
+
+    .btn-language a {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0;
+    }
+
+    #bs-navbar {
+        margin-top: 0;
+    }
+
+    .navbar-header {
+        padding: 25px 50px;
+        border-bottom: 1px solid #d1d1d1;
+        height: 125px;
+    }
+
+    .navbar-toggle {
+        margin-right: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .fa-align-justify {
+        display: none;
+    }
+
+    .fa-times {
+        display: block;
+    }
+
+    .collapsed .fa-align-justify {
+        display: block;
+    }
+
+    .collapsed .fa-times {
+        display: none;
+    }
+
+    .navbar-toggle .fa {
+        font-size: 32px;
+        color: #666666;
+    }
+
+    .navbar-nav li {
+        border-bottom: 1px solid #d1d1d1;
+        padding: 20px;
+    }
+
+    .navbar-nav li.last-item {
+        border-bottom: none;
+    }
+
+    .navbar-nav li a {
+        font-size: 24px;
+    }
+
+    .btn-menu {
+        padding: 15px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .btn-menu a {
+        font-size: 24px !important;
+    }
+
+    .menu-xs {
+        margin-top: 25px;
+    }
+
+    .menu-xs .pull-right {
+        margin-right: 30px;
+    }
+
+    .menu-xs .btn-share {
+        font-weight: bold;
+    }
+    .menu-xs .btn-cup {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .back-to-top {
+        float: none !important;
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    /*-- Change max-width from 768 to 767 --*/
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        background-color: #fff;
+    }
+
+    /*-- Disable this, suggest remove - this cause the menu disappear as soon as it toogle in --*/
+    .navbar-nav {
+        float: none !important;
+        margin: 0px -15px;
+        position: relative; /*-- New attribute --*/
+        z-index: 9999; /*-- New attribute --*/
+        background-color: #fff; /*-- New attribute --*/
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .navbar-header {
+        padding: 25px 20px;
+    }
+
+    .navbar-nav li a {
+        font-size: 20px;
+    }
+
+    .btn-menu a {
+        font-size: 20px !important;
+    }
+
+    .menu-xs .pull-right {
+        margin-right: 20px;
+    }
+}
