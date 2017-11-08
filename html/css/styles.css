@@ -351,6 +351,165 @@ footer .back-to-top img {
 }
 /* End homepage */
 
+/* Begin page 39 */
+.block-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.block-note {
+    font-family: "Yu Gothic";
+    font-size: 24px;
+    margin: 0 0 48px 0;
+}
+
+.block-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 60px 0;
+}
+
+.block-list .block-item {
+    border-top: 2px solid #cccccc;
+    padding: 30px 0px;
+}
+
+.block-list li:last-child {
+    border-bottom: 2px solid #cccccc;
+}
+
+.block-list .block-item .block-item-title {
+    font-family: "Yu Gothic";
+    font-size: 20px;
+    display: inline;
+}
+
+.block-list .block-item .block-item-title a {
+    color: #333333;
+}
+
+.block-item .label-item-info {
+    font-family: "Yu Gothic";
+    font-size: 16px;
+    color: #ffffff;
+    min-width: 177px;
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.block-item .label-item-time {
+    font-family: "Yu Gothic";
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.block-item .label-item-time,
+.block-list .block-item .block-item-title,
+.block-item .arrow-item-detail {
+    line-height: 32px;
+}
+
+.block-item .arrow-item-detail img {
+    width: 10px;
+}
+
+.block-view-all .btn-view-all {
+    font-family: "Yu Gothic";
+    font-size: 22px;
+    color: #009844;
+    padding: 10px 20px 10px 55px;
+    display: inline-block;
+    text-decoration: none;
+    background: #ffffff !important;
+    border: 1px solid #009844;
+}
+
+.block-green .block-view-all .btn-view-all:hover {
+    color: #ffffff !important;
+    background: #009844 !important;
+}
+
+.block-view-all .btn-view-all .arrow-item-detail {
+    margin: 0 0 0 40px;
+}
+
+.block-green .block-title {
+    color: #009844;
+}
+
+.block-green .label-item-info,
+.block-green .block-view-all .btn-view-all {
+    background: #009844;
+}
+
+@media only screen and (max-width : 767px) {
+    .block-container {
+        padding: 0;
+    }
+
+    .block-list {
+        margin: 0 0 30px 0;
+    }
+
+    .block-list .block-item {
+        padding: 20px 35px 10px 35px;
+        border-top: 1px solid #cccccc;
+    }
+
+    .block-list li:last-child {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .block-list .block-item .block-item-title {
+        display: inline-block;
+        margin: 5px 35px 0 0;
+    }
+
+    .block-title {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .block-list .block-item .block-item-title,
+    .block-note {
+        font-size: 16px;
+    }
+
+    .block-item .label-item-time,
+    .block-item .label-item-info {
+        font-size: 14px;
+    }
+
+    .block-item .label-item-info {
+        min-width: 150px;
+    }
+
+    .block-item .arrow-item-detail img {
+        position: absolute;
+        right: 20px;
+    }
+
+    .block-note {
+        margin: 0 0 25px 0;
+    }
+
+    .block-view-all .btn-view-all {
+        font-size: 20px;
+    }
+
+    .block-view-all .btn-view-all {
+        padding: 7px 15px 7px 30px;
+    }
+
+    .block-view-all .btn-view-all .arrow-item-detail img {
+        width: 7px;
+    }
+}
+
+/* End page 39 */
+
 @media screen and (max-width: 1200px) {
     header {
         padding: 25px 20px;
@@ -375,6 +534,14 @@ footer .back-to-top img {
 
     .btn-language a {
         font-size: 9px;
+    }
+
+    .business-btn {
+        padding: 20px 50px;
+    }
+
+    .business-btn.btn-small {
+        padding: 10px 20px;
     }
 }
 
