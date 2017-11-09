@@ -5,6 +5,7 @@
 
 body {
     font-family: "Yu Gothic";
+    color: #666666;
 }
 
 header {
@@ -796,7 +797,7 @@ h2.block-header {
     margin: 35px 0;
 }
 
-.franchise-content .franchise-contact {
+.franchise-contact {
     font-size: 18px;
     line-height: 28px;
 }
@@ -888,6 +889,70 @@ h2.block-header {
 }
 
 /* End page 02 */
+
+/* Begin page 03 */
+.franchise-title {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.franchise-outline-content {
+    margin-bottom: 30px;
+}
+
+.franchise-outline-content .img-responsive {
+    margin: 0px auto 50px;
+}
+
+.franchise-outline-desc {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+
+.franchise-outline-caption {
+    color: #472c00;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.franchise-outline-flow {
+    color: #472c00;
+    font-size: 22px;
+    text-align: center;
+    border: 1px solid #472c00;
+    padding: 20px 40px;
+    min-height: 105px;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+}
+
+.franchise-outline-arrow {
+    margin: 50px 0;
+}
+
+.franchise-outline-row {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width : 768px) {
+    .franchise-outline-flow {
+        font-size: 22px;
+        padding: 20px 10px;
+        min-height: 130px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .franchise-outline-flow {
+        font-size: 16px;
+    }
+}
+
+
+/* End page 03 */
 
 /* Begin page 39 */
 .block-title {

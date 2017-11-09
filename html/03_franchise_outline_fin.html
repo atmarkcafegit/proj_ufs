@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ユーシーシーフードサービスシステムズ株式会社</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.back-to-top', function() {
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+                return false;
+            });
+
+            $(document).on('mouseover', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'block');
+                return false;
+            });
+
+            $(document).on('mouseout', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'none');
+                return false;
+            });
+
+            $(document).on('click', '.block-tab a', function() {
+                var target = $(this).data('target');
+                $('.block-tab .col-xs-6').removeClass('active');
+                $(this).parent('div').addClass('active');
+
+                $('.franchise-content').removeClass('active');
+                $('#' + target).addClass('active');
+                return false;
+            });
+
+            $(document).on('click', '.block-more-info a', function() {
+                if ($(this).hasClass('active')) {
+                    $('.block-more-info-content').hide();
+                    $(this).removeClass('active');
+                    $('.block-more-info .fa-minus').hide();
+                    $('.block-more-info .fa-plus').show();
+                } else {
+                    $('.block-more-info-content').show();
+                    $(this).addClass('active');
+                    $('.block-more-info .fa-minus').show();
+                    $('.block-more-info .fa-plus').hide();
+                }
+            });
+
+            $(window).scroll(function (event) {
+                var scroll = $(document).scrollTop();
+                if (scroll >= 900) {
+                    $('#register-member').css('display', 'block');
+                } else {
+                    $('#register-member').css('display', 'none');
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<header>
+    <div class="navbar-header">
+        <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
+                data-target="#bs-navbar" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-align-justify fa-fw" aria-hidden="true"></i>
+            <i class="fa fa-times fa-fw" aria-hidden="true"></i>
+        </button>
+        <div class="visible-xs pull-right menu-xs">
+            <div class="pull-right btn-cup">
+                <div><img src="image/icon_cup.png" class="icon-cup"></div>
+                店舗検索
+            </div>
+            <div class="pull-right btn-share">SHARE</div>
+        </div>
+        <a href="#" class="navbar-brand">
+            <img src="image/ufs_logo.png" class="img-responsive">
+        </a>
+    </div>
+    <nav class="collapse navbar-collapse" id="bs-navbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="hidden-xs">
+                <a href="#">
+                    <img src="image/icon_cup.png">
+                    店舗検索
+                </a>
+            </li>
+
+            <li class="visible-xs"><a href="#">最新ニュース<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li><a href="#">採用情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li><a href="#">フランチャイズビジネス<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="hidden-xs"><a href="#">会社概要</a></li>
+            <li class="visible-xs"><a href="#">店舗情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="visible-xs"><a href="#">公式アプリ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="visible-xs"><a href="#">プレシャスメンバーズ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="visible-xs"><a href="#">ENGLISH<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="visible-xs last-item">
+                <div class="btn-menu">
+                    <a href="#">会員登録 / ログイン</a>
+                </div>
+            </li>
+            <li class="share-button hidden-xs">
+                <div class="btn-menu">
+                    <a href="#">Share</a>
+                </div>
+                <div class="btn-social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-envelope"></i></a>
+                </div>
+            </li>
+            <li class="login-button hidden-xs">
+                <div class="btn-language">
+                    <a href="#" class="active">JAPANESE</a>
+                    /
+                    <a href="#">ENGLISH</a>
+                </div>
+                <div class="btn-menu">
+                    <a href="#">会員登録 / ログイン</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="">
+        <div class="block-green">
+            <h3 class="block-title text-center">FRANCHISE BUSINESS</h3>
+            <p class="block-note text-center">フランチャイズビジネスの概要</p>
+        </div>
+
+        <div class="franchise-outline-content">
+            <p class="franchise-title">● フランチャイズビジネスの強み</p>
+            <div>
+                <img src="image/franchise_5.png" class="img-responsive">
+            </div>
+            <p class="franchise-outline-desc">フランチャイズビジネスには、独自開業にはないさまざまなメリットがあります。<br>
+                お客様がフランチャイズパッケージを活用されることで、独自開業される場合に比べて、リスクを減らすことができます。</p>
+        </div>
+
+        <div class="franchise-outline-content">
+            <p class="franchise-title">● フランチャイズビジネスのしくみ</p>
+            <div>
+                <img src="image/franchise_6.png" class="img-responsive">
+            </div>
+            <p class="franchise-outline-desc">長年にわたって培ってきた弊社独自の経営ノウハウをご提供します。</p>
+        </div>
+
+        <div class="franchise-outline-content">
+            <p class="franchise-title">● フランチャイズビジネスなら安心</p>
+            <p class="franchise-outline-desc">フランチャイズビジネスなら、開業に伴うさまざま不安を払拭できます。</p>
+            <p class="franchise-outline-caption">こんな不安はございませんか?</p>
+            <div class="row small-gutter">
+                <div class="col-xs-4">
+                    <div class="franchise-outline-flow">
+                        オーナーになるための資格や条件は?
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="franchise-outline-flow">
+                        出店場所は?
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="franchise-outline-flow">
+                        出店資金は?
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row small-gutter">
+                <div class="col-xs-4">
+                    <div class="franchise-outline-flow">
+                        人員募集は?
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="franchise-outline-flow">
+                        教育・トレーニングは?
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="franchise-outline-flow">
+                        開店後のサポートは?
+                    </div>
+                </div>
+            </div>
+
+            <div class="franchise-outline-arrow">
+                <img src="image/franchise-arrow.png" class="img-responsive">
+            </div>
+
+            <div class="franchise-outline-contact">
+                <div class="row franchise-outline-row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <div class="btn-custom btn-green">
+                            よくあるご質問はこちら
+                            <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <div class="btn-custom btn-brown">
+                            <i class="fa fa-file-text-o fa-flip-horizontal fa-icon" aria-hidden="true"></i>
+                            資料請求
+                            <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="btn-custom btn-green">
+                            <i class="fa fa-envelope fa-icon" aria-hidden="true"></i>
+                            お問い合わせフォームへ
+                            <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="btn-custom btn-green">
+                            <i class="fa fa-volume-control-phone fa-rotate-270 fa-icon" aria-hidden="true"></i>
+                            電話でのお問い合わせ
+                            <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="franchise-contact">【お問い合わせ先】 TEL：(03)5400-5581  FAX：(03)5400-5583<br>
+                    受付時間：平日 9:30～18:00 　担当：疋田（ひきた）</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="franchise-info">
+            <div class="block-more-info">
+                <a href="javascript:void(0)">
+                    <p>さらに詳しくフランチャイズについて知りたい方はこち</p>
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus"></i>
+                </a>
+            </div>
+            <div class="block-more-info-content">
+                <ul>
+                    <li><a href="#">フランチャイズビジネスの概<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">開店までの流れ<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">加盟条件<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">研修システムとサポート<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">出店事例のご紹介<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">よくある質問<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">フランチャイズ事業説明会<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="back-to-top pull-right">
+            <a href="#">
+                <div><img src="image/icon_back_to_top.png"></div>
+                トップへ戻る
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">個人情報保護方針</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">ソーシャルメディア一覧</a></li>
+                    <li><a href="#">サイトマップ</a></li>
+                    <li><a href="#">UCCグループのご案内</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="col-md-12">
+                <p>ユーシーシーフードサービスシステムズ株式会社</p>
+                <p class="text-cp">© UCC Foodservise Systems Inc. all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
