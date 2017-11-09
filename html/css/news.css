@@ -7,7 +7,7 @@
     font-family: "Montserrat Regular";
     font-size: 40px;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     margin: 105px 0 10px 0;
 }
 
@@ -20,7 +20,7 @@
 .block-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 60px 0;
+    margin-bottom: 0;
 }
 
 .block-list .block-item {
@@ -63,35 +63,23 @@
     width: 10px;
 }
 
-.block-view-all .btn-view-all {
-    font-family: "Yu Gothic";
-    font-size: 22px;
-    color: #009844;
-    padding: 10px 20px 10px 55px;
-    display: inline-block;
-    text-decoration: none;
-    background: #ffffff !important;
-    border: 1px solid #009844;
-}
-
-.block-view-all .btn-view-all .arrow-item-detail {
-    margin: 0 0 0 40px;
-}
-
 .block-green .block-title {
     color: #009844;
 }
 
-.block-green .label-item-info,
-.block-green .block-view-all .btn-view-all {
+.block-green .label-item-info {
     background: #009844;
 }
 
-#news-container {
+.block-container .btn-custom {
+    margin: 60px 0 0 0;
+}
+
+#block-container {
     margin-bottom: 150px;
 }
 
-#news-container .block-title {
+#block-container .block-title {
     margin: 50px 0 10px 0;
 }
 
@@ -100,8 +88,8 @@
         padding: 0;
     }
 
-    .block-list {
-        margin: 0 0 30px 0;
+    .block-container .btn-custom {
+        margin: 30px 0 0 0;
     }
 
     .block-list .block-item {
@@ -153,29 +141,11 @@
         margin: 0 0 25px 0;
     }
 
-    .block-view-all .btn-view-all {
-        font-size: 20px;
-    }
-
-    .block-green .block-view-all .btn-view-all {
-        color: #009844;
-        background: #ffffff;
-        border: 1px solid #009844;
-    }
-
-    .block-view-all .btn-view-all {
-        padding: 7px 15px 7px 30px;
-    }
-
-    .block-view-all .btn-view-all .arrow-item-detail img {
-        width: 7px;
-    }
-
-    #news-container {
+    #block-container {
         margin-bottom: 40px;
     }
 
-    #news-container .block-title {
+    #block-container .block-title {
         margin: 30px 0 10px 0;
     }
 }

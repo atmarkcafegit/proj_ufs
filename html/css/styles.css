@@ -862,7 +862,7 @@ h2.block-header {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     margin: 100px 0 10px 0;
 }
 
@@ -880,7 +880,7 @@ h2.block-header {
 .block-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 60px 0;
+    margin-bottom: 0;
 }
 
 .block-list .block-item {
@@ -923,50 +923,20 @@ h2.block-header {
     line-height: 32px;
 }
 
-.block-view-all .btn-view-all .arrow-item-detail img,
 .block-item .arrow-item-detail img {
     width: 10px;
-}
-
-.block-view-all .btn-view-all {
-    font-family: "Yu Gothic";
-    font-size: 22px;
-    color: #009844;
-    padding: 10px 20px 10px 55px;
-    display: inline-block;
-    text-decoration: none;
-    background: #ffffff !important;
-    border: 1px solid #009844;
-}
-
-.block-view-all .btn-view-all .arrow-item-white {
-    display: none;
-}
-
-.block-green .block-view-all .btn-view-all:hover {
-    color: #ffffff !important;
-    background: #009844 !important;
-}
-
-.block-green .block-view-all .btn-view-all:hover .arrow-item-white {
-    display: block;
-}
-
-.block-green .block-view-all .btn-view-all:hover .arrow-item-green {
-    display: none;
-}
-
-.block-view-all .btn-view-all .arrow-item-detail {
-    margin: 0 0 0 40px;
 }
 
 .block-green .block-title {
     color: #009844;
 }
 
-.block-green .label-item-info,
-.block-green .block-view-all .btn-view-all {
+.block-green .label-item-info {
     background: #009844;
+}
+
+.block-container .btn-custom {
+    margin: 60px 0 0 0;
 }
 
 @media only screen and (max-width : 767px) {
@@ -974,8 +944,8 @@ h2.block-header {
         padding: 0;
     }
 
-    .block-list {
-        margin: 0 0 30px 0;
+    .block-container .btn-custom {
+        margin: 30px 0 0 0;
     }
 
     .block-list .block-item {
@@ -1030,18 +1000,6 @@ h2.block-header {
 
     .block-note {
         margin: 0 0 25px 0;
-    }
-
-    .block-view-all .btn-view-all {
-        font-size: 20px;
-    }
-
-    .block-view-all .btn-view-all {
-        padding: 7px 15px 7px 30px;
-    }
-
-    .block-view-all .btn-view-all .arrow-item-detail img {
-        width: 7px;
     }
 }
 
