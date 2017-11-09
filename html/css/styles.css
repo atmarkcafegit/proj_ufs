@@ -570,7 +570,7 @@ footer .back-to-top img {
     }
 
     .business-btn {
-        padding: 20px 50px;
+        padding: 20px 30px;
     }
 
     .business-btn.btn-small {
@@ -679,6 +679,11 @@ footer .back-to-top img {
 
     .brand-block .col-xs-6 {
         height: 120px;
+    }
+
+    .business-block img.img-responsive {
+        width: 1000px !important;
+        height: 400px !important;
     }
 }
 
