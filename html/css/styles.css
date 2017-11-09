@@ -485,7 +485,7 @@ footer .back-to-top img {
 @media screen and (max-width: 768px) {
     header {
         padding: 0;
-        height: 90px;
+        height: 80px;
     }
 
     #bs-navbar {
@@ -494,7 +494,7 @@ footer .back-to-top img {
 
     .navbar-header {
         padding: 0px 50px;
-        height: 90px;
+        height: 80px;
     }
 
     .navbar-toggle {
@@ -671,6 +671,7 @@ footer .back-to-top img {
     }
 
     .logo-ufs {
+        width: 50px;
         margin-top: 10px;
     }
 
@@ -1053,6 +1054,10 @@ h2.block-header {
     margin: 60px 0 0 0;
 }
 
+.last-block-container {
+    margin-bottom: 150px;
+}
+
 @media only screen and (max-width : 767px) {
     .block-container {
         padding: 0;
@@ -1114,6 +1119,10 @@ h2.block-header {
 
     .block-note {
         margin: 0 0 25px 0;
+    }
+
+    .last-block-container {
+        margin-bottom: 40px;
     }
 }
 

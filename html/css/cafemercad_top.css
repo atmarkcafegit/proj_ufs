@@ -1,16 +1,16 @@
-.logo-cafedi {
-    margin-top: 15px;
+.logo-cafemercad {
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    .logo-cafedi {
+    .logo-cafemercad {
         width: 135px;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width: 374px) {
-    .logo-cafedi {
+    .logo-cafemercad {
         width: 100px;
     }
 }
