@@ -73,7 +73,6 @@ header {
 
 .btn-menu:hover {
     background-color: #009844;
-
 }
 
 .btn-menu:hover a {
@@ -114,6 +113,53 @@ header {
 .icon-cup {
     display: inline-block;
     margin-top: -3px;
+}
+
+.btn-custom {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.btn-custom .fa-angle-right.fa-lg {
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.btn-custom .fa-icon {
+    margin-right: 20px;
+}
+
+.btn-brown {
+    color: #472c00;
+    border: 1px solid #472c00;
+}
+
+.btn-brown:hover {
+    color: #fff;
+    background-color: #472c00;
+}
+
+.btn-green {
+    color: #009844;
+    border: 1px solid #009844;
+}
+
+.btn-green:hover {
+    color: #fff;
+    background-color: #009844;
+}
+
+@media only screen and (max-width : 480px) {
+    .btn-custom {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn-custom .fa-icon {
+        margin-right: 5px;
+    }
 }
 
 /* Begin footer */
@@ -245,8 +291,10 @@ footer .back-to-top img {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    display: table-cell;
-    vertical-align: middle;
+}
+
+.recruit-block h3.custom-recruit {
+    padding-top: 20px;
 }
 
 .recruit-block p {
@@ -689,6 +737,126 @@ footer .back-to-top img {
 
 /* End page 01 */
 
+/* Begin page 02 */
+h2.block-header {
+    color: #fff;
+    background-color: #999999;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 60px;
+}
+
+.block-tab {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.block-tab .col-xs-6 {
+    border: 1px solid #999999;
+}
+
+.block-tab a {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+
+    color: #999999;
+}
+
+.block-tab .active {
+    background-color: #999999;
+}
+
+.block-tab .active a {
+    color: #fff;
+}
+
+.franchise-content {
+    margin-top: 40px;
+}
+
+.franchise-content h3 {
+    color: #fff;
+    background-color: #999999;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0;
+    width: 180px;
+    margin: 25px auto;
+}
+
+.franchise-content .img-responsive {
+    margin: 0 auto 20px;
+}
+
+.franchise-content .franchise-text {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 35px 0;
+}
+
+.franchise-content .franchise-contact {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.block-more-info {
+    background-color: #999999;
+    position: relative;
+    padding: 20px 50px;
+    font-size: 22px;
+    margin: 80px 0 160px;
+}
+
+.block-more-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.block-more-info p {
+    margin: 0;
+}
+
+.block-more-info .fa {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
+
+@media only screen and (max-width : 768px) {
+    .franchise-content {
+        border: 1px solid #999999;
+        display: none;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .franchise-content.active {
+        display: block;
+        margin-top: 0;
+    }
+
+
+    .block-more-info {
+        padding: 10px 20px;
+        font-size: 22px;
+        margin: 60px 0 60px;
+    }
+
+    .block-more-info p {
+        width: 70%;
+    }
+
+    .block-more-info .fa {
+        right: 20px;
+        top: 30px
+    }
+}
+
+/* End page 02 */
+
 /* Begin page 39 */
 .block-title {
     font-family: 'Montserrat', sans-serif;
@@ -702,6 +870,11 @@ footer .back-to-top img {
     font-family: "Yu Gothic";
     font-size: 24px;
     margin: 0 0 48px 0;
+}
+
+.block-desc {
+    font-size: 16px;
+    color: #999999;
 }
 
 .block-list {
@@ -836,6 +1009,10 @@ footer .back-to-top img {
     .block-list .block-item .block-item-title,
     .block-note {
         font-size: 16px;
+    }
+
+    .block-desc {
+        font-size: 14px;
     }
 
     .block-item .label-item-time,
