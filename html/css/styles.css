@@ -494,7 +494,6 @@ footer .back-to-top img {
 
     .navbar-header {
         padding: 0px 50px;
-        border-bottom: 1px solid #d1d1d1;
         height: 90px;
     }
 
@@ -529,6 +528,10 @@ footer .back-to-top img {
     .navbar-nav li {
         border-bottom: 1px solid #d1d1d1;
         padding: 20px;
+    }
+
+    .navbar-nav li:nth-child(2) {
+        border-top: 1px solid #d1d1d1;
     }
 
     .navbar-nav li.last-item {
@@ -643,6 +646,7 @@ footer .back-to-top img {
 
     .navbar-collapse {
         background-color: #fff;
+        border-top: none;
     }
 
     /*-- Disable this, suggest remove - this cause the menu disappear as soon as it toogle in --*/
