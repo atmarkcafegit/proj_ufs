@@ -260,7 +260,6 @@ footer .back-to-top img {
 
 .carousel img {
     width: 1920px !important;
-    height: 777px !important;
     overflow-x: hidden;
     max-width: none !important;
 }
@@ -802,12 +801,16 @@ h2.block-header {
     line-height: 28px;
 }
 
+.franchise-info {
+    margin-bottom: 120px;
+}
+
 .block-more-info {
     background-color: #999999;
     position: relative;
     padding: 20px 50px;
     font-size: 22px;
-    margin: 80px 0 160px;
+    margin: 80px 0 0;
 }
 
 .block-more-info a {
@@ -825,6 +828,32 @@ h2.block-header {
     right: 50px;
 }
 
+.block-more-info .fa-minus {
+    display: none;
+}
+
+.block-more-info-content {
+    border: 1px solid #999999;
+    display: none;
+}
+
+.block-more-info-content ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.block-more-info-content ul li {
+    padding: 20px 40px;
+    border-bottom: 1px solid #999999;
+}
+
+.block-more-info-content ul li a {
+    font-size: 18px;
+    color: #666666;
+    text-decoration: none;
+}
+
 @media only screen and (max-width : 768px) {
     .franchise-content {
         border: 1px solid #999999;
@@ -839,10 +868,13 @@ h2.block-header {
     }
 
 
+    .franchise-info {
+        margin-bottom: 50px;
+    }
+
     .block-more-info {
         padding: 10px 20px;
-        font-size: 22px;
-        margin: 60px 0 60px;
+        margin: 60px 0 0;
     }
 
     .block-more-info p {
