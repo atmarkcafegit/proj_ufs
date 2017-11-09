@@ -1,0 +1,125 @@
+.block-brown .block-title {
+    color: #472c00;
+}
+
+.block-brown .label-item-info,
+.block-brown .block-view-all .btn-view-all {
+    background: #472c00;
+}
+
+.block-brown .block-view-all .btn-view-all {
+    border: 1px solid #472c00;
+    color: #472c00;
+}
+
+.block-brown .block-view-all .btn-view-all:hover {
+    color: #ffffff !important;
+    background: #472c00 !important;
+}
+
+.block-brown .block-view-all .btn-view-all:hover .arrow-item-white {
+    display: block;
+}
+
+.block-brown .block-view-all .btn-view-all:hover .arrow-item-brown {
+    display: none;
+}
+
+#navbar-brown .btn-menu {
+    border: 1px solid #472c00;
+}
+
+#navbar-brown .btn-menu a {
+    color: #472c00;
+}
+
+#navbar-brown .btn-menu:hover {
+    background-color: #472c00;
+}
+
+#navbar-brown .btn-social a {
+    color: #472c00 !important;
+}
+
+.logo-cafedi {
+    width: 135px;
+    margin-top: 25px;
+}
+
+.last-item .link-top-page {
+    display: inline;
+}
+
+.last-item .link-top-page img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.last-item .link-top-page span {
+    font-size: 12px;
+}
+
+.menu-block {
+    text-align: center;
+    padding: 0;
+}
+
+.menu-text {
+    font-size: 20px;
+}
+
+.menu-text p {
+    margin-top: 20px;
+}
+
+.menu-image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar-brown .btn-menu {
+        display: inline-block;
+        position: relative;
+        float: right;
+        width: 140px;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    #navbar-brown .last-item .btn-menu a {
+        font-size: 12px !important;
+    }
+
+    .menu-text p {
+        font-size: 16px;
+        margin: 13px 0 20px 0;
+    }
+
+    p.menu-text-title:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .menu-block-container {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .logo-cafedi {
+        width: 100px;
+    }
+
+    .last-item .link-top-page img {
+        width: 35px;
+    }
+
+    #navbar-brown .btn-menu {
+        width: 130px;
+    }
+
+    .last-item .link-top-page img {
+        margin-right: 5px;
+    }
+}
+
