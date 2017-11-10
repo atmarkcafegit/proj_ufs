@@ -1090,7 +1090,7 @@ h2.block-header {
 
     .block-list .block-item .block-item-title {
         display: inline-block;
-        margin: 5px 35px 0 0;
+        margin: 0px 35px 0 0;
     }
 
     .block-title {
@@ -1115,6 +1115,7 @@ h2.block-header {
 
     .block-item .label-item-info {
         min-width: 150px;
+        margin-bottom: 5px;
     }
 
     .block-item .label-item-time {
