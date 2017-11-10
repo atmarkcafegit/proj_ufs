@@ -15,7 +15,7 @@
 
 .block-container .btn-custom.btn-paging.btn-paging {
     font-size: 18px;
-    color: #333;
+    color: #472c00;
     padding: 15px 0;
 }
 
@@ -39,6 +39,23 @@
     margin: 0 0 0 15px;
 }
 
+.menu-image-detail img {
+    width: 100%;
+}
+
+@media (min-width : 768px) {
+    .menu-image-detail {
+        width: 54%;
+        padding-right: 0;
+    }
+
+    .menu-content-detail {
+        width: 40%;
+        margin-left: 6%;
+        padding-left: 0;
+    }
+}
+
 @media only screen and (max-width : 767px) {
 
     .menu-detail {
@@ -56,6 +73,11 @@
 
     .menu-detail li:last-child .block-item-title {
         font-size: 14px;
+    }
+
+    .menu-category-detail-container {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .block-container .btn-custom.btn-paging.btn-paging {
