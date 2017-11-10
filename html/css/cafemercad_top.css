@@ -12,6 +12,7 @@
 @media screen and (max-width: 374px) {
     .logo-cafemercad {
         width: 100px;
+        margin-top: 25px;
     }
 }
 

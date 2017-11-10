@@ -12,6 +12,7 @@
 @media screen and (max-width: 374px) {
     .logo-cafedi {
         width: 100px;
+        margin-top: 30px;
     }
 }
 
