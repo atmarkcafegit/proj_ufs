@@ -1148,6 +1148,44 @@ h2.block-header {
 
 /* End page 05 */
 
+/* Begin page 06 */
+.franchise-term {
+    margin-top: 50px;
+}
+
+.franchise-term-image-first {
+    margin: 100px auto;
+}
+
+.table.table-custom {
+    margin: 40px 0;
+    border: 1px solid #999999;
+}
+
+.table.table-custom th {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px 30px;
+    border: 1px solid #999999;
+}
+
+.table.table-custom td {
+    padding: 20px 30px;
+    border: 1px solid #999999;
+}
+
+.table-custom td, .table-custom th {
+    font-size: 16px;
+}
+
+@media only screen and (max-width : 768px) {
+    .franchise-term-image-first {
+        margin: 30px auto 50px;
+    }
+}
+
+/* End page 06 */
+
 /* Begin page 39 */
 .block-title {
     font-family: 'Montserrat', sans-serif;
