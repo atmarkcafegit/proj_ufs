@@ -1072,14 +1072,14 @@ h2.block-header {
     }
 
     .block-list .block-item {
-        padding: 20px 35px 10px 35px;
+        padding: 20px 20px 10px 20px;
         border-top: 1px solid #cccccc;
         position: relative;
     }
 
     .block-list .block-item .link-arrow {
         position: absolute;
-        right: 30px;
+        right: 20px;
         top: 50%;
         transform: translate(-50%, -50%);
     }
