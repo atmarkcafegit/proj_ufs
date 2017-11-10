@@ -51,6 +51,19 @@
                 }
             });
 
+            $(document).on('click', '.block-faq-content a', function() {
+                var target = $(this).data('target');
+                $('.block-faq-info a').removeClass('active');
+
+                if ($(this).hasClass('active')) {
+                    $('#' + target).hide('fast');
+                    $(this).removeClass('active');
+                } else {
+                    $('#' + target).show('fast');
+                    $(this).addClass('active');
+                }
+            });
+
             $(window).scroll(function (event) {
                 var scroll = $(document).scrollTop();
                 if (scroll >= 900) {
@@ -79,7 +92,7 @@
             <div class="pull-right btn-share">SHARE</div>
         </div>
         <a href="#" class="navbar-brand">
-            <img src="image/ufs_logo.png" class="img-responsive logo-ufs">
+            <img src="image/ufs_logo.png" class="img-responsive">
         </a>
     </div>
     <nav class="collapse navbar-collapse" id="bs-navbar">
@@ -133,80 +146,142 @@
     <div class="">
         <div class="block-green">
             <h3 class="block-title text-center">FRANCHISE BUSINESS</h3>
-            <p class="block-note text-center">フランチャイズビジネスの概要</p>
+            <p class="block-note text-center">開店までの流れ</p>
+        </div>
+
+        <div class="franchise-open">
+            <ul class="open-list">
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">1</div>
+                        <div class="open-title">事業説明会または個別相談</div>
+                    </div>
+                    <div class="open-content">
+                        本部よりチェーンへの加盟を希望する方を対象に、理念や特徴を説明いたします。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">2</div>
+                        <div class="open-title">フランチャイズシステムの理解</div>
+                    </div>
+                    <div class="open-content">
+                        加盟希望者と開発担当者で面談し、フランチャイズシステムをご理解いただきます。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">3</div>
+                        <div class="open-title">店舗視察</div>
+                    </div>
+                    <div class="open-content">
+                        最寄駅周辺や出店希望立地の既存店を視察いただき、店舗視察レポートを提出していただきます。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">4</div>
+                        <div class="open-title">加盟意思の確認</div>
+                    </div>
+                    <div class="open-content">
+                        加盟の意思を明確にしていただき、加盟申込書と会社概要・決済報告書等を本部へ提出いただきます。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">5</div>
+                        <div class="open-title">面談</div>
+                    </div>
+                    <div class="open-content">
+                        加盟希望者と弊社社長・役員との面談後、チェーン加盟登録の手続きを行います。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">6</div>
+                        <div class="open-title">物件収集</div>
+                    </div>
+                    <div class="open-content">
+                        加盟者が店舗物件を取得していただきます。本部が物件収集の方法についてレクチャーさせていただいたり、本部で入手した物件情報をご紹介する場合もあります。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">7</div>
+                        <div class="open-title">立件調査</div>
+                    </div>
+                    <div class="open-content">
+                        加盟者が出店を検討されている物件について、開発担当者が周辺環境や店前通行量を調査し加盟希望者へ結果報告いたします。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">8</div>
+                        <div class="open-title">加盟意思の確認</div>
+                    </div>
+                    <div class="open-content">
+                        加盟の意思を明確にしていただき、加盟申込書と会社概要・決済報告書等を本部へ提出いただきます。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">9</div>
+                        <div class="open-title">出店の最終意思決定</div>
+                    </div>
+                    <div class="open-content">
+                        加盟者はリスクを認識した上で出店への最終意思を決定していただきます。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">10</div>
+                        <div class="open-title">出店証人と賃貸借契約・加盟契約</div>
+                    </div>
+                    <div class="open-content">
+                        弊社の出店承認後、加盟者は物件の賃貸借契約・当社とのフランチャイズ加盟契約・設計管理契約等を締結していただきます。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">11</div>
+                        <div class="open-title">内装設備決定</div>
+                    </div>
+                    <div class="open-content">
+                        加盟者は設計管理担当者・開発担当者と打合せを行い、施工業者と内装工事請負契約等を締結していただきます。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">12</div>
+                        <div class="open-title">研修</div>
+                    </div>
+                    <div class="open-content">
+                        加盟者は直営店舗にて研修を受講いただき、接客・調理・店舗経営のノウハウを取得していただきます。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">13</div>
+                        <div class="open-title">工事</div>
+                    </div>
+                    <div class="open-content">
+                        内装工事終了後、加盟者・設計管理担当者・開発担当者の立会いのもと店舗竣工検査を行います。
+                    </div>
+                </li>
+                <li>
+                    <div class="open-header">
+                        <div class="open-number">14</div>
+                        <div class="open-title">オープン</div>
+                    </div>
+                    <div class="open-content">
+                        数日間の店舗での本格的なトレーニングを行った後、グランドオープンとなります。
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <div class="franchise-outline-content">
-            <p class="franchise-title">● フランチャイズビジネスの強み</p>
-            <div>
-                <img src="image/franchise_5.png" class="img-responsive">
-            </div>
-            <p class="franchise-outline-desc">フランチャイズビジネスには、独自開業にはないさまざまなメリットがあります。<br>
-                お客様がフランチャイズパッケージを活用されることで、独自開業される場合に比べて、リスクを減らすことができます。</p>
-        </div>
-
-        <div class="franchise-outline-content">
-            <p class="franchise-title">● フランチャイズビジネスのしくみ</p>
-            <div>
-                <img src="image/franchise_6.png" class="img-responsive">
-            </div>
-            <p class="franchise-outline-desc">長年にわたって培ってきた弊社独自の経営ノウハウをご提供します。</p>
-        </div>
-
-        <div class="franchise-outline-content">
-            <p class="franchise-title">● フランチャイズビジネスなら安心</p>
-            <p class="franchise-outline-desc">フランチャイズビジネスなら、開業に伴うさまざま不安を払拭できます。</p>
-            <p class="franchise-outline-caption">こんな不安はございませんか?</p>
-            <div class="row small-gutter">
-                <div class="col-xs-4">
-                    <div class="franchise-outline-flow">
-                        オーナーになるための資格や条件は?
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="franchise-outline-flow">
-                        出店場所は?
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="franchise-outline-flow">
-                        出店資金は?
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row small-gutter">
-                <div class="col-xs-4">
-                    <div class="franchise-outline-flow">
-                        人員募集は?
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="franchise-outline-flow">
-                        教育・トレーニングは?
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="franchise-outline-flow">
-                        開店後のサポートは?
-                    </div>
-                </div>
-            </div>
-
-            <div class="franchise-outline-arrow">
-                <img src="image/franchise-arrow.png" class="img-responsive">
-            </div>
-
             <div class="franchise-outline-contact">
-                <div class="row franchise-outline-row">
-                    <div class="col-md-offset-3 col-md-6">
-                        <a href="#" class="btn-custom btn-green">
-                            よくあるご質問はこちら
-                            <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-
                 <div class="row">
                     <div class="col-md-offset-3 col-md-6">
                         <a href="#" class="btn-custom btn-brown">
@@ -238,9 +313,6 @@
                     受付時間：平日 9:30～18:00 　担当：疋田（ひきた）</p>
             </div>
         </div>
-
-
-
 
         <div class="franchise-info">
             <div class="block-more-info">

@@ -121,6 +121,8 @@ header {
     text-align: center;
     padding: 10px 0;
     margin-bottom: 30px;
+    display: block;
+    text-decoration: none !important;
 }
 
 .btn-custom .fa-angle-right.fa-lg {
@@ -974,7 +976,7 @@ h2.block-header {
 }
 /* End page 03 */
 
-/* End page 04 */
+/* Begin page 04 */
 .franchise-faq {
     margin-bottom: 80px;
 }
@@ -1100,6 +1102,52 @@ h2.block-header {
 
 /* End page 04 */
 
+/* Begin page 05 */
+.franchise-open {
+    margin-bottom: 80px;
+}
+
+.open-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    border-top: 1px solid #999999;
+}
+
+.open-header {
+    display: flex;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.open-title {
+    display: inline-block;
+    padding: 15px;
+}
+
+.open-number {
+    display: inline-block;
+    width: 53px;
+    padding: 15px;
+    background-color: #999999;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.open-content {
+    padding: 15px;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    letter-spacing: 1px;
+}
+
+/* End page 05 */
+
 /* Begin page 39 */
 .block-title {
     font-family: 'Montserrat', sans-serif;
@@ -1180,6 +1228,8 @@ h2.block-header {
 
 .block-container .btn-custom {
     margin: 60px 0 0 0;
+    display: block;
+    text-decoration: none;
 }
 
 .last-block-container {
