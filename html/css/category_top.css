@@ -47,11 +47,11 @@
 
 .last-item .link-top-page img {
     width: 40px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .last-item .link-top-page span {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .menu-block {
@@ -80,13 +80,13 @@
         display: inline-block;
         position: relative;
         float: right;
-        width: 140px;
+        width: 145px;
         padding: 8px;
         margin-top: 5px;
     }
 
     #navbar-brown .last-item .btn-menu a {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 
     .menu-text p {
@@ -109,12 +109,17 @@
 }
 
 @media screen and (max-width: 374px) {
-    .last-item .link-top-page img {
-        width: 35px;
+    .last-item .link-top-page span,
+    #navbar-brown .last-item .btn-menu a {
+        font-size: 12px !important;
     }
 
     #navbar-brown .btn-menu {
         width: 130px;
+    }
+
+    .last-item .link-top-page img {
+        width: 35px;
     }
 
     .last-item .link-top-page img {

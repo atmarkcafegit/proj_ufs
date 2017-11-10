@@ -571,6 +571,10 @@ footer .back-to-top img {
         font-size: 12px;
     }
 
+    .menu-xs .btn-cup .icon-cup {
+        margin-bottom: 5px;
+    }
+
     footer {
         text-align: center;
     }
