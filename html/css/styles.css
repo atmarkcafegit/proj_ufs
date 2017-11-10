@@ -1079,7 +1079,7 @@ h2.block-header {
 
     .block-list .block-item .link-arrow {
         position: absolute;
-        right: 20px;
+        right: 15px;
         top: 50%;
         transform: translate(-50%, -50%);
     }
