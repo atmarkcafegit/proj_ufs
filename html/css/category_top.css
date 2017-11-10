@@ -1,3 +1,5 @@
+/* Begin common for some pages (14, 17, 23, 27, 31, 35) */
+
 .block-brown .block-title {
     color: #472c00;
 }
@@ -125,4 +127,99 @@
         margin-right: 5px;
     }
 }
+
+/* End common for some pages (14, 17, 23, 27, 31, 35) */
+
+/* Begin common menu category */
+
+.menu-category-container .block-title {
+    margin: 50px 0 10px 0;
+}
+
+@media only screen and (max-width : 767px) {
+    .menu-category-container .block-title {
+        margin: 30px 0 10px 0;
+    }
+}
+
+/* End common menu category */
+
+/* Begin style logo page 14 */
+
+.logo-cafedi {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-cafedi {
+        width: 135px;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .logo-cafedi {
+        width: 100px;
+        margin-top: 30px;
+    }
+}
+
+/* End style logo page 14*/
+
+/* Begin style logo page 17 */
+
+.logo-cafemercad {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-cafemercad {
+        width: 135px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .logo-cafemercad {
+        width: 100px;
+        margin-top: 25px;
+    }
+}
+
+/* End style logo page 17 */
+
+/* Begin style logo page 27 */
+
+.logo-wean {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-wean {
+        width: 100px;
+        margin-top: 20px;
+    }
+}
+
+/* End style logo page 27 */
+
+/* Begin style logo page 31 */
+
+@media screen and (max-width: 768px) {
+    .logo-caffera {
+        width: 85px;
+        margin-top: 10px;
+    }
+}
+
+/* End style logo page 31 */
+
+
+
+
+
+
+
+
+
 
