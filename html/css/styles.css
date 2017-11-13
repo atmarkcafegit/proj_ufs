@@ -169,6 +169,24 @@ header {
     background-color: #009844;
 }
 
+.block-sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    margin: 55px 0 30px 0;
+}
+
+.block-green .block-sub-title {
+    color: #009844;
+}
+
+.block-desc {
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
+}
+
 @media only screen and (max-width : 768px) {
     .large-gutter > [class*='col-'] {
         padding-right: 15px;
@@ -178,6 +196,10 @@ header {
     .row.large-gutter {
         margin-left: -15px;
         margin-right: -15px;
+    }
+
+    .block-sub-title {
+        font-size: 20px;
     }
 }
 
@@ -1367,6 +1389,58 @@ h2.block-header {
 
 
 /* Begin page 09 */
+
+/* Begin page 12 */
+.recruit-container {
+    margin: 50px 0 150px;
+}
+.recruit-content {
+    position: relative;
+}
+
+.recruit-content .img-responsive {
+    margin-bottom: 10px;
+}
+
+.recruit-caption {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: -90px;
+    color: #fff;
+    width: 90%;
+    text-decoration: none;
+}
+
+.recruit-caption:hover, .recruit-caption:active, .recruit-caption:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.recruit-caption .recruit-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    position: relative;
+}
+.recruit-caption .recruit-title span {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.recruit-caption .recruit-desc {
+    font-size: 16px;
+}
+
+.recruit-caption img {
+    width: 30px;
+}
+
+/* End page 12 */
+
 
 /* Begin page 39 */
 .block-title {
