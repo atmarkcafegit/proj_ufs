@@ -331,8 +331,24 @@ footer .back-to-top img {
     padding: 40px;
 }
 
+.recruit-image {
+    overflow: hidden;
+}
+
 .recruit-image img {
     width: 100%;
+}
+
+.recruit-image img {
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.recruit-image:hover img {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .recruit-block h3 {
@@ -363,6 +379,15 @@ footer .back-to-top img {
     width: 1920px !important;
     height: 500px !important;
     overflow-x: hidden;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.business-block:hover img.img-responsive {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .business-block h1 {
