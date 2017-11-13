@@ -10,17 +10,30 @@ body {
 
 header {
     width: 100%;
-    max-width: 1300px;
     height: 125px;
-    margin: 0 auto;
-    padding: 25px 50px;
     background-color: #fff;
     box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(153, 153, 153, 0);
+}
+
+.header-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 25px 50px;
 }
 
 .navbar-brand {
     height: auto;
     padding: 5px 0;
+}
+
+#content {
+    margin-top: 125px;
 }
 
 #bs-navbar {
@@ -507,7 +520,7 @@ footer .back-to-top img {
 
 
 @media screen and (max-width: 1200px) {
-    header {
+    .header-container {
         padding: 25px 20px;
     }
 
@@ -566,8 +579,15 @@ footer .back-to-top img {
 
 @media screen and (max-width: 767px) {
     header {
+        height: 80px;
+    }
+    .header-container {
         padding: 0;
         height: 80px;
+    }
+
+    #content {
+        margin-top: 80px;
     }
 
     #bs-navbar {
