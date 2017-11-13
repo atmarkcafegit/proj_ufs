@@ -1243,7 +1243,7 @@ h2.block-header {
 .block-item .label-item-time {
     font-family: "Yu Gothic";
     font-size: 16px;
-    padding: 0 20px;
+    padding: 0 25px 0 15px;
 }
 
 .block-item .label-item-time,
@@ -1270,6 +1270,22 @@ h2.block-header {
     text-decoration: none;
 }
 
+.block-list .block-item {
+    position: relative;
+    padding-right: 35px;
+}
+
+.block-list .block-item .link-arrow {
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.block-list .block-item .block-item-title {
+    margin: 0px 35px 0 0;
+}
+
 .last-block-container {
     margin-bottom: 150px;
 }
@@ -1286,14 +1302,10 @@ h2.block-header {
     .block-list .block-item {
         padding: 20px 20px 10px 20px;
         border-top: 1px solid #cccccc;
-        position: relative;
     }
 
     .block-list .block-item .link-arrow {
-        position: absolute;
         right: 15px;
-        top: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .block-list li:last-child {
