@@ -484,7 +484,7 @@ footer .back-to-top img {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     header {
         padding: 0;
         height: 80px;
@@ -1424,7 +1424,7 @@ h2.block-header {
     margin-top: 60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #navbar-brown .btn-menu {
         display: inline-block;
         position: relative;
@@ -1497,7 +1497,7 @@ h2.block-header {
     margin-top: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .logo-cafedi {
         width: 135px;
         margin-top: 25px;
@@ -1519,7 +1519,7 @@ h2.block-header {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .logo-cafemercad {
         width: 135px;
         margin-top: 20px;
@@ -1541,7 +1541,7 @@ h2.block-header {
     margin-top: 15px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .logo-wean {
         width: 100px;
         margin-top: 20px;
@@ -1552,7 +1552,7 @@ h2.block-header {
 
 /* Begin style logo page 31 */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .logo-caffera {
         width: 85px;
         margin-top: 10px;
