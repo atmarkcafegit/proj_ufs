@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ユーシーシーフードサービスシステムズ株式会社</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.back-to-top', function() {
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+                return false;
+            });
+
+            $(document).on('mouseover', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'block');
+                return false;
+            });
+
+            $(document).on('mouseout', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'none');
+                return false;
+            });
+
+            $(document).on('click', '.block-tab a', function() {
+                var target = $(this).data('target');
+                $('.block-tab .col-xs-6').removeClass('active');
+                $(this).parent('div').addClass('active');
+
+                $('.franchise-content').removeClass('active');
+                $('#' + target).addClass('active');
+                return false;
+            });
+
+            $(document).on('click', '.block-more-info a', function() {
+                if ($(this).hasClass('active')) {
+                    $('.block-more-info-content').hide();
+                    $(this).removeClass('active');
+                    $('.block-more-info .fa-minus').hide();
+                    $('.block-more-info .fa-plus').show();
+                } else {
+                    $('.block-more-info-content').show();
+                    $(this).addClass('active');
+                    $('.block-more-info .fa-minus').show();
+                    $('.block-more-info .fa-plus').hide();
+                }
+            });
+
+            $(window).scroll(function (event) {
+                var scroll = $(document).scrollTop();
+                if (scroll >= 900) {
+                    $('#register-member').css('display', 'block');
+                } else {
+                    $('#register-member').css('display', 'none');
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<header>
+    <div class="navbar-header">
+        <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
+                data-target="#bs-navbar" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="fa fa-align-justify fa-fw" aria-hidden="true"></i>
+            <i class="fa fa-times fa-fw" aria-hidden="true"></i>
+        </button>
+        <div class="visible-xs pull-right menu-xs">
+            <div class="pull-right btn-cup">
+                <div><img src="image/icon_cup.png" class="icon-cup"></div>
+                店舗検索
+            </div>
+            <div class="pull-right btn-share">SHARE</div>
+        </div>
+        <a href="#" class="navbar-brand">
+            <img src="image/ufs_logo.png" class="img-responsive logo-ufs">
+        </a>
+    </div>
+    <nav class="collapse navbar-collapse" id="bs-navbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="hidden-xs">
+                <a href="#">
+                    <img src="image/icon_cup.png">
+                    店舗検索
+                </a>
+            </li>
+
+            <li class="visible-xs"><a href="#">最新ニュース<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li><a href="#">採用情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li><a href="#">フランチャイズビジネス<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="hidden-xs"><a href="#">会社概要</a></li>
+            <li class="visible-xs"><a href="#">店舗情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="visible-xs"><a href="#">公式アプリ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="visible-xs"><a href="#">プレシャスメンバーズ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="visible-xs"><a href="#">ENGLISH<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+            <li class="visible-xs last-item">
+                <div class="btn-menu">
+                    <a href="#">会員登録 / ログイン</a>
+                </div>
+            </li>
+            <li class="share-button hidden-xs">
+                <div class="btn-menu">
+                    <a href="#">Share</a>
+                </div>
+                <div class="btn-social">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-envelope"></i></a>
+                </div>
+            </li>
+            <li class="login-button hidden-xs">
+                <div class="btn-language">
+                    <a href="#" class="active">JAPANESE</a>
+                    /
+                    <a href="#">ENGLISH</a>
+                </div>
+                <div class="btn-menu">
+                    <a href="#">会員登録 / ログイン</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="">
+        <div class="block-green">
+            <h3 class="block-title text-center">FRANCHISE BUSINESS</h3>
+            <p class="block-note text-center">出店事例</p>
+        </div>
+
+        <div class="row visible-xs block-tab">
+            <div class="col-xs-6 active"><a href="javascript:void(0);" data-target="franchise-1">上島珈琲店</a></div>
+            <div class="col-xs-6"><a href="javascript:void(0);" data-target="franchise-2">珈琲館</a></div>
+        </div>
+
+        <h2 class="block-header hidden-xs">上島珈琲店</h2>
+        <div class="franchise-content active"  id="franchise-1">
+            <div class="franchise-case-block">
+                <div>
+                    <div class="franchise-case-number">
+                        CASE<br><span>1</span>
+                    </div>
+                    <div class="franchise-case-title">元酒販店を改装し上島珈琲店へ</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="image/franchise_16.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="ans">
+                        周辺には、100年以上の歴史を誇る老舗が多く（浪花家総本店や豆源、永坂更科、等）また、外国の大使館が多くあり外国人のカフェニーズもある客足が途切れない商店街において、地元で酒販店として小売と卸業を営んでおられた貸主様は、ビルのイメージアップを図ることから『上島珈琲店』業態を選ばれ、ビジネスマンや地元の方が上島珈琲店をご利用頂いていることに喜んでおられます。
+                        今では街に無くてはならない店舗としてお客様から愛されています。
+                        </p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <div class="franchise-case-number">
+                        CASE<br><span>2</span>
+                    </div>
+                    <div class="franchise-case-title">元コンビニを改装し上島珈琲店へ</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="image/franchise_17.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="ans">貸主様はこだわりの店・看板の無い店・古着やアパレル、おしゃれな中古家具＆雑貨店が多い町並みの中で永らくマンションの一階にてコンビニエンスストアを経営されていました。<br>
+                        同業のコンビニからの賃貸の申し出もありましたが、貸主様と共に商売をさせて頂きたいとの当社の申し出を受け入れて頂き、街角に合った店舗として『上島珈琲店』業態を選ばれました。他の様々なコーヒーチェーンの中から、品質、サービスで群を抜く当店を選択いただきました。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="support-button">
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-6">
+                            <a href="#" class="btn-custom btn-brown">
+                                珈琲館の出店事例紹介を見る
+                                <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="block-header hidden-xs">珈琲館</h2>
+        <div class="franchise-content" id="franchise-2">
+            <div class="franchise-case-block">
+                <div>
+                    <div class="franchise-case-number">
+                        CASE<br><span>1</span>
+                    </div>
+                    <div class="franchise-case-title">珈琲館 新板橋店 ： 定方 卓也 オーナー</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="image/franchise_18.png" class="img-responsive">
+                        <table class="table table-responsive table-case">
+                            <thead>
+                                <tr><td colspan="2">店舗情報</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>開店日</th>
+                                    <td>2002年2月5日</td>
+                                </tr>
+                                <tr>
+                                    <th>住所</th>
+                                    <td>東京都板橋区板橋1-48-17高速ビル1Ｆ</td>
+                                </tr>
+                                <tr>
+                                    <th>TEL</th>
+                                    <td>03-3963-5881</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="franchise-case-blqa">
+                            <div class="franchise-case-qa">【加盟のきっかけ】</div>
+                            <p>Q:珈琲館フランチャイズを選定された理由をお聞かせください。</p>
+                            <p class="ans">A:10代から珈琲館のアルバイトを始めました。<br>
+                                経験を重ねていくうちに、仕事の厳しさ、楽しさ、お客様に「ごちそうさま」と言って頂ける喜びを感じいつか自分のお店を持ちたいという願望が生まれま</p>
+                        </div>
+                        <div class="franchise-case-blqa">
+                            <div class="franchise-case-qa">【店づくりで大切にしている事】</div>
+                            <p>Q:店舗運営において、経営者(責任者)として何が最も大切だとお考えですか？</p>
+                            <p class="ans">A:珈琲館を利用して良かった、また来たい、と思って頂けるお店作りを目指しています。<br>
+                                QSCAのバランスはもちろん、五感でお客様を気持ちを察する気付き、いつでも同じ空間を提供する事が大切と考えています。</p>
+                        </div>
+                        <div class="franchise-case-blqa">
+                            <div class="franchise-case-qa">【今後の抱負】</div>
+                            <p>Q:珈琲館フランチャイズ加盟による将来のビジョン等をお聞かせください。</p>
+                            <p class="ans">A:お店は「人」でつくりあげるものです。<br>
+                                お客様はもちろんですが、共に働くスタッフも大切な人です。<br>
+                                人を育てる事を軸として、より一層の拡大を図りたいと考えています。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <div class="franchise-case-number">
+                        CASE<br><span>2</span>
+                    </div>
+                    <div class="franchise-case-title">珈琲館 関目店 ： 青山 宏 オーナー</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="image/franchise_19.png" class="img-responsive">
+                        <table class="table table-responsive table-case">
+                            <thead>
+                            <tr><td colspan="2">店舗情報</td></tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>開店日</th>
+                                <td>1996年7月24日</td>
+                            </tr>
+                            <tr>
+                                <th>住所</th>
+                                <td>大阪府大阪市城東区関目5丁目15-25 グランデ・ユウ 1階</td>
+                            </tr>
+                            <tr>
+                                <th>TEL</th>
+                                <td>06-6939-8657</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="franchise-case-blqa">
+                            <div class="franchise-case-qa">【加盟のきっかけ】</div>
+                            <p class="ans">10代の頃珈琲館でアルバイトを始めました。その頃は全くコーヒーは飲めずむしろ苦手で、缶コーヒーすら飲めませんでした。しかし珈琲館ブレンドは美味しく飲めた事から、この珈琲を多くのお客様に知ってほしいという思いが加盟のきっかけとなりました。</p>
+                        </div>
+                        <div class="franchise-case-blqa">
+                            <div class="franchise-case-qa">【店づくりで大切にしている事】</div>
+                            <p class="ans">わたくし自身当初はコーヒーが苦手だった経緯もあり、コーヒーが苦手だという方に美味しく飲んでいただけるよう日々心がけています。そしてお店はお客様にとっての「自宅の応接間」であり続ける、またそう言って頂ける空間作りを大切しています。</p>
+                        </div>
+                        <div class="franchise-case-blqa">
+                            <div class="franchise-case-qa">【今後の抱負】</div>
+                            <p class="ans">わたくしの子供に是非とも珈琲館のオーナーになりたい、働きたいと思ってもらえるようなお店づくりをこころがけていきたいです。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-button">
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-6">
+                            <a href="#" class="btn-custom btn-brown">
+                                上島珈琲店の出店事例紹介を見る
+                                <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="franchise-term">
+            <div class="franchise-outline-contact">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <a href="#" class="btn-custom btn-brown">
+                            <i class="fa fa-file-text-o fa-flip-horizontal fa-icon" aria-hidden="true"></i>
+                            資料請求
+                            <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#" class="btn-custom btn-green">
+                            <i class="fa fa-envelope fa-icon" aria-hidden="true"></i>
+                            お問い合わせフォームへ
+                            <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#" class="btn-custom btn-green">
+                            <i class="fa fa-volume-control-phone fa-rotate-270 fa-icon" aria-hidden="true"></i>
+                            電話でのお問い合わせ
+                            <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="franchise-contact">【お問い合わせ先】 TEL：(03)5400-5581  FAX：(03)5400-5583<br>
+                    受付時間：平日 9:30～18:00 　担当：疋田（ひきた）</p>
+            </div>
+        </div>
+
+        <div class="franchise-info">
+            <div class="block-more-info">
+                <a href="javascript:void(0)">
+                    <p>さらに詳しくフランチャイズについて知りたい方はこち</p>
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus"></i>
+                </a>
+            </div>
+            <div class="block-more-info-content">
+                <ul>
+                    <li><a href="#">フランチャイズビジネスの概<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">開店までの流れ<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">加盟条件<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">研修システムとサポート<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">出店事例のご紹介<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">よくある質問<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                    <li><a href="#">フランチャイズ事業説明会<i class="fa fa-angle-right fa-lg pull-right"></i> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="back-to-top pull-right">
+            <a href="#">
+                <div><img src="image/icon_back_to_top.png"></div>
+                トップへ戻る
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">個人情報保護方針</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">ソーシャルメディア一覧</a></li>
+                    <li><a href="#">サイトマップ</a></li>
+                    <li><a href="#">UCCグループのご案内</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="col-md-12">
+                <p>ユーシーシーフードサービスシステムズ株式会社</p>
+                <p class="text-cp">© UCC Foodservise Systems Inc. all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

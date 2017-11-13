@@ -32,6 +32,21 @@ header {
     padding-left: 8px;
 }
 
+.large-gutter > [class*='col-'] {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.row.large-gutter {
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.row.small-gutter {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
 .navbar-nav li>a {
     color: #666666;
     font-size: 18px;
@@ -152,6 +167,40 @@ header {
 .btn-green:hover {
     color: #fff;
     background-color: #009844;
+}
+
+.block-sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    margin: 55px 0 30px 0;
+}
+
+.block-green .block-sub-title {
+    color: #009844;
+}
+
+.block-desc {
+    font-size: 16px;
+    color: #666666;
+    text-align: justify;
+}
+
+@media only screen and (max-width : 768px) {
+    .large-gutter > [class*='col-'] {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .row.large-gutter {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .block-sub-title {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -332,21 +381,27 @@ footer .back-to-top img {
     text-align: center;
 }
 
+.business-text:hover {
+    text-decoration: none !important;
+}
+
 .business-btn {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px 177px;
     text-align: center;
     margin-top: 40px;
+    font-size: 26px;
+    text-decoration: none !important;
+    color: #000 !important;
 }
 
 .business-btn.btn-small {
     padding: 10px 195px;
 }
 
-.business-btn a {
+.business-btn {
     font-size: 26px;
     color: #000 !important;
-    text-decoration: none !important;
 }
 
 .business-btn p {
@@ -958,7 +1013,7 @@ h2.block-header {
 }
 
 .franchise-outline-row {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width : 768px) {
@@ -1185,6 +1240,231 @@ h2.block-header {
 }
 
 /* End page 06 */
+
+/* Begin page 08 */
+.support-block {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.support-header {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.support-header span.support-number {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+}
+
+.support-header .support-help {
+    font-size: 14px;
+    color: #999999;
+}
+
+.support-block p {
+    margin: 10px 0;
+}
+
+.support-time {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.support-button {
+    margin-top: 50px;
+}
+/* End page 08 */
+
+/* Begin page 09 */
+.franchise-case-block {
+    color: #472c00;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.franchise-case-block hr {
+    height: 2px;
+    background-color: #d1cabf;
+    margin-top: 40px;
+}
+
+.franchise-case-block .img-responsive {
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.franchise-case-number {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #472c00;
+    color: #fff;
+    padding-top: 9px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.franchise-case-number span {
+    font-size: 28px;
+}
+
+.franchise-case-title {
+    color: #472c00;
+    font-size: 22px;
+    display: inline-block;
+    line-height: 70px;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.franchise-case-blqa {
+    margin-bottom: 30px;
+}
+
+.franchise-case-qa {
+    font-size: 20px;
+    margin: 0 0 10px -10px;
+}
+
+.franchise-case-blqa .ans {
+    color: #666666;
+}
+
+.table-case {
+    margin-top: 35px;
+}
+
+.table-case tr, .table-case td, .table-case th {
+    border: 1px solid #472c00;
+}
+
+.table-case thead {
+    background-color: #472c00;
+    color: #fff;
+}
+
+.table-case thead td {
+    text-align: center;
+}
+
+.table-case tbody th {
+    text-align: center;
+    background-color: #f6f4f2;
+    width: 25%;
+    vertical-align: middle !important;
+}
+
+.table-case tbody th, .table-case tbody td {
+    padding: 10px 20px !important;
+}
+
+@media only screen and (max-width : 480px) {
+    .franchise-case-title {
+        width: 65%;
+        line-height: 26px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .franchise-case-number {
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    .franchise-case-number span {
+        font-size: 20px;
+        margin-top: -10px;
+        display: block;
+    }
+
+    .franchise-case-title {
+        font-size: 18px;
+        width: 60%;
+        margin-top: 0px;
+    }
+}
+
+
+/* Begin page 09 */
+
+/* Begin page 12 */
+.recruit-container {
+    margin: 50px 0 150px;
+}
+.recruit-content {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.recruit-content .img-responsive {
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.recruit-content:hover img {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.recruit-caption {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    text-decoration: none;
+    top: 30px;
+    left: 50%;
+    translate-x: -50%;
+    transform: translateX(-50%);
+}
+
+.recruit-caption:hover, .recruit-caption:active, .recruit-caption:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.recruit-caption .recruit-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    position: relative;
+}
+.recruit-caption .recruit-title span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.recruit-caption .recruit-desc {
+    font-size: 16px;
+}
+
+.recruit-caption img {
+    width: 30px;
+}
+
+
+@media only screen and (max-width : 768px) {
+    .recruit-caption {
+        top: 70px;
+    }
+}
+
+/* End page 12 */
+
 
 /* Begin page 39 */
 .block-title {
