@@ -926,10 +926,6 @@ h2.block-header {
     line-height: 28px;
 }
 
-.franchise-info {
-    margin-bottom: 120px;
-}
-
 .block-more-info {
     background-color: #999999;
     position: relative;
@@ -990,11 +986,6 @@ h2.block-header {
     .franchise-content.active {
         display: block;
         margin-top: 0;
-    }
-
-
-    .franchise-info {
-        margin-bottom: 50px;
     }
 
     .block-more-info {
@@ -1443,7 +1434,7 @@ h2.block-header {
 
 /* Begin page 12 */
 .recruit-container {
-    margin: 50px 0 150px;
+    margin: 50px 0 0;
 }
 .recruit-content {
     position: relative;
