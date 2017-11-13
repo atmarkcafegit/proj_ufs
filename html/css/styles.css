@@ -1320,7 +1320,7 @@ h2.block-header {
     }
 
     .block-list .block-item {
-        padding: 20px 20px 10px 20px;
+        padding: 10px 20px 10px 20px;
         border-top: 1px solid #cccccc;
     }
 
@@ -1333,7 +1333,7 @@ h2.block-header {
     }
 
     .block-list .block-item .block-item-title {
-        display: inline-block;
+        display: block;
         margin: 0px 35px 0 0;
     }
 
@@ -1343,6 +1343,8 @@ h2.block-header {
         margin-top: 55px;
     }
 
+    .block-container .btn-custom,
+    .block-container.menu-block-container .btn-custom,
     .block-list .block-item .block-item-title,
     .block-note {
         font-size: 16px;
@@ -1359,7 +1361,7 @@ h2.block-header {
 
     .block-item .label-item-info {
         min-width: 150px;
-        margin-bottom: 5px;
+        margin: 10px 0 5px 0;
     }
 
     .block-item .label-item-time {
@@ -1372,6 +1374,12 @@ h2.block-header {
 
     .last-block-container {
         margin-bottom: 40px;
+    }
+
+    .block-container .btn-list-category {
+        width: 220px;
+        padding: 0;
+        margin: 0 auto;
     }
 }
 
@@ -1664,8 +1672,7 @@ h2.block-header {
     }
 
     .menu-detail .block-item {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 10px 0px 10px 0px;
     }
 
     .menu-detail .block-item .block-item-title {
