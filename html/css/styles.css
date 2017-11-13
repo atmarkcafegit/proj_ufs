@@ -1423,10 +1423,11 @@ h2.block-header {
     text-align: center;
     width: 90%;
     text-decoration: none;
-    top: 30px;
+    top: 35px;
     left: 50%;
     translate-x: -50%;
     transform: translateX(-50%);
+    color: #ffffff;
 }
 
 .recruit-caption:hover, .recruit-caption:active, .recruit-caption:visited {
@@ -1740,8 +1741,22 @@ h2.block-header {
     margin-top: 20px;
 }
 
+.menu-image {
+    position: relative;
+    overflow: hidden;
+}
+
 .menu-image img {
     width: 100%;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.menu-image:hover img {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .menu-banner {
