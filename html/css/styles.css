@@ -1425,7 +1425,7 @@ h2.block-header {
 .block-item .label-item-time {
     font-family: "Yu Gothic";
     font-size: 16px;
-    padding: 0 20px;
+    padding: 0 20px 0 15px;
 }
 
 .block-item .label-item-time,
@@ -1450,6 +1450,33 @@ h2.block-header {
     margin: 60px 0 0 0;
     display: block;
     text-decoration: none;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+.block-container.menu-block-container .btn-custom {
+    margin: 45px 0 0 0;
+}
+
+.block-container .btn-custom i {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+    margin-top: 0 !important;
+}
+
+.block-list .block-item {
+    position: relative;
+    padding-right: 35px;
+}
+
+.block-list .block-item .link-arrow {
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .last-block-container {
@@ -1462,20 +1489,25 @@ h2.block-header {
     }
 
     .block-container .btn-custom {
+        padding-left: 15px;
+    }
+
+    .block-container .btn-custom.back-to-list {
+        padding-right: 20px;
+    }
+
+    .block-container .btn-custom,
+    .block-container.menu-block-container .btn-custom {
         margin: 30px 0 0 0;
     }
 
     .block-list .block-item {
         padding: 20px 20px 10px 20px;
         border-top: 1px solid #cccccc;
-        position: relative;
     }
 
     .block-list .block-item .link-arrow {
-        position: absolute;
         right: 15px;
-        top: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .block-list li:last-child {
@@ -1554,6 +1586,10 @@ h2.block-header {
 
 .block-brown .block-view-all .btn-view-all:hover .arrow-item-brown {
     display: none;
+}
+
+.block-brown .block-item .label-item-info {
+    min-width: 100px;
 }
 
 #navbar-brown .btn-menu {
@@ -1742,4 +1778,111 @@ h2.block-header {
 }
 
 /* End style logo page 31 */
+
+/* Begin common menu category detail */
+
+.menu-detail li:last-child {
+    border-bottom: none;
+}
+
+.menu-detail li:last-child .block-item-title {
+    font-size: 16px;
+}
+
+.block-container .btn-custom.btn-paging,
+.block-container .btn-custom.back-to-list {
+    margin-top: 40px;
+}
+
+.block-container .btn-custom.btn-paging.btn-paging {
+    font-size: 18px;
+    color: #472c00;
+    padding: 15px 0;
+}
+
+.block-container .btn-custom.btn-paging.btn-paging-previous {
+    text-align: left;
+}
+
+.block-container .btn-custom.btn-paging.btn-paging-next {
+    text-align: right;
+}
+
+.block-container .btn-custom.btn-paging i {
+    line-height: 24px;
+    position: inherit;
+    transform: none;
+}
+
+.block-container .btn-custom.btn-paging.btn-paging-previous i {
+    margin-right: 15px;
+}
+
+.block-container .btn-custom.btn-paging.btn-paging-next i {
+    margin: 0 0 0 15px;
+}
+
+.menu-image-detail img {
+    width: 100%;
+}
+
+@media (min-width : 768px) {
+    .menu-image-detail {
+        width: 54%;
+        padding-right: 0;
+    }
+
+    .menu-content-detail {
+        width: 40%;
+        margin-left: 6%;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+
+    .menu-detail {
+        margin-top: 30px;
+    }
+
+    .menu-detail .block-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .menu-detail .block-item .block-item-title {
+        margin-right: 0;
+    }
+
+    .menu-detail li:last-child .block-item-title {
+        font-size: 14px;
+    }
+
+    .menu-category-detail-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .block-container .btn-custom.btn-paging.btn-paging {
+        font-size: 14px;
+    }
+
+    .block-container .btn-custom.btn-paging i {
+        line-height: 20px;
+    }
+
+    .block-container .btn-custom.btn-paging.btn-paging-previous i {
+        margin-right: 10px;
+    }
+
+    .block-container .btn-custom.btn-paging.btn-paging-next i {
+        margin: 0 0 0 10px;
+    }
+
+    .block-container .btn-custom.btn-paging, .block-container .btn-custom.back-to-list {
+        margin-top: 35px;
+    }
+}
+
+/* End common menu category detail */
 
