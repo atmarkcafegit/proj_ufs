@@ -381,21 +381,27 @@ footer .back-to-top img {
     text-align: center;
 }
 
+.business-text:hover {
+    text-decoration: none !important;
+}
+
 .business-btn {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px 177px;
     text-align: center;
     margin-top: 40px;
+    font-size: 26px;
+    text-decoration: none !important;
+    color: #000 !important;
 }
 
 .business-btn.btn-small {
     padding: 10px 195px;
 }
 
-.business-btn a {
+.business-btn {
     font-size: 26px;
     color: #000 !important;
-    text-decoration: none !important;
 }
 
 .business-btn p {
