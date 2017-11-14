@@ -74,6 +74,7 @@ header {
 
 .navbar-nav li.share-button {
     margin-top: 6px;
+    margin-left: 20px;
     font-family: "Yu Gothic";
 }
 
@@ -417,6 +418,7 @@ footer .back-to-top img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    text-decoration: none !important;
 }
 
 .business-text:hover {
@@ -606,7 +608,7 @@ footer .back-to-top img {
     }
 
     .navbar-toggle {
-        margin-right: 0;
+        margin-right: -10px;
         padding: 0;
         margin-top: 25px;
         margin-bottom: 0;
@@ -877,22 +879,30 @@ h2.block-header {
     margin-top: 60px;
 }
 
+h2.block-header.block-brown {
+    background-color: #472c00;
+    margin-top: 30px;
+}
+
 .block-tab {
     padding: 0 15px;
     text-align: center;
 }
 
-.block-tab .col-xs-6 {
+.block-tab .col-xs-6, .block-tab .col-xs-4 {
     border: 1px solid #999999;
 }
 
 .block-tab a {
     width: 100%;
     padding: 10px;
-    display: block;
     text-decoration: none;
-
     color: #999999;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .block-tab .active {
@@ -961,6 +971,7 @@ h2.block-header {
 
 .block-more-info-content {
     border: 1px solid #999999;
+    border-bottom: none;
     display: none;
 }
 
@@ -1000,13 +1011,27 @@ h2.block-header {
     }
 
     .block-more-info p {
-        width: 70%;
+        width: 80%;
+        font-size: 18px;
     }
 
     .block-more-info .fa {
-        right: 20px;
-        top: 30px
+        right: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
+
+    .block-tab {
+        display: flex !important;
+    }
+
+    .block-more-info-content .fa {
+        margin-right: -20px;
+    }
+}
+
+@media only screen and (max-width : 750px) {
+
 }
 
 /* End page 02 */
@@ -1029,6 +1054,11 @@ h2.block-header {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 50px;
+}
+
+
+.franchise-outline-desc span.brown {
+    color: #472c00;
 }
 
 .franchise-outline-caption {
@@ -1063,6 +1093,10 @@ h2.block-header {
         font-size: 22px;
         padding: 20px 10px;
         min-height: 130px;
+    }
+
+    .franchise-title {
+        font-size: 20px;
     }
 }
 
@@ -1529,6 +1563,38 @@ h2.block-header {
     color: #999999;
 }
 
+.block-img {
+    overflow: hidden;
+    position: relative;
+    margin: 50px 0 90px;
+}
+
+.block-img img {
+    width: 100%;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    height: 260px;
+}
+
+.block-img:hover img {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.block-caption {
+    position: absolute;
+    text-align: center;
+    padding: 35px 75px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 26px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 740px;
+}
+
 .block-list {
     list-style: none;
     padding: 0;
@@ -1661,7 +1727,6 @@ h2.block-header {
     }
 
     .block-title {
-        font-size: 24px;
         letter-spacing: 2px;
         margin-top: 55px;
     }
@@ -1704,9 +1769,144 @@ h2.block-header {
         padding: 0;
         margin: 0 auto;
     }
+
+    .block-caption {
+        width: 300px;
+        padding: 10px 20px;
+        font-size: 22px;
+    }
 }
 
 /* End page 39 */
+
+/* Begin page 42 */
+.precious-content p {
+    color: #666666;
+    font-size: 16px;
+    margin: 30px 0 0;
+}
+
+.precious-content p.small {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #999999;
+}
+
+.precious-content .row.row-content {
+    margin: 30px 0;
+}
+
+.precious-brand {
+    text-align: center;
+}
+
+.precious-brand-list {
+    margin-top: 20px;
+}
+
+.precious-brand img {
+    max-height: 90px;
+}
+
+.precious-content .franchise-case-title-custom {
+    width: 75%;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.franchise-case-title-custom.custom-long {
+    margin-top: -20px;
+}
+
+.precious-point {
+    margin-top: 60px;
+}
+
+.precious-content .block-brown .block-title {
+    background-color: #fff;
+    font-size: 40px;
+    width: auto;
+}
+
+.precious-content .block-note {
+    font-family: "Yu Gothic";
+    font-size: 24px;
+    margin: 0 0 48px 0;
+}
+
+.precious-block {
+    padding: 30px 0;
+}
+
+.precious-block p {
+    line-height: 30px;
+    margin-top: 0;
+}
+
+.precious-block .btn-custom {
+    margin-top: 35px;
+}
+
+.precious-block .img-responsive {
+    margin: 0;
+}
+
+.precious-content .text-brown {
+    font-size: 20px;
+    color: #472c00;
+}
+
+.precious-content ul {
+    padding: 0 0 0 20px;
+    margin-top: 20px;
+}
+
+.precious-content ul li {
+    font-size: 16px;
+}
+
+.link-store {
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .precious-content .franchise-case-title {
+        width: 80%;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .precious-content .franchise-case-title {
+        width: 70%;
+        margin-top: 0px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .precious-content .precious-point-normal {
+        margin: 40px 0;
+    }
+
+    .precious-point {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .precious-content p {
+        margin: 15px 0 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .precious-content .franchise-case-title {
+        margin-top: -5px;
+    }
+}
+
+
+/* Begin page 42 */
 
 /* Begin common for some pages (14, 17, 23, 27, 31, 35) */
 
