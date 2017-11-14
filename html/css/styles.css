@@ -232,7 +232,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 320px)
+@media only screen and (max-width: 320px){
     .btn-custom {
         font-size: 12px;
     }
