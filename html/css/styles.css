@@ -1016,8 +1016,9 @@ h2.block-header.block-brown {
     }
 
     .block-more-info .fa {
-        right: 20px;
-        top: 25px
+        right: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .block-tab {
@@ -1027,6 +1028,10 @@ h2.block-header.block-brown {
     .block-more-info-content .fa {
         margin-right: -20px;
     }
+}
+
+@media only screen and (max-width : 750px) {
+
 }
 
 /* End page 02 */
