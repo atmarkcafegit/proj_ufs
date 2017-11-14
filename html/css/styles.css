@@ -577,6 +577,12 @@ footer .back-to-top img {
     }
 }
 
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 50px 0;
+    }
+}
+
 @media screen and (max-width: 767px) {
     header {
         height: 80px;
