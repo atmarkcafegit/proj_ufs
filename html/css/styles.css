@@ -608,7 +608,7 @@ footer .back-to-top img {
     }
 
     .navbar-toggle {
-        margin-right: 0;
+        margin-right: -10px;
         padding: 0;
         margin-top: 25px;
         margin-bottom: 0;
@@ -971,6 +971,7 @@ h2.block-header.block-brown {
 
 .block-more-info-content {
     border: 1px solid #999999;
+    border-bottom: none;
     display: none;
 }
 
@@ -1010,16 +1011,21 @@ h2.block-header.block-brown {
     }
 
     .block-more-info p {
-        width: 70%;
+        width: 80%;
+        font-size: 18px;
     }
 
     .block-more-info .fa {
         right: 20px;
-        top: 30px
+        top: 25px
     }
 
     .block-tab {
         display: flex !important;
+    }
+
+    .block-more-info-content .fa {
+        margin-right: -20px;
     }
 }
 
@@ -1082,6 +1088,10 @@ h2.block-header.block-brown {
         font-size: 22px;
         padding: 20px 10px;
         min-height: 130px;
+    }
+
+    .franchise-title {
+        font-size: 20px;
     }
 }
 
@@ -1712,7 +1722,6 @@ h2.block-header.block-brown {
     }
 
     .block-title {
-        font-size: 24px;
         letter-spacing: 2px;
         margin-top: 55px;
     }
