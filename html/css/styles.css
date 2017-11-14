@@ -949,7 +949,7 @@ h2.block-header.block-brown {
 .block-more-info {
     background-color: #999999;
     position: relative;
-    padding: 20px 50px;
+    padding: 20px 40px;
     font-size: 22px;
     margin: 80px 0 0;
 }
@@ -1027,10 +1027,6 @@ h2.block-header.block-brown {
 
     .block-tab {
         display: flex !important;
-    }
-
-    .block-more-info-content .fa {
-        
     }
 
     .block-more-info-content ul li {
