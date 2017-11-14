@@ -1030,7 +1030,11 @@ h2.block-header.block-brown {
     }
 
     .block-more-info-content .fa {
-        margin-right: -20px;
+        
+    }
+
+    .block-more-info-content ul li {
+        padding: 20px 20px;
     }
 }
 
