@@ -1077,6 +1077,7 @@ h2.block-header.block-brown {
     text-align: center;
     border: 1px solid #472c00;
     padding: 20px 40px;
+    margin-bottom: 20px;
     min-height: 105px;
     display: flex;
     justify-content:center;
@@ -1089,7 +1090,7 @@ h2.block-header.block-brown {
 }
 
 .franchise-outline-row {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width : 768px) {
