@@ -232,6 +232,12 @@ header {
     }
 }
 
+@media only screen and (max-width: 320px)
+    .btn-custom {
+        font-size: 12px;
+    }
+}
+
 /* Begin footer */
 footer {
     background-color: #472c00;
