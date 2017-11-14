@@ -1957,6 +1957,14 @@ h2.block-header.block-brown {
     color: #472c00;
 }
 
+.slider-brown .carousel-indicators li {
+    border: 1px solid #472c00;
+}
+
+.slider-brown .carousel-indicators li.active {
+    background: #472c00;
+}
+
 #navbar-brown .btn-menu {
     border: 1px solid #472c00;
 }
