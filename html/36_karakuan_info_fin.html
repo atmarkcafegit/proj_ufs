@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ユーシーシーフードサービスシステムズ株式会社</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.back-to-top', function() {
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+                return false;
+            })
+
+            $(document).on('mouseover', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'block');
+                return false;
+            });
+
+            $(document).on('mouseout', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'none');
+                return false;
+            });
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="navbar-header">
+                <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
+                        data-target="#bs-navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-align-justify fa-fw" aria-hidden="true"></i>
+                    <i class="fa fa-times fa-fw" aria-hidden="true"></i>
+                </button>
+                <div class="visible-xs pull-right menu-xs">
+                    <div class="pull-right btn-cup">
+                        <div><img src="image/icon_cup.png" class="icon-cup"></div>
+                        店舗検索
+                    </div>
+                    <div class="pull-right btn-share">SHARE</div>
+                </div>
+                <a href="#" class="navbar-brand">
+                    <img src="image/karakuan_top_logo.png" class="img-responsive logo-caffera">
+                </a>
+            </div>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav navbar-right" id="navbar-brown">
+                    <li class="hidden-xs">
+                        <a href="#">
+                            <img src="image/icon_cup.png">
+                            店舗検索
+                        </a>
+                    </li>
+
+                    <li class="visible-xs"><a href="#">最新ニュース<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li><a href="#">メニュ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li><a href="#">フランチャイズビジネス<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs"><a href="#">店舗情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs"><a href="#">公式アプリ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs"><a href="#">プレシャスメンバーズ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs last-item">
+                        <a href="#" class="link-top-page">
+                            <img src="image/arrow_right_brown.png" />
+                            <span>UFSサイトへ戻る</span>
+                        </a>
+                        <div class="btn-menu">
+                            <a href="#">会員登録 / ログイン</a>
+                        </div>
+                    </li>
+                    <li class="share-button hidden-xs">
+                        <div class="btn-menu">
+                            <a href="#">Share</a>
+                        </div>
+                        <div class="btn-social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </li>
+                    <li class="login-button hidden-xs">
+                        <div class="btn-language">
+                            <a href="#" class="active">JAPANESE</a>
+                            /
+                            <a href="#">ENGLISH</a>
+                        </div>
+                        <div class="btn-menu">
+                            <a href="#">会員登録 / ログイン</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contents" id="content">
+        <div class="container block-container last-block-container menu-category-container">
+            <div class="">
+                <div class="block-brown">
+                    <h3 class="block-title text-center">INFORMATION</h3>
+                    <p class="block-note text-center">最新情報</p>
+                    <ul class="block-list">
+                        <li class="block-item">
+                            <span class="label-item-info text-center">新商品情報</span>
+                            <span class="label-item-time">2017.9.1</span>
+                            <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
+                            <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow_brown.png"></span></a>
+                        </li>
+                        <li class="block-item">
+                            <span class="label-item-info text-center">親店情報</span>
+                            <span class="label-item-time">2017.9.1</span>
+                            <div class="block-item-title"><a href="#">【お客様窓口　受付について】8月14日（月）はお休みをいただきます。</a></div>
+                            <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow_brown.png"></span></a>
+                        </li>
+                        <li class="block-item">
+                            <span class="label-item-info text-center">採用情報</span>
+                            <span class="label-item-time">2017.9.1</span>
+                            <div class="block-item-title"><a href="#">プレシャスカード入金ポイント2倍キャンペーン</a></div>
+                            <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow_brown.png"></span></a>
+                        </li>
+                        <li class="block-item">
+                            <span class="label-item-info text-center">プレス</span>
+                            <span class="label-item-time">2017.9.1</span>
+                            <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
+                            <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow_brown.png"></span></a>
+                        </li>
+                        <li class="block-item">
+                            <span class="label-item-info text-center">お知らせ</span>
+                            <span class="label-item-time">2017.9.1</span>
+                            <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
+                            <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow_brown.png"></span></a>
+                        </li>
+                        <li class="block-item">
+                            <span class="label-item-info text-center">親店情報</span>
+                            <span class="label-item-time">2017.9.1</span>
+                            <div class="block-item-title"><a href="#">【お客様窓口　受付について】8月14日（月）はお休みをいただきます。</a></div>
+                            <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow_brown.png"></span></a>
+                        </li>
+                        <li class="block-item">
+                            <span class="label-item-info text-center">採用情報</span>
+                            <span class="label-item-time">2017.9.1</span>
+                            <div class="block-item-title"><a href="#">プレシャスカード入金ポイント2倍キャンペーン</a></div>
+                            <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow_brown.png"></span></a>
+                        </li>
+                        <li class="block-item">
+                            <span class="label-item-info text-center">プレス</span>
+                            <span class="label-item-time">2017.9.1</span>
+                            <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
+                            <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow_brown.png"></span></a>
+                        </li>
+                    </ul>
+                    <div class="">
+                        <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+                            <a href="#" class="btn-custom btn-brown">
+                                さらに読み込む
+                                <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="back-to-top pull-right">
+                <a href="#">
+                    <div><img src="image/icon_back_to_top.png"></div>
+                    トップへ戻る
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li><a href="#">ソーシャルメディア一覧</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                        <li><a href="#">UCCグループのご案内</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-12">
+                    <p>ユーシーシーフードサービスシステムズ株式会社</p>
+                    <p class="text-cp">© UCC Foodservise Systems Inc. all rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
