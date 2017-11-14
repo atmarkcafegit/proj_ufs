@@ -924,7 +924,7 @@ h2.block-header.block-brown {
     text-align: center;
     padding: 5px 0;
     width: 180px;
-    margin: 25px auto;
+    margin: 30px auto;
 }
 
 .franchise-content .img-responsive {
@@ -1556,11 +1556,6 @@ h2.block-header.block-brown {
     font-family: "Yu Gothic";
     font-size: 24px;
     margin: 0 0 48px 0;
-}
-
-.block-desc {
-    font-size: 16px;
-    color: #999999;
 }
 
 .block-img {
