@@ -1741,12 +1741,32 @@ h2.block-header {
     min-width: 100px;
 }
 
+.block-brown .block-list .block-item {
+    border-top: 2px solid #e4e0d9;
+}
+
+.block-brown .block-list li:last-child {
+    border-bottom: 2px solid #e4e0d9;
+}
+
+.block-brown .menu-detail .product-name {
+    color: #472c00;
+}
+
+.block-list.block-item-title-brown .block-item-title a {
+    color: #472c00;
+}
+
 #navbar-brown .btn-menu {
     border: 1px solid #472c00;
 }
 
-#navbar-brown .btn-menu a {
+#navbar-brown .btn-menu a, #navbar-brown li a {
     color: #472c00;
+}
+
+#navbar-brown .btn-language a.active {
+    border-bottom: 2px solid #a39680;
 }
 
 #navbar-brown .btn-menu:hover {
@@ -1755,6 +1775,12 @@ h2.block-header {
 
 #navbar-brown .btn-social a {
     color: #472c00 !important;
+}
+
+#navbar-header-brown .navbar-toggle .fa,
+#navbar-header-brown .menu-xs .btn-cup,
+#navbar-header-brown .menu-xs .btn-share {
+    color: #472c00;
 }
 
 .last-item .link-top-page {
@@ -1944,6 +1970,7 @@ h2.block-header {
 
 /* Begin common menu category detail */
 
+.block-brown .block-list.menu-detail li:last-child,
 .menu-detail li:last-child {
     border-bottom: none;
 }
