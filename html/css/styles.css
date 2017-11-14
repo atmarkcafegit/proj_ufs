@@ -1044,6 +1044,11 @@ h2.block-header.block-brown {
     margin-bottom: 50px;
 }
 
+
+.franchise-outline-desc span.brown {
+    color: #472c00;
+}
+
 .franchise-outline-caption {
     color: #472c00;
     font-size: 22px;
