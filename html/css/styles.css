@@ -1860,7 +1860,7 @@ h2.block-header.block-brown {
 @media screen and (max-width: 768px) {
     .precious-content .franchise-case-title {
         width: 70%;
-        margin-top: -5px;
+        margin-top: 0px;
         font-size: 20px;
         line-height: 24px;
     }
@@ -1876,6 +1876,12 @@ h2.block-header.block-brown {
 
     .precious-content p {
         margin: 15px 0 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .precious-content .franchise-case-title {
+        margin-top: -5px;
     }
 }
 
