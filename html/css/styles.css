@@ -1572,7 +1572,7 @@ h2.block-header {
 .block-item .label-item-time,
 .block-list .block-item .block-item-title,
 .block-item .arrow-item-detail {
-    line-height: 32px;
+    line-height: unset;
 }
 
 .block-item .arrow-item-detail img {
@@ -1643,7 +1643,7 @@ h2.block-header {
     }
 
     .block-list .block-item {
-        padding: 10px 20px 10px 20px;
+        padding: 15px 20px 15px 20px;
         border-top: 1px solid #cccccc;
     }
 
@@ -1684,7 +1684,7 @@ h2.block-header {
 
     .block-item .label-item-info {
         min-width: 150px;
-        margin: 10px 0 5px 0;
+        margin: 5px 0 7px 0;
     }
 
     .block-item .label-item-time {
