@@ -60,6 +60,12 @@ header {
     margin-right: -8px;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 .navbar-nav li>a {
     color: #666666;
     font-size: 18px;
@@ -673,7 +679,7 @@ footer .back-to-top img {
     }
 
     .menu-xs {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     .menu-xs .pull-right {
