@@ -1773,6 +1773,7 @@ h2.block-header.block-brown {
     display: flex;
     align-items: center;
     margin: 20px 0;
+    line-height: 24px;
 }
 
 .step-number {
@@ -1796,6 +1797,23 @@ h2.block-header.block-brown {
     padding-left: 40px;
     padding-right: 20px;
     font-size: 20px;
+    color: #666666;
+}
+
+.block-img-2 img {
+    margin: 0 auto 50px;
+}
+
+.charge-content .img-responsive {
+    margin: 30px auto;
+}
+
+.charge-content p {
+    margin: 20px 0;
+}
+
+.text-light {
+    color: #999999;
 }
 
 @media only screen and (max-width : 767px) {
@@ -1811,7 +1829,37 @@ h2.block-header.block-brown {
     }
 
     .step-title {
-        padding-left: 20px;
+        padding-left: 10px;
+        padding-right: 0;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .step-number {
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+        line-height: 16px;
+        font-size: 10px;
+    }
+
+    .step-number span {
+        font-size: 20px;
+    }
+
+    .step-title {
+        padding-left: 10px;
+        padding-right: 0;
+        font-size: 14px;
+    }
+
+    .charge-content .img-responsive {
+        margin: 20px auto;
+    }
+
+    .charge-content .img-arrow {
+        width: 60px;
     }
 }
 
