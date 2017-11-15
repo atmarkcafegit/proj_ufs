@@ -146,7 +146,7 @@
         </div>
 
         <div class="row visible-xs block-tab">
-            <div class="col-xs-4 active"><a href="javascript:void(0);" data-target="precious-1">PRECIOUS MEMBERS　プレシャスメンバーズ</a></div>
+            <div class="col-xs-4 active"><a href="javascript:void(0);" data-target="precious-1">PRECIOUS MEMBERS<br><span class="small">プレシャスメンバーズ</span></a></div>
             <div class="col-xs-4"><a href="javascript:void(0);" data-target="precious-2">プレシャスカード</a></div>
             <div class="col-xs-4"><a href="javascript:void(0);" data-target="precious-3">公式アプリ</a></div>
         </div>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
 
-                <br>
+                <br class="hidden-xs">
 
                 <div  class="precious-point-normal">
                     <div class="franchise-case-number">
@@ -263,17 +263,28 @@
                             <div class="franchise-case-number">
                                 POINT<br><span>1</span>
                             </div>
-                            <div class="franchise-case-title franchise-case-title-custom">チャージ(入金)、ご利用ごとにポイントがたまります。</div>
+                            <div class="franchise-case-title franchise-case-title-custom custom">チャージ(入金)、ご利用ごとにポイントがたまります。</div>
                         </div>
+
+                        <div class="visible-xs">
+                            <p>PRECIOUS CARDはチャージ金額に応じてポイントが貯まります。チャージ金額が多いほどお得。</p>
+                            <p>1,000円&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→2%<br>
+                            2,000円&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→3%<br>
+                            3,000円以上&nbsp;&nbsp;&nbsp;→5%</p>
+                            <br>
+                        </div>
+
                     </div>
                     <div class="col-md-7">
                         <img src="image/precious_3.png" class="img-responsive">
                     </div>
                 </div>
-                <p>PRECIOUS CARDはチャージ金額に応じてポイントが貯まります。チャージ金額が多いほどお得。</p>
-                <p>1,000円&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→2%</p>
-                <p>2,000円&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→3%</p>
-                <p>3,000円以上&nbsp;&nbsp;&nbsp;→5%</p>
+                <div class="hidden-xs">
+                    <p>PRECIOUS CARDはチャージ金額に応じてポイントが貯まります。チャージ金額が多いほどお得。</p>
+                    <p>1,000円&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→2%</p>
+                    <p>2,000円&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→3%</p>
+                    <p>3,000円以上&nbsp;&nbsp;&nbsp;→5%</p>
+                </div>
             </div>
 
             <div class="franchise-case-block">
@@ -283,7 +294,7 @@
                             <div class="franchise-case-number">
                                 POINT<br><span>2</span>
                             </div>
-                            <div class="franchise-case-title franchise-case-title-custom">小銭要らずでスピーディーにお買い物ができます。</div>
+                            <div class="franchise-case-title franchise-case-title-custom custom">小銭要らずでスピーディーにお買い物ができます。</div>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -332,7 +343,7 @@
                             <div class="franchise-case-number">
                                 POINT<br><span>4</span>
                             </div>
-                            <div class="franchise-case-title franchise-case-title-custom">入会金・年会費無料で、ギフトにもおすすめです。</div>
+                            <div class="franchise-case-title franchise-case-title-custom custom">入会金・年会費無料で、ギフトにもおすすめです。</div>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -348,7 +359,7 @@
                             <div class="franchise-case-number">
                                 POINT<br><span>5</span>
                             </div>
-                            <div class="franchise-case-title franchise-case-title-custom">PRECIOUS MEMBERS登録でさらにお得で便利に！</div>
+                            <div class="franchise-case-title franchise-case-title-custom custom">PRECIOUS MEMBERS登録でさらにお得で便利に！</div>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -371,13 +382,13 @@
 
             <h2 class="block-header block-brown">パスポート利用可能店</h2>
             <div class="row precious-block">
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-5">
                     <img src="image/precious_9.png" class="img-responsive">
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-xs-7">
                     <p>店頭のこのステッカーが目印です。<br>または店舗検索ページでご確認ください。</p>
                     <br>
-                    <div class="row">
+                    <div class="row hidden-xs">
                         <div class="col-md-9">
                             <a href="#" class="btn-custom btn-brown">
                                 利用可能店舗はこちら
@@ -385,6 +396,14 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row visible-xs">
+                <div class="col-md-12 ">
+                    <a href="#" class="btn-custom btn-brown">
+                        利用可能店舗はこちら
+                        <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
             <p class="text-brown">現在パスポートをお持ちの方は、切り替えが必要です。</p>
@@ -416,25 +435,27 @@
                 </div>
             </div>
 
-            <div class="precious-point">
-                <div class="franchise-case-number">
-                    POINT<br><span>1</span>
+            <div class="franchise-case-block">
+                <div class="precious-point-normal">
+                    <div class="franchise-case-number">
+                        POINT<br><span>1</span>
+                    </div>
+                    <div class="franchise-case-title custom">メニュー情報や店舗情報をいち早くお知らせします。</div>
                 </div>
-                <div class="franchise-case-title">メニュー情報や店舗情報をいち早くお知らせします。</div>
-            </div>
 
-            <div class="precious-point">
-                <div class="franchise-case-number">
-                    POINT<br><span>2</span>
+                <div class="precious-point-normal">
+                    <div class="franchise-case-number">
+                        POINT<br><span>2</span>
+                    </div>
+                    <div class="franchise-case-title">今いる場所や行きたい場所の近くの店舗を簡単に探せます。</div>
                 </div>
-                <div class="franchise-case-title">今いる場所や行きたい場所の近くの店舗を簡単に探せます。</div>
-            </div>
 
-            <div class="precious-point">
-                <div class="franchise-case-number">
-                    POINT<br><span>3</span>
+                <div class="precious-point-normal">
+                    <div class="franchise-case-number">
+                        POINT<br><span>3</span>
+                    </div>
+                    <div class="franchise-case-title">PRECIOUS MEMBERS登録でキャンペーンや限定クーポンをご用意しています。</div>
                 </div>
-                <div class="franchise-case-title">PRECIOUS MEMBERS登録でキャンペーンや限定クーポンをご用意しています。</div>
             </div>
 
             <div class="support-button">

@@ -919,6 +919,7 @@ h2.block-header.block-brown {
 
 .block-tab .col-xs-6, .block-tab .col-xs-4 {
     border: 1px solid #999999;
+    padding: 0;
 }
 
 .block-tab a {
@@ -931,6 +932,8 @@ h2.block-header.block-brown {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    font-size: 12px;
+    padding: 5px;
 }
 
 .block-tab .active {
@@ -1380,6 +1383,13 @@ h2.block-header.block-brown {
 .support-button {
     margin-top: 50px;
 }
+
+@media only screen and (max-width : 768px) {
+    .support-button {
+        margin-top: 30px;
+    }
+}
+
 /* End page 08 */
 
 /* Begin page 09 */
@@ -1475,6 +1485,18 @@ h2.block-header.block-brown {
         line-height: 26px;
         margin-left: 20px;
         margin-top: 10px;
+    }
+
+    .franchise-case-number {
+        width: 60px;
+        height: 60px;
+        padding-top: 10px;
+    }
+
+    .franchise-case-number span {
+        font-size: 20px;
+        margin-top: -10px;
+        display: block;
     }
 }
 
@@ -1767,6 +1789,14 @@ h2.block-header.block-brown {
         font-size: 14px;
     }
 
+    .block-img {
+        margin: 30px 0;
+    }
+
+    .block-img img {
+        height: 200px;
+    }
+
     .block-item .label-item-time,
     .block-item .label-item-info {
         font-size: 14px;
@@ -1904,9 +1934,9 @@ h2.block-header.block-brown {
 
 @media screen and (max-width: 768px) {
     .precious-content .franchise-case-title {
-        width: 70%;
+        width: 72%;
         margin-top: 0px;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 24px;
     }
 
@@ -1922,13 +1952,34 @@ h2.block-header.block-brown {
     .precious-content p {
         margin: 15px 0 0;
     }
+
+    .precious-content .block-brown .block-title {
+        font-size: 24px;
+    }
+
+    .precious-content .block-note {
+        font-size: 16px;
+    }
+
+    .franchise-case-block .row.row-content {
+        margin: 10px 0;
+    }
+
+    .precious-block p {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .precious-content .franchise-case-title {
-        margin-top: -5px;
+        margin-top: -10px;
+    }
+
+    .precious-content .franchise-case-title.custom {
+        margin-top: 5px;
     }
 }
+
 
 
 /* Begin page 42 */
