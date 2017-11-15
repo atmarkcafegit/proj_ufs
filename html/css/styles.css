@@ -608,6 +608,12 @@ footer .back-to-top img {
     }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .carousel-caption {
+        top: 4%;
+    }
+}
+
 @media screen and (max-width: 767px) {
     header {
         height: 80px;
