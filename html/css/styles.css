@@ -380,7 +380,11 @@ footer .back-to-top img {
 }
 
 .carousel-caption {
-    top: 20%;
+    top: 50%;
+    bottom: unset;
+    transform: translate(0%, -50%);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .carousel-caption h1 {
@@ -388,6 +392,7 @@ footer .back-to-top img {
     font-weight: bold;
     line-height: 50px;
     letter-spacing: 6px;
+    margin-top: 0;
 }
 
 .carousel-caption p.text-large {
@@ -662,10 +667,6 @@ footer .back-to-top img {
         padding: 50px 0;
     }
 
-    .carousel-caption {
-        top: 6%;
-    }
-
     .navbar-nav li>a {
         padding: 7px 10px;
     }
@@ -782,10 +783,6 @@ footer .back-to-top img {
     footer .back-to-top {
         float: none !important;
         margin-bottom: 150px;
-    }
-
-    .carousel-caption {
-        top: 10%;
     }
 
     .recruit-block {
@@ -915,12 +912,6 @@ footer .back-to-top img {
 
     .navbar-nav > li > a img {
         width: 10px;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .carousel-caption {
-        top: 4%;
     }
 }
 
