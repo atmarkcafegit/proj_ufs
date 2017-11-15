@@ -924,7 +924,7 @@ h2.block-header.block-brown {
 
 .block-tab a {
     width: 100%;
-    padding: 10px;
+    padding: 10px 5px;
     text-decoration: none;
     color: #999999;
     height: 100%;
@@ -933,7 +933,6 @@ h2.block-header.block-brown {
     align-content: center;
     flex-direction: column;
     font-size: 12px;
-    padding: 5px;
 }
 
 .block-tab .active {
@@ -1411,33 +1410,6 @@ h2.block-header.block-brown {
     width: 100%;
 }
 
-.franchise-case-number {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #472c00;
-    color: #fff;
-    padding-top: 9px;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.franchise-case-number span {
-    font-size: 28px;
-}
-
-.franchise-case-title {
-    color: #472c00;
-    font-size: 22px;
-    display: inline-block;
-    line-height: 70px;
-    vertical-align: top;
-    margin-left: 30px;
-}
-
 .franchise-case-blqa {
     margin-bottom: 30px;
 }
@@ -1479,46 +1451,6 @@ h2.block-header.block-brown {
     padding: 10px 20px !important;
 }
 
-@media only screen and (max-width : 480px) {
-    .franchise-case-title {
-        width: 65%;
-        line-height: 26px;
-        margin-left: 20px;
-        margin-top: 10px;
-    }
-
-    .franchise-case-number {
-        width: 60px;
-        height: 60px;
-        padding-top: 10px;
-    }
-
-    .franchise-case-number span {
-        font-size: 20px;
-        margin-top: -10px;
-        display: block;
-    }
-}
-
-@media only screen and (max-width : 320px) {
-    .franchise-case-number {
-        width: 50px;
-        height: 50px;
-        padding-top: 5px;
-    }
-
-    .franchise-case-number span {
-        font-size: 20px;
-        margin-top: -10px;
-        display: block;
-    }
-
-    .franchise-case-title {
-        font-size: 18px;
-        width: 60%;
-        margin-top: 0px;
-    }
-}
 
 
 /* Begin page 09 */
@@ -1834,6 +1766,57 @@ h2.block-header.block-brown {
 
 /* End page 39 */
 
+
+/* Begin page 41 */
+
+.step-point {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.step-number {
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+    background-color: #472c00;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.step-number span {
+    font-size: 28px;
+}
+
+.step-title {
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width : 767px) {
+    .step-number {
+        height: 60px;
+        width: 60px;
+        min-width: 60px;
+        line-height: 20px;
+    }
+
+    .step-number span {
+        font-size: 24px;
+    }
+
+    .step-title {
+        padding-left: 20px;
+    }
+}
+
+/* End page 41 */
+
 /* Begin page 42 */
 .precious-content p {
     color: #666666;
@@ -1851,6 +1834,12 @@ h2.block-header.block-brown {
     margin: 30px 0;
 }
 
+.precious-content .row-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .precious-brand {
     text-align: center;
 }
@@ -1861,16 +1850,6 @@ h2.block-header.block-brown {
 
 .precious-brand img {
     max-height: 90px;
-}
-
-.precious-content .franchise-case-title-custom {
-    width: 75%;
-    line-height: 30px;
-    margin-left: 10px;
-}
-
-.franchise-case-title-custom.custom-long {
-    margin-top: -20px;
 }
 
 .precious-point {
@@ -1925,21 +1904,7 @@ h2.block-header.block-brown {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 992px) {
-    .precious-content .franchise-case-title {
-        width: 80%;
-        line-height: 40px;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .precious-content .franchise-case-title {
-        width: 72%;
-        margin-top: 0px;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
     .precious-content .precious-point-normal {
         margin: 40px 0;
     }
@@ -1968,19 +1933,11 @@ h2.block-header.block-brown {
     .precious-block p {
         margin-top: 0;
     }
-}
 
-@media screen and (max-width: 480px) {
-    .precious-content .franchise-case-title {
-        margin-top: -10px;
-    }
-
-    .precious-content .franchise-case-title.custom {
-        margin-top: 5px;
+    .precious-content .row-point {
+        display: block;
     }
 }
-
-
 
 /* Begin page 42 */
 
