@@ -168,7 +168,7 @@ header {
     border: 1px solid #472c00;
 }
 
-.btn-brown:hover {
+.btn-brown:hover, .btn-brown:active {
     color: #fff;
     background-color: #472c00;
 }
@@ -178,7 +178,7 @@ header {
     border: 1px solid #009844;
 }
 
-.btn-green:hover {
+.btn-green:hover, .btn-green:active {
     color: #fff;
     background-color: #009844;
 }
@@ -229,6 +229,12 @@ header {
 
     .btn-custom .fa-angle-right.fa-lg {
         margin-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .btn-custom {
+        font-size: 12px;
     }
 }
 
@@ -712,6 +718,10 @@ footer .back-to-top img {
         vertical-align: middle;
     }
 
+    .recruit-block h3.custom-recruit {
+        padding-top: 10px;
+    }
+
     .recruit-image {
         width: 50%;
     }
@@ -738,17 +748,31 @@ footer .back-to-top img {
     }
 
     #business-container img.img-responsive {
-        width: 1000px !important;
-        height: 400px !important;
+        width: 700px !important;
+        height: 300px !important;
         max-width: none !important;
     }
 
     .business-btn {
-        padding: 20px 30px;
+        padding: 20px 10px;
+        margin-top: 20px;
+        font-size: 22px;
     }
 
     .business-btn.btn-small {
         padding: 10px 20px;
+    }
+
+    .business-btn.btn-small .small {
+        font-size: 14px;
+    }
+
+    .business-text {
+        width: 80%;
+    }
+
+    .image-arrow {
+        margin-top: 20px;
     }
 }
 
@@ -816,7 +840,7 @@ footer .back-to-top img {
     }
 
     .carousel-caption h1 {
-        font-size: 20px;
+        font-size: 22px;
         letter-spacing: 2px;
     }
 
@@ -836,8 +860,8 @@ footer .back-to-top img {
     }
 
     .recruit-block h3 {
-        height: 50px;
-        font-size: 18px;
+        height: 40px;
+        font-size: 16px;
         vertical-align: middle;
     }
 
@@ -854,7 +878,7 @@ footer .back-to-top img {
     }
 
     .business-block h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .business-btn a {
@@ -866,8 +890,8 @@ footer .back-to-top img {
     }
 
     .business-block img.img-responsive {
-        width: 1000px !important;
-        height: 400px !important;
+        width: 700px !important;
+        height: 300px !important;
     }
 }
 
@@ -895,11 +919,12 @@ h2.block-header.block-brown {
 
 .block-tab .col-xs-6, .block-tab .col-xs-4 {
     border: 1px solid #999999;
+    padding: 0;
 }
 
 .block-tab a {
     width: 100%;
-    padding: 10px;
+    padding: 10px 5px;
     text-decoration: none;
     color: #999999;
     height: 100%;
@@ -907,6 +932,7 @@ h2.block-header.block-brown {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    font-size: 12px;
 }
 
 .block-tab .active {
@@ -949,7 +975,7 @@ h2.block-header.block-brown {
 .block-more-info {
     background-color: #999999;
     position: relative;
-    padding: 20px 50px;
+    padding: 20px 40px;
     font-size: 22px;
     margin: 80px 0 0;
 }
@@ -966,7 +992,7 @@ h2.block-header.block-brown {
 .block-more-info .fa {
     position: absolute;
     top: 25px;
-    right: 50px;
+    right: 40px;
 }
 
 .block-more-info .fa-minus {
@@ -1029,8 +1055,8 @@ h2.block-header.block-brown {
         display: flex !important;
     }
 
-    .block-more-info-content .fa {
-        margin-right: -20px;
+    .block-more-info-content ul li {
+        padding: 20px 20px;
     }
 }
 
@@ -1077,6 +1103,7 @@ h2.block-header.block-brown {
     text-align: center;
     border: 1px solid #472c00;
     padding: 20px 40px;
+    margin-bottom: 20px;
     min-height: 105px;
     display: flex;
     justify-content:center;
@@ -1089,7 +1116,7 @@ h2.block-header.block-brown {
 }
 
 .franchise-outline-row {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width : 768px) {
@@ -1355,6 +1382,13 @@ h2.block-header.block-brown {
 .support-button {
     margin-top: 50px;
 }
+
+@media only screen and (max-width : 768px) {
+    .support-button {
+        margin-top: 30px;
+    }
+}
+
 /* End page 08 */
 
 /* Begin page 09 */
@@ -1374,33 +1408,6 @@ h2.block-header.block-brown {
 .franchise-case-block .img-responsive {
     margin: 0 0 20px 0;
     width: 100%;
-}
-
-.franchise-case-number {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 12px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #472c00;
-    color: #fff;
-    padding-top: 9px;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
-.franchise-case-number span {
-    font-size: 28px;
-}
-
-.franchise-case-title {
-    color: #472c00;
-    font-size: 22px;
-    display: inline-block;
-    line-height: 70px;
-    vertical-align: top;
-    margin-left: 30px;
 }
 
 .franchise-case-blqa {
@@ -1444,34 +1451,6 @@ h2.block-header.block-brown {
     padding: 10px 20px !important;
 }
 
-@media only screen and (max-width : 480px) {
-    .franchise-case-title {
-        width: 65%;
-        line-height: 26px;
-        margin-left: 20px;
-        margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width : 320px) {
-    .franchise-case-number {
-        width: 50px;
-        height: 50px;
-        padding-top: 5px;
-    }
-
-    .franchise-case-number span {
-        font-size: 20px;
-        margin-top: -10px;
-        display: block;
-    }
-
-    .franchise-case-title {
-        font-size: 18px;
-        width: 60%;
-        margin-top: 0px;
-    }
-}
 
 
 /* Begin page 09 */
@@ -1655,7 +1634,7 @@ h2.block-header.block-brown {
 .block-container .btn-custom {
     margin: 60px 0 0 0;
     display: block;
-    text-decoration: none;
+    text-decoration: none !important;
     position: relative;
     padding-right: 30px;
     padding-left: 20px;
@@ -1728,6 +1707,7 @@ h2.block-header.block-brown {
     .block-title {
         letter-spacing: 2px;
         margin-top: 55px;
+        font-size: 24px;
     }
 
     .block-container .btn-custom,
@@ -1739,6 +1719,14 @@ h2.block-header.block-brown {
 
     .block-desc {
         font-size: 14px;
+    }
+
+    .block-img {
+        margin: 30px 0;
+    }
+
+    .block-img img {
+        height: 200px;
     }
 
     .block-item .label-item-time,
@@ -1778,6 +1766,57 @@ h2.block-header.block-brown {
 
 /* End page 39 */
 
+
+/* Begin page 41 */
+
+.step-point {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.step-number {
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+    background-color: #472c00;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.step-number span {
+    font-size: 28px;
+}
+
+.step-title {
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width : 767px) {
+    .step-number {
+        height: 60px;
+        width: 60px;
+        min-width: 60px;
+        line-height: 20px;
+    }
+
+    .step-number span {
+        font-size: 24px;
+    }
+
+    .step-title {
+        padding-left: 20px;
+    }
+}
+
+/* End page 41 */
+
 /* Begin page 42 */
 .precious-content p {
     color: #666666;
@@ -1795,6 +1834,12 @@ h2.block-header.block-brown {
     margin: 30px 0;
 }
 
+.precious-content .row-point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .precious-brand {
     text-align: center;
 }
@@ -1805,16 +1850,6 @@ h2.block-header.block-brown {
 
 .precious-brand img {
     max-height: 90px;
-}
-
-.precious-content .franchise-case-title-custom {
-    width: 75%;
-    line-height: 30px;
-    margin-left: 10px;
-}
-
-.franchise-case-title-custom.custom-long {
-    margin-top: -20px;
 }
 
 .precious-point {
@@ -1869,21 +1904,7 @@ h2.block-header.block-brown {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 992px) {
-    .precious-content .franchise-case-title {
-        width: 80%;
-        line-height: 40px;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .precious-content .franchise-case-title {
-        width: 70%;
-        margin-top: 0px;
-        font-size: 20px;
-        line-height: 24px;
-    }
-
     .precious-content .precious-point-normal {
         margin: 40px 0;
     }
@@ -1896,14 +1917,27 @@ h2.block-header.block-brown {
     .precious-content p {
         margin: 15px 0 0;
     }
-}
 
-@media screen and (max-width: 480px) {
-    .precious-content .franchise-case-title {
-        margin-top: -5px;
+    .precious-content .block-brown .block-title {
+        font-size: 24px;
+    }
+
+    .precious-content .block-note {
+        font-size: 16px;
+    }
+
+    .franchise-case-block .row.row-content {
+        margin: 10px 0;
+    }
+
+    .precious-block p {
+        margin-top: 0;
+    }
+
+    .precious-content .row-point {
+        display: block;
     }
 }
-
 
 /* Begin page 42 */
 
