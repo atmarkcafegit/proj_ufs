@@ -1194,13 +1194,13 @@ h2.block-header.block-brown {
 .block-faq-content ul li {
     padding: 20px 40px;
     border-bottom: 1px solid #999999;
-    font-size: 18px;
+    font-size: 16px;
     color: #666666;
     position: relative;
 }
 
 .block-faq-content ul li a {
-    font-size: 18px;
+    font-size: 16px;
     color: #666666;
     text-decoration: none;
 }
