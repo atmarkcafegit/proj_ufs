@@ -776,6 +776,20 @@ footer .back-to-top img {
     }
 
 
+    .brand-block .img-responsive {
+        position: absolute;
+        margin: auto;
+        width: 140px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .brand-block .col-xs-6, .brand-block .col-md-4 {
+        height: 120px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -885,20 +899,6 @@ footer .back-to-top img {
 
     .business-btn a {
         font-size: 18px;
-    }
-
-    .brand-block .col-xs-6, .brand-block .col-md-4 {
-        height: 120px;
-    }
-
-    .brand-block .img-responsive {
-        position: absolute;
-        margin: auto;
-        width: 140px;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
     }
 
     .business-block img.img-responsive {
