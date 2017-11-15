@@ -718,6 +718,10 @@ footer .back-to-top img {
         vertical-align: middle;
     }
 
+    .recruit-block h3.custom-recruit {
+        padding-top: 10px;
+    }
+
     .recruit-image {
         width: 50%;
     }
@@ -744,17 +748,31 @@ footer .back-to-top img {
     }
 
     #business-container img.img-responsive {
-        width: 1000px !important;
-        height: 400px !important;
+        width: 700px !important;
+        height: 300px !important;
         max-width: none !important;
     }
 
     .business-btn {
-        padding: 20px 30px;
+        padding: 20px 10px;
+        margin-top: 20px;
+        font-size: 22px;
     }
 
     .business-btn.btn-small {
         padding: 10px 20px;
+    }
+
+    .business-btn.btn-small .small {
+        font-size: 14px;
+    }
+
+    .business-text {
+        width: 80%;
+    }
+
+    .image-arrow {
+        margin-top: 20px;
     }
 }
 
@@ -822,7 +840,7 @@ footer .back-to-top img {
     }
 
     .carousel-caption h1 {
-        font-size: 20px;
+        font-size: 22px;
         letter-spacing: 2px;
     }
 
@@ -842,8 +860,8 @@ footer .back-to-top img {
     }
 
     .recruit-block h3 {
-        height: 50px;
-        font-size: 18px;
+        height: 40px;
+        font-size: 16px;
         vertical-align: middle;
     }
 
@@ -860,7 +878,7 @@ footer .back-to-top img {
     }
 
     .business-block h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .business-btn a {
@@ -872,8 +890,8 @@ footer .back-to-top img {
     }
 
     .business-block img.img-responsive {
-        width: 1000px !important;
-        height: 400px !important;
+        width: 700px !important;
+        height: 300px !important;
     }
 }
 
@@ -1735,6 +1753,7 @@ h2.block-header.block-brown {
     .block-title {
         letter-spacing: 2px;
         margin-top: 55px;
+        font-size: 24px;
     }
 
     .block-container .btn-custom,
