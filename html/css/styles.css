@@ -2163,6 +2163,11 @@ h2.block-header.block-brown {
     .company-map {
         float: right;
     }
+
+    .company-width {
+        display: inline-block;
+        width: 70%;
+    }
 }
 
 
