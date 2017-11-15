@@ -37,7 +37,7 @@ header {
 }
 
 #bs-navbar {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .small-gutter > [class*='col-'] {
@@ -65,7 +65,7 @@ header {
     font-size: 18px;
     font-family: "Yu Gothic";
     background-color: transparent !important;
-    padding: 10px 30px;
+    padding: 9px 30px;
 }
 
 .navbar-nav li a:hover, .navbar-nav li a:active, .navbar-nav li a:visited  {
@@ -1602,7 +1602,7 @@ h2.block-header.block-brown {
     font-family: "Yu Gothic";
     font-size: 16px;
     color: #ffffff;
-    min-width: 177px;
+    min-width: 185px;
     display: inline-block;
     padding: 5px 5px;
 }
@@ -1654,7 +1654,7 @@ h2.block-header.block-brown {
 
 .block-list .block-item {
     position: relative;
-    padding-right: 35px;
+    padding-right: 25px;
 }
 
 .block-list .block-item .link-arrow {
@@ -1735,7 +1735,7 @@ h2.block-header.block-brown {
     }
 
     .block-item .label-item-info {
-        min-width: 150px;
+        min-width: 165px;
         margin: 5px 0 7px 0;
     }
 
@@ -2190,7 +2190,14 @@ h2.block-header.block-brown {
 /* Begin style logo page 14 */
 
 .logo-cafedi {
-    margin-top: 15px;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-cafedi {
+        width: 165px;
+        margin-top: 18px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -2212,7 +2219,14 @@ h2.block-header.block-brown {
 /* Begin style logo page 17 */
 
 .logo-cafemercad {
-    margin-top: 10px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-cafemercad {
+        width: 165px;
+        margin-top: 11px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -2234,13 +2248,13 @@ h2.block-header.block-brown {
 /* Begin style logo page 27 */
 
 .logo-wean {
-    margin-top: 15px;
+    margin-top: 9px;
 }
 
 @media screen and (max-width: 767px) {
     .logo-wean {
         width: 100px;
-        margin-top: 20px;
+        margin-top: 18px;
     }
 }
 
@@ -2256,6 +2270,21 @@ h2.block-header.block-brown {
 }
 
 /* End style logo page 31 */
+
+/* Begin style logo page 35 */
+
+.logo-karakuan {
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 767px) {
+    .logo-karakuan {
+        width: 85px;
+        margin-top: 10px;
+    }
+}
+
+/* End style logo page 35 */
 
 /* Begin common menu category detail */
 
