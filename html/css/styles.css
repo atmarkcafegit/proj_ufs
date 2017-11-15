@@ -60,10 +60,9 @@ header {
     margin-right: -8px;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-nav li>a {
@@ -169,7 +168,7 @@ header {
     margin-right: 20px;
 }
 
-.btn-brown {
+.btn-brown, .btn-brown:visited {
     color: #472c00;
     border: 1px solid #472c00;
 }
@@ -179,7 +178,7 @@ header {
     background-color: #472c00;
 }
 
-.btn-green {
+.btn-green, .btn-green:visited {
     color: #009844;
     border: 1px solid #009844;
 }
@@ -2017,7 +2016,56 @@ h2.block-header.block-brown {
     }
 }
 
-/* Begin page 42 */
+/* End page 42 */
+
+/* Begin page 44 */
+.calorie-content {
+    border-top: 2px solid #cccccc;
+    margin-top: 50px;
+}
+
+.calorie-content .row {
+    border-bottom: 2px solid #cccccc;
+    padding: 20px 0;
+}
+
+.calorie-content .img-responsive {
+    margin: 0 auto;
+}
+
+.calorie-content .calorie-brand-name {
+    color: #666666;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.calorie-content .support-button {
+    margin-top: 30px;
+}
+
+.calorie-content .calorie-list {
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+.calorie-content .calorie-list li {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .calorie-content .calorie-brand-name {
+        font-size: 16px;
+    }
+
+    .calorie-content .support-button {
+        margin-top: 20px;
+    }
+}
+
+/* End page 44 */
 
 /* Begin common for some pages (14, 17, 23, 27, 31, 35) */
 
