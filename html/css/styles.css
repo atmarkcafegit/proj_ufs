@@ -893,6 +893,14 @@ footer .back-to-top img {
         width: 700px !important;
         height: 300px !important;
     }
+
+
+}
+
+@media only screen and (max-width : 320px) {
+    .navbar-nav li {
+        padding: 15px 20px;
+    }
 }
 
 /* End page 01 */
@@ -1060,8 +1068,10 @@ h2.block-header.block-brown {
     }
 }
 
-@media only screen and (max-width : 750px) {
-
+@media only screen and (max-width : 320px) {
+    .block-more-info-content ul li a {
+        font-size: 14px;
+    }
 }
 
 /* End page 02 */
