@@ -32,6 +32,69 @@ header {
     padding: 5px 0;
 }
 
+.btn-share {
+    position: relative;
+}
+
+.mobile-share {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: -68px;
+    width: 180px;
+    background-color: #fff;
+}
+
+.mobile-share.active {
+    display: block;
+}
+
+.mobile-share.active .btn-social {
+    display: block;
+}
+
+.mobile-share .fa {
+    font-size: 18px;
+}
+
+.mobile-share .btn-social a {
+    margin: 0 8px;
+}
+
+.mobile-share .fa-close {
+    color: #666;
+}
+
+.arrow_box {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 2px;
+}
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.arrow_box:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-bottom-color: #ccc;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
 #content {
     margin-top: 125px;
 }
@@ -605,6 +668,10 @@ footer .back-to-top img {
 
     .navbar-nav li>a {
         padding: 7px 10px;
+    }
+
+    .btn-social a {
+        font-size: 16px;
     }
 }
 
