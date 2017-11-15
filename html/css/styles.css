@@ -60,6 +60,11 @@ header {
     margin-right: -8px;
 }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
 .navbar-nav li>a {
     color: #666666;
     font-size: 18px;
@@ -163,7 +168,7 @@ header {
     margin-right: 20px;
 }
 
-.btn-brown {
+.btn-brown, .btn-brown:visited {
     color: #472c00;
     border: 1px solid #472c00;
 }
@@ -173,7 +178,7 @@ header {
     background-color: #472c00;
 }
 
-.btn-green {
+.btn-green, .btn-green:visited {
     color: #009844;
     border: 1px solid #009844;
 }
@@ -469,7 +474,7 @@ footer .back-to-top img {
 }
 
 .brand-block .col-md-4 {
-    border: 1px solid #666666;
+    border: 0.5px solid #666666;
     padding: 35px;
     text-align: center;
 }
@@ -481,7 +486,7 @@ footer .back-to-top img {
 .contact-block .contact-content {
     border: 1px solid #666666;
     padding: 35px;
-
+    margin-bottom: 20px;
 }
 
 .contact-block .contact-content .fa-lg {
@@ -681,7 +686,7 @@ footer .back-to-top img {
     }
 
     .menu-xs {
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     .menu-xs .pull-right {
@@ -782,6 +787,22 @@ footer .back-to-top img {
     .image-arrow {
         margin-top: 20px;
     }
+
+
+    .brand-block .img-responsive {
+        position: absolute;
+        margin: auto;
+        width: 140px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .brand-block .col-xs-6, .brand-block .col-md-4 {
+        height: 120px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -893,16 +914,14 @@ footer .back-to-top img {
         font-size: 18px;
     }
 
-    .brand-block .col-xs-6 {
-        height: 120px;
-    }
-
     .business-block img.img-responsive {
         width: 700px !important;
-        height: 300px !important;
+        height: 250px !important;
     }
 
-
+    .contact-text {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width : 320px) {
@@ -1183,13 +1202,13 @@ h2.block-header.block-brown {
 .block-faq-content ul li {
     padding: 20px 40px;
     border-bottom: 1px solid #999999;
-    font-size: 18px;
+    font-size: 16px;
     color: #666666;
     position: relative;
 }
 
 .block-faq-content ul li a {
-    font-size: 18px;
+    font-size: 16px;
     color: #666666;
     text-decoration: none;
 }
@@ -1258,13 +1277,16 @@ h2.block-header.block-brown {
     .block-faq-content ul li span.faq-text.ans {
         width: 89%;
     }
+
+    .franchise-faq {
+        margin-bottom: 50px;
+    }
 }
 
 
 @media only screen and (max-width : 480px) {
     .block-faq-info {
         padding: 10px 20px;
-        margin: 60px 0 0;
     }
 
     .block-faq-content ul li {
@@ -2015,7 +2037,56 @@ h2.block-header.block-brown {
     }
 }
 
-/* Begin page 42 */
+/* End page 42 */
+
+/* Begin page 44 */
+.calorie-content {
+    border-top: 2px solid #cccccc;
+    margin-top: 50px;
+}
+
+.calorie-content .row {
+    border-bottom: 2px solid #cccccc;
+    padding: 20px 0;
+}
+
+.calorie-content .img-responsive {
+    margin: 0 auto;
+}
+
+.calorie-content .calorie-brand-name {
+    color: #666666;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.calorie-content .support-button {
+    margin-top: 30px;
+}
+
+.calorie-content .calorie-list {
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+.calorie-content .calorie-list li {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .calorie-content .calorie-brand-name {
+        font-size: 16px;
+    }
+
+    .calorie-content .support-button {
+        margin-top: 20px;
+    }
+}
+
+/* End page 44 */
 
 /* Begin common for some pages (14, 17, 23, 27, 31, 35) */
 
