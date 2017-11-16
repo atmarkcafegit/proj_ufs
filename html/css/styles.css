@@ -1066,6 +1066,10 @@ h2.block-header.block-brown {
     font-size: 12px;
 }
 
+.block-tab-custom a {
+    height: 90px;
+}
+
 .block-tab .active {
     background-color: #999999;
 }
