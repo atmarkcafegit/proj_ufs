@@ -1601,6 +1601,7 @@ h2.block-header.block-brown {
 
 .franchise-case-block .ans, .franchise-case-blqa .ans {
     color: #666666;
+    text-align: justify;
 }
 
 .table-case {
