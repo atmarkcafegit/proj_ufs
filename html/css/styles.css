@@ -1575,6 +1575,11 @@ h2.block-header.block-brown {
     margin-top: 40px;
 }
 
+.franchise-case-block .step-title {
+    color: #472c00;
+    font-size: 22px;
+}
+
 .franchise-case-block .img-responsive {
     margin: 0 0 20px 0;
     width: 100%;
@@ -1589,7 +1594,7 @@ h2.block-header.block-brown {
     margin: 0 0 10px -10px;
 }
 
-.franchise-case-blqa .ans {
+.franchise-case-block .ans, .franchise-case-blqa .ans {
     color: #666666;
 }
 
