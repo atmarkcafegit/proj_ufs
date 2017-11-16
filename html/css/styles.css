@@ -1183,7 +1183,7 @@ h2.block-header.block-brown {
     }
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 767px) {
     .franchise-content {
         border: 1px solid #999999;
         display: none;
@@ -1195,7 +1195,9 @@ h2.block-header.block-brown {
         display: block;
         margin-top: 0;
     }
+}
 
+@media only screen and (max-width : 480px) {
     .block-tab {
         display: flex !important;
     }
