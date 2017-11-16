@@ -11,6 +11,19 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            $(document).on('click', '.visible-xs .btn-share-text', function() {
+                if ($('.mobile-share').hasClass('active')) {
+                    $('.mobile-share').removeClass('active');
+                } else {
+                    $('.mobile-share').addClass('active');
+                }
+            });
+
+            $(document).on('click', '.mobile-share .fa-close', function(event) {
+                event.preventDefault();
+                $('.mobile-share').removeClass('active');
+            });
+
             $(document).on('click', '.back-to-top', function() {
                 $('html, body').animate({ scrollTop: 0 }, 'slow');
                 return false;
@@ -43,7 +56,20 @@
                         <div><img src="image/icon_cup_brown.png" class="icon-cup"></div>
                         店舗検索
                     </div>
-                    <div class="pull-right btn-share">SHARE</div>
+                    <div class="pull-right btn-share">
+                        <span class="btn-share-text">SHARE</span>
+                        <div class="mobile-share">
+                            <div class="arrow_box">
+                                <div class="btn-social">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                    <a href="#"><i class="fa fa-close"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <a href="#" class="navbar-brand">
                     <img src="image/wean_top_logo.png" class="img-responsive logo-wean">
