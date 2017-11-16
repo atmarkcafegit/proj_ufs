@@ -1913,6 +1913,12 @@ h2.block-header.block-brown {
     padding: 0;
 }
 
+@media only screen and (max-width : 992px) {
+    .last-block-container {
+        margin-bottom: 100px;
+    }
+}
+
 @media only screen and (max-width : 767px) {
     .block-container {
         padding: 0;
