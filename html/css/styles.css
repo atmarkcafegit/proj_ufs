@@ -1641,6 +1641,11 @@ h2.block-header.block-brown {
 
 .table-case tr, .table-case td, .table-case th {
     border: 1px solid #472c00;
+    vertical-align: middle !important;
+}
+
+.table-case td {
+    color: #666666;
 }
 
 .table-case thead {
@@ -1670,6 +1675,14 @@ h2.block-header.block-brown {
 
     .franchise-case-block .ans, .franchise-case-blqa .ans {
         font-size: 14px;
+    }
+
+    .table-case {
+        margin-top: 15px;
+    }
+
+    .franchise-case-block hr {
+        margin-top: 20px;
     }
 }
 
