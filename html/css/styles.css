@@ -287,6 +287,10 @@ header {
     .block-sub-title {
         font-size: 20px;
     }
+
+    .btn-custom .fa-icon {
+        margin-right: 5px;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -681,6 +685,14 @@ footer .back-to-top img {
 
     .btn-social a {
         font-size: 16px;
+    }
+
+    .contact-block .contact-content .fa-custom {
+        font-size: 70px;
+    }
+
+    .contact-block .contact-content .fa-lg {
+        font-size: 35px;
     }
 }
 
