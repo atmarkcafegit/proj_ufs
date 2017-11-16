@@ -1570,6 +1570,25 @@ h2.block-header.block-brown {
     }
 }
 
+@media only screen and (max-width : 480px) {
+    .support-header {
+        font-size: 16px;
+    }
+
+    .support-block {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .franchise-contact {
+        font-size: 16px;
+    }
+
+    .support-time {
+        font-size: 16px;
+    }
+}
+
 /* End page 08 */
 
 /* Begin page 09 */
