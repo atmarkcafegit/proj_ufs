@@ -1060,12 +1060,14 @@ h2.block-header.block-brown {
     color: #999999;
     height: 100%;
     display: flex;
-    display: -webkit-flex; /* NEW */
-    -webkit-flex-wrap: wrap; /* NEW */
     justify-content: center;
     align-content: center;
     flex-direction: column;
     font-size: 12px;
+}
+
+.block-tab-custom a {
+    height: 90px;
 }
 
 .block-tab .active {
@@ -1201,7 +1203,7 @@ h2.block-header.block-brown {
 
 @media only screen and (max-width : 480px) {
     .block-tab {
-        display: flex !important;
+        display: flex;
     }
 }
 
@@ -1639,15 +1641,20 @@ h2.block-header.block-brown {
 
 .table-case tr, .table-case td, .table-case th {
     border: 1px solid #472c00;
+    vertical-align: middle !important;
+}
+
+.table-case td {
+    color: #666666;
 }
 
 .table-case thead {
     background-color: #472c00;
-    color: #fff;
 }
 
 .table-case thead td {
     text-align: center;
+    color: #fff;
 }
 
 .table-case tbody th {
@@ -1668,6 +1675,22 @@ h2.block-header.block-brown {
 
     .franchise-case-block .ans, .franchise-case-blqa .ans {
         font-size: 14px;
+    }
+
+    .table-case {
+        margin-top: 15px;
+    }
+
+    .franchise-case-block hr {
+        margin-top: 20px;
+    }
+
+    .franchise-case-block {
+        font-size: 14px;
+    }
+
+    .franchise-case-qa {
+        font-size: 16px;
     }
 }
 
@@ -1896,6 +1919,12 @@ h2.block-header.block-brown {
 
 .block-container .btn-list-category {
     padding: 0;
+}
+
+@media only screen and (max-width : 992px) {
+    .last-block-container {
+        margin-bottom: 100px;
+    }
 }
 
 @media only screen and (max-width : 767px) {
