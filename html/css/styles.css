@@ -664,6 +664,10 @@ footer .back-to-top img {
     .btn-language a {
         font-size: 8px;
     }
+
+    .recruit-block {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -789,9 +793,7 @@ footer .back-to-top img {
         margin-bottom: 150px;
     }
 
-    .recruit-block {
-        margin-bottom: 20px;
-    }
+
 
     .recruit-text, .recruit-image {
         width: 49%;
