@@ -825,11 +825,8 @@ footer .back-to-top img {
 
     footer .back-to-top {
         float: none !important;
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
-
-
-
 
     .carousel-indicators li {
         margin-right: 10px;
@@ -1167,7 +1164,7 @@ h2.block-header.block-brown {
 
     .block-more-info {
         padding: 10px 20px;
-        margin: 60px 0 0;
+        margin: 40px 0 0;
     }
 
     .block-more-info p {
