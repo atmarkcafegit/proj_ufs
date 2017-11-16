@@ -1586,7 +1586,7 @@ h2.block-header.block-brown {
     margin-top: 40px;
 }
 
-.franchise-case-block .step-title {
+.franchise-text .step-title {
     color: #472c00;
     font-size: 22px;
 }
@@ -2032,7 +2032,7 @@ h2.block-header.block-brown {
     .step-title {
         padding-left: 10px;
         padding-right: 0;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -2052,7 +2052,7 @@ h2.block-header.block-brown {
     .step-title {
         padding-left: 10px;
         padding-right: 0;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .charge-content .img-responsive {
