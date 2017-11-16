@@ -2376,7 +2376,7 @@ h2.block-header.block-brown {
     background-color: #472c00;
 }
 
-#navbar-brown .btn-social a {
+#navbar-brown .btn-social a, #navbar-header-brown .btn-social a {
     color: #472c00 !important;
 }
 
