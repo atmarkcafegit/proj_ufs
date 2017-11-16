@@ -1659,7 +1659,15 @@ h2.block-header.block-brown {
     padding: 10px 20px !important;
 }
 
+@media only screen and (max-width : 768px) {
+    .franchise-text .step-title {
+        font-size: 18px;
+    }
 
+    .franchise-case-block .ans, .franchise-case-blqa .ans {
+        font-size: 14px;
+    }
+}
 
 /* Begin page 09 */
 
