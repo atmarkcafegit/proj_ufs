@@ -2648,5 +2648,13 @@ h2.block-header.block-brown {
     }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .block-container .btn-custom.back-to-list {
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /* End common menu category detail */
 
