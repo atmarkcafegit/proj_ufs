@@ -1060,8 +1060,6 @@ h2.block-header.block-brown {
     color: #999999;
     height: 100%;
     display: flex;
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
     justify-content: center;
     align-content: center;
     flex-direction: column;
@@ -1201,7 +1199,7 @@ h2.block-header.block-brown {
 
 @media only screen and (max-width : 480px) {
     .block-tab {
-        display: flex !important;
+        display: flex;
     }
 }
 
