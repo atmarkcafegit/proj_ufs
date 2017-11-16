@@ -1650,11 +1650,11 @@ h2.block-header.block-brown {
 
 .table-case thead {
     background-color: #472c00;
-    color: #fff;
 }
 
 .table-case thead td {
     text-align: center;
+    color: #fff;
 }
 
 .table-case tbody th {
@@ -1683,6 +1683,14 @@ h2.block-header.block-brown {
 
     .franchise-case-block hr {
         margin-top: 20px;
+    }
+
+    .franchise-case-block {
+        font-size: 14px;
+    }
+
+    .franchise-case-qa {
+        font-size: 16px;
     }
 }
 
