@@ -1438,6 +1438,12 @@ h2.block-header.block-brown {
     letter-spacing: 1px;
 }
 
+@media only screen and (max-width : 768px) {
+    .franchise-open {
+        margin-bottom: 40px;
+    }
+}
+
 /* End page 05 */
 
 /* Begin page 06 */
