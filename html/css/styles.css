@@ -1921,7 +1921,7 @@ h2.block-header.block-brown {
 
 .block-list .block-item {
     position: relative;
-    padding-right: 25px;
+    padding-right: 20px;
 }
 
 .block-list .block-item .link-arrow {
@@ -2995,6 +2995,10 @@ h2.block-header.block-brown {
     margin-bottom: 0;
 }
 
+.menu-info-detail .block-item .label-item-time {
+    font-size: 18px;
+}
+
 @media screen and (max-width: 767px) {
     .menu-info-detail .block-list .block-item {
         padding-bottom: 50px;
@@ -3016,6 +3020,10 @@ h2.block-header.block-brown {
     .menu-info-detail .block-list .block-item .block-item-content,
     .menu-info-detail .block-list .block-item .block-item-title {
         line-height: 25px;
+    }
+
+    .menu-info-detail .block-item .label-item-time {
+        font-size: 14px;
     }
 }
 
