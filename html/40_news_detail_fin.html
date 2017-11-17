@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ユーシーシーフードサービスシステムズ株式会社</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.visible-xs .btn-share-text', function() {
+                if ($('.mobile-share').hasClass('active')) {
+                    $('.mobile-share').removeClass('active');
+                } else {
+                    $('.mobile-share').addClass('active');
+                }
+            });
+
+            $(document).on('click', '.mobile-share .fa-close', function(event) {
+                event.preventDefault();
+                $('.mobile-share').removeClass('active');
+            });
+
+            $(document).on('click', '.back-to-top', function() {
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+                return false;
+            })
+
+            $(document).on('mouseover', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'block');
+                return false;
+            });
+
+            $(document).on('mouseout', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'none');
+                return false;
+            });
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="navbar-header">
+                <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
+                        data-target="#bs-navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-align-justify fa-fw" aria-hidden="true"></i>
+                    <i class="fa fa-times fa-fw" aria-hidden="true"></i>
+                </button>
+                <div class="visible-xs pull-right menu-xs">
+                    <div class="pull-right btn-cup">
+                        <div><img src="image/icon_cup.png" class="icon-cup"></div>
+                        店舗検索
+                    </div>
+                    <div class="pull-right btn-share">
+                        <span class="btn-share-text">SHARE</span>
+                        <div class="mobile-share">
+                            <div class="arrow_box">
+                                <div class="btn-social">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                    <a href="#"><i class="fa fa-close"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="navbar-brand">
+                    <img src="image/ufs_logo.png" class="img-responsive logo-ufs">
+                </a>
+            </div>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden-xs">
+                        <a href="#">
+                            <img src="image/icon_cup.png">
+                            店舗検索
+                        </a>
+                    </li>
+
+                    <li class="visible-xs"><a href="#">最新ニュース<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li><a href="#">採用情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li><a href="#">フランチャイズビジネス<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="hidden-xs"><a href="#">会社概要</a></li>
+                    <li class="visible-xs"><a href="#">店舗情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs"><a href="#">公式アプリ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs"><a href="#">プレシャスメンバーズ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs"><a href="#">ENGLISH<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs last-item">
+                        <div class="btn-menu">
+                            <a href="#">会員登録 / ログイン</a>
+                        </div>
+                    </li>
+                    <li class="share-button hidden-xs">
+                        <div class="btn-menu">
+                            <a href="#">Share</a>
+                        </div>
+                        <div class="btn-social">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </li>
+                    <li class="login-button hidden-xs">
+                        <div class="btn-language">
+                            <a href="#" class="active">JAPANESE</a>
+                            /
+                            <a href="#">ENGLISH</a>
+                        </div>
+                        <div class="btn-menu">
+                            <a href="#">会員登録 / ログイン</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contents" id="content">
+        <div class="container block-container last-block-container menu-category-container menu-category-detail-container menu-info-detail">
+            <div class="">
+                <div class="block-green">
+                    <h3 class="block-title text-center">INFORMARTION</h3>
+                    <p class="block-note text-center">最新情報</p>
+                    <ul class="block-list block-list-has-label">
+                        <li class="block-item">
+                            <span class="label-item-info text-center">お知らせ</span>
+                            <span class="label-item-time">2017.8.1</span>
+                            <div class="block-item-title">
+                                熊本地震の被災者の方々に<br>
+                                お悔やみとお見舞いを申し上げます
+                            </div>
+                            <div class="block-item-content">
+                                <p>この度の熊本地震により被災された皆様、ならびにそのご家族の皆様に心よりお見舞い申し上げます。</p>
+                                <p>皆様の安全と被災地の一日も早い復興を心よりお祈り申し上げます。</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-3">
+                            <a href="#" class="btn-custom btn-paging btn-paging-previous">
+                                <i class="fa fa-angle-left fa-lg pull-left" aria-hidden="true"></i>
+                                前へ
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6">
+                            <a href="#" class="btn-custom btn-green back-to-list">
+                                一覧へ戻る
+                                <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-3">
+                            <a href="#" class="btn-custom btn-paging btn-paging-next">
+                                次へ
+                                <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="back-to-top pull-right">
+                <a href="#">
+                    <div><img src="image/icon_back_to_top.png"></div>
+                    トップへ戻る
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul>
+                        <li><a href="#">ソーシャルメディア一覧</a></li>
+                        <li><a href="#">サイトマップ</a></li>
+                        <li><a href="#">UCCグループのご案内</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-12">
+                    <p>ユーシーシーフードサービスシステムズ株式会社</p>
+                    <p class="text-cp">© UCC Foodservise Systems Inc. all rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

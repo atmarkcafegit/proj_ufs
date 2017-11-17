@@ -2564,6 +2564,10 @@ h2.block-header.block-brown {
     color: #472c00;
 }
 
+.block-container .block-brown .btn-custom.btn-paging.btn-paging {
+    color: #472c00;
+}
+
 .block-list.block-item-title-brown .block-item-title a {
     color: #472c00;
 }
@@ -2843,7 +2847,7 @@ h2.block-header.block-brown {
 
 .block-container .btn-custom.btn-paging.btn-paging {
     font-size: 18px;
-    color: #472c00;
+    color: #666666;
     padding: 15px 0;
     display: inline-block;
 }
@@ -3005,6 +3009,10 @@ h2.block-header.block-brown {
 
 .menu-info-detail .block-item .label-item-time {
     font-size: 18px;
+}
+
+.menu-info-detail .block-item .label-item-info {
+    min-width: 100px;
 }
 
 @media screen and (max-width: 767px) {
