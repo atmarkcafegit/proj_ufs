@@ -2681,6 +2681,14 @@ h2.block-header.block-brown {
         margin-top: 40px;
         padding: 0 20px;
     }
+
+    #navbar-brown li:nth-child(2) {
+        border-top: 1px solid #c7bfb2;
+    }
+
+    #navbar-brown li {
+        border-bottom: 1px solid #c7bfb2;
+    }
 }
 
 @media screen and (max-width: 374px) {
