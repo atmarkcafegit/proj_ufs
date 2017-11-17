@@ -1633,6 +1633,7 @@ h2.block-header.block-brown {
 .franchise-case-block .ans, .franchise-case-blqa .ans {
     color: #666666;
     text-align: justify;
+    text-justify: distribute;
 }
 
 .table-case {
@@ -1723,10 +1724,9 @@ h2.block-header.block-brown {
     text-align: center;
     width: 90%;
     text-decoration: none;
-    top: 35px;
+    top: 50%;
     left: 50%;
-    translate-x: -50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     color: #ffffff;
 }
 
@@ -1744,9 +1744,10 @@ h2.block-header.block-brown {
 }
 .recruit-caption .recruit-title span {
     position: absolute;
-    bottom: 0;
+    width: 70%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
 }
 
 .recruit-caption .recruit-desc {
@@ -1758,8 +1759,36 @@ h2.block-header.block-brown {
 }
 
 @media only screen and (max-width : 768px) {
+    .recruit-container {
+        margin: 50px 0 0;
+    }
+
     .recruit-caption {
-        top: 70px;
+
+    }
+
+    .recruit-title {
+        font-size: 18px;
+    }
+
+    .recruit-caption .recruit-desc {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .recruit-container {
+        margin: 20px 0 0;
+    }
+
+    .recruit-caption {
+
+    }
+
+    .recruit-caption .recruit-desc {
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 }
 
@@ -2380,10 +2409,117 @@ h2.block-header.block-brown {
         width: 70%;
     }
 }
-
-
-
 /* End page 46 */
+
+/* Begin page 48 */
+.privacy-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin: 50px 0 100px;
+}
+
+.privacy-list li {
+    padding: 15px 0;
+    border-top: 1px solid #999999;
+    position: relative;
+}
+
+.privacy-list li:last-child {
+    border-bottom: 1px solid #999999;
+}
+
+.privacy-list li a {
+    color: #666666;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.privacy-list li a .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+}
+
+.privacy-number {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+}
+
+.privacy-content {
+    padding-bottom: 20px;
+}
+
+.privacy-content h3 {
+    font-size: 20px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.privacy-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+
+.privacy-sub-content {
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .privacy-list {
+        margin: 20px 0 40px;
+    }
+
+    .privacy-list li {
+        padding: 8px 0;
+    }
+
+    .privacy-list li a {
+        font-size: 14px;
+    }
+
+    .privacy-number {
+        margin-right: 5px;
+    }
+
+    .privacy-content {
+        padding-bottom: 5px;
+    }
+
+    .privacy-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .privacy-content h3 {
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .privacy-sub-content {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .privacy-number, .privacy-text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .privacy-text {
+        width: 85%;
+    }
+}
+
+
+
+/* Begin page 48 */
 
 /* Begin common for some pages (14, 17, 23, 27, 31, 35) */
 
