@@ -1835,7 +1835,7 @@ h2.block-header.block-brown {
 }
 
 .block-list .block-item .block-item-title a {
-    color: #333333;
+    color: #666666;
 }
 
 .block-item .label-item-info {
@@ -2002,7 +2002,7 @@ h2.block-header.block-brown {
 
     .block-item .label-item-info {
         min-width: 165px;
-        margin: 5px 0 7px 0;
+        margin: 5px 0 10px 0 !important;
     }
 
     .block-item .label-item-time {
@@ -2703,6 +2703,7 @@ h2.block-header.block-brown {
     font-size: 18px;
     color: #472c00;
     padding: 15px 0;
+    display: inline-block;
 }
 
 .block-container .btn-custom.btn-paging.btn-paging-previous {
@@ -2711,6 +2712,7 @@ h2.block-header.block-brown {
 
 .block-container .btn-custom.btn-paging.btn-paging-next {
     text-align: right;
+    float: right;
 }
 
 .block-container .btn-custom.btn-paging i {
@@ -2769,6 +2771,7 @@ h2.block-header.block-brown {
 
     .block-container .btn-custom.btn-paging.btn-paging {
         font-size: 14px;
+        padding: 12px 0;
     }
 
     .block-container .btn-custom.btn-paging i {
@@ -2826,3 +2829,60 @@ h2.block-header.block-brown {
 
 /* End common menu fin */
 
+/* Begin common menu info fin */
+
+.menu-info-detail .block-list .block-item {
+    border-top: none;
+    padding: 0 0 90px 0;
+}
+
+.menu-info-detail .block-list .block-item .block-item-title {
+    margin-top: 20px;
+    display: block;
+}
+
+.menu-info-detail .block-list .block-item .block-item-content {
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.menu-info-detail .btn-custom.btn-paging,
+.menu-info-detail .btn-custom.back-to-list {
+    margin-top: 60px;
+}
+
+.menu-info-detail .block-list .block-item .block-item-content,
+.menu-info-detail .block-list .block-item .block-item-title {
+    line-height: 30px;
+}
+
+.menu-info-detail .block-list .block-item .block-item-content p,
+.menu-info-detail .block-item-title p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-info-detail .block-list .block-item {
+        padding-bottom: 50px;
+    }
+
+    .menu-info-detail .block-list .block-item .block-item-content {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .menu-info-detail .block-list .block-item .block-item-title {
+        margin-top: 5px;
+    }
+
+    .menu-info-detail .btn-custom.btn-paging, .menu-info-detail .btn-custom.back-to-list {
+        margin-top: 30px;
+    }
+
+    .menu-info-detail .block-list .block-item .block-item-content,
+    .menu-info-detail .block-list .block-item .block-item-title {
+        line-height: 25px;
+    }
+}
+
+/* End common menu info fin */
