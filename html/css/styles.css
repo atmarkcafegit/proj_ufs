@@ -1724,10 +1724,9 @@ h2.block-header.block-brown {
     text-align: center;
     width: 90%;
     text-decoration: none;
-    top: 35px;
+    top: 50%;
     left: 50%;
-    translate-x: -50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     color: #ffffff;
 }
 
@@ -1765,7 +1764,7 @@ h2.block-header.block-brown {
     }
 
     .recruit-caption {
-        top: 10px;
+
     }
 
     .recruit-title {
@@ -1784,7 +1783,7 @@ h2.block-header.block-brown {
     }
 
     .recruit-caption {
-        top: 40px;
+
     }
 
     .recruit-caption .recruit-desc {
