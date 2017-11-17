@@ -2514,10 +2514,61 @@ h2.block-header.block-brown {
         width: 85%;
     }
 }
+/* End page 48 */
 
+/* Begin page 50 */
+.social-container {
+    margin: 40px 0;
+    border-top: 1px solid #999999;
+}
 
+.social-content {
+    border-bottom: 1px solid #999999;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Begin page 48 */
+.social-content .img-responsive {
+    margin: 0 auto;
+}
+
+.social-content .contact-content {
+    text-align: center;
+}
+
+.social-content .contact-content a {
+    color: #999999;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.social-title {
+    font-size: 22px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .social-container {
+        margin: 20px 0;
+    }
+
+    .social-content {
+        padding: 20px 0;
+    }
+
+    .social-content .contact-content a {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .social-title {
+        font-size: 16px;
+    }
+}
+
+/* End page 50 */
 
 /* Begin common for some pages (14, 17, 23, 27, 31, 35) */
 
