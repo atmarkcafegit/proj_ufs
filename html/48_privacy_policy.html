@@ -51,6 +51,15 @@
                 }
             });
 
+            $(document).on('click', '.privacy-menu', function() {
+                var target = $(this).data('target');
+                var top = $("#" + target).offset().top - 150;
+
+                $('html, body').animate({
+                    scrollTop: top
+                }, 1000);
+            });
+
             $(window).scroll(function (event) {
                 var scroll = $(document).scrollTop();
                 if (scroll >= 900) {
@@ -139,6 +148,82 @@
             <p class="block-desc">ユーシーシーフードサービスシステムズ株式会社（以下、当社といいます）は、個人情報に関する法律およびその他の規範を遵守し、業務上取り扱うすべての個人情報を保護する重要性を十分に認識し、以下のとおり取り</p>
         </div>
 
+        <ul class="privacy-list">
+            <li class="privacy-item">
+                <a href="#" class="privacy-menu" data-target="block-1">
+                    <span class="privacy-number">1.</span> <span class="privacy-text">個人情報の管理について</span>
+                    <i class="fa fa-angle-right fa-lg"></i>
+                </a>
+            </li>
+            <li class="privacy-item">
+                <a href="#"  class="privacy-menu" data-target="block-2">
+                    <span class="privacy-number">2.</span> <span class="privacy-text">個人情報の取得と利用目的について</span>
+                    <i class="fa fa-angle-right fa-lg"></i>
+                </a>
+            </li>
+            <li class="privacy-item">
+                <a href="#" class="privacy-menu" data-target="block-3">
+                    <span class="privacy-number">3.</span> <span class="privacy-text">第三者への提供について</span>
+                    <i class="fa fa-angle-right fa-lg"></i>
+                </a>
+            </li>
+            <li class="privacy-item">
+                <a href="#" class="privacy-menu" data-target="block-4">
+                    <span class="privacy-number">4.</span> <span class="privacy-text">保有個人データについて</span>
+                    <i class="fa fa-angle-right fa-lg"></i>
+                </a>
+            </li>
+            <li class="privacy-item">
+                <a href="#" class="privacy-menu" data-target="block-5">
+                    <span class="privacy-number">5.</span> <span class="privacy-text">個人情報の開示などのお問い合わせと手続きについて</span>
+                    <i class="fa fa-angle-right fa-lg"></i>
+                </a>
+            </li>
+            <li class="privacy-item">
+                <a href="#" class="privacy-menu" data-target="block-6">
+                    <span class="privacy-number">6.</span> <span class="privacy-text">Webにおける個人情報の取り扱いについて</span>
+                    <i class="fa fa-angle-right fa-lg"></i>
+                </a>
+            </li>
+            <li class="privacy-item">
+                <a href="#" class="privacy-menu" data-target="block-7">
+                    <span class="privacy-number">7.</span> <span class="privacy-text">改訂について</span>
+                    <i class="fa fa-angle-right fa-lg"></i>
+                </a>
+            </li>
+            <li class="privacy-item">
+                <a href="#" class="privacy-menu" data-target="block-8">
+                    <span class="privacy-number">8.</span> <span class="privacy-text">個人情報に関するお問い合わせ窓口</span>
+                    <i class="fa fa-angle-right fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="privacy-content" id="block-1">
+            <h3><span class="privacy-number">1.</span>個人情報の管理について</h3>
+            <p>（1）当社は、個人情報を管理するにあたり、管理責任者を置き、適切な管理を行うとともに、 外部への流出防止に努めます。</p>
+            <p>（2）当社は、不正アクセス対策、コンピュータウィルス対策などの適切な情報セキュリティ 対策をはじめとする安全対策を講じ、個人情報の紛失、破壊、漏えい等の防止に努めます。</p>
+            <p>（3）当社は、従業者に対して、個人情報の適切な取り扱い等についての教育を行い、個人情報の保護に努めます。</p>
+        </div>
+
+        <div class="privacy-content" id="block-2">
+            <h3><span class="privacy-number">2.</span>個人情報の取得と利用目的について</h3>
+            <p>（1）当社は、個人情報を取得させていただく場合は、遵法精神に基づき適正かつ公正な手段で行います。なお、当社が個人情報の取得を意図し、
+                ご本人から書面やWebを通じて直接ご提供いただく場合、個人情報の利用目的を明示させていただきます。ただし、
+                提供時の状況から利用目的が明らかな場合は、利用目的の明示を省略させていただくことがあります。</p>
+            <p>（2）当社は、以下に掲げる利用目的の達成に必要な範囲内において、個人情報を利用いたします。</p>
+            <p class="privacy-sub-content">［1］ 商品・サービスの提供のご案内を送付するため<br>
+                ［2］ 当社が開催（主催、共催、協賛、後援）する展示会、セミナー等のご案内を送付するため<br>
+                ［3］ 当社で企画するキャンペーン、懸賞その他イベントの応募および参加に関するご案内を送付するため<br>
+                ［4］ 当社で企画する会員サービス等のご登録およびサービスの提供のため<br>
+                ［5］ 商品の企画および利用等、顧客満足に関するアンケート等のご依頼およびその後のご連絡のため<br>
+                ［6］ 採用活動、株主、退職者へのご連絡およびお問い合わせのため<br>
+            </p>
+            <p>（3）当社で、個人情報保護法の施行前（2005年3月31日以前）に取得し、保有する個人情報に関しては、前記の利用目的で利用させていただきます。</p>
+            <p>（4）当社では、業務を円滑に遂行するために、個人情報の取り扱いを外部に委託する場合があります。この場合、当社が個人情報を適正に取り扱っていると認められる委託先を選定し、個人情報の取り扱いに関する契約の締結や適切な監督を行います。</p>
+            <p>（5）当社は、合併、分社化、営業譲渡等で事業を承継し個人情報を取得した場合、承継前にご本人に同意を得ている、または通知、または公表した利用目的の達成に必要な範囲内で利用します。</p>
+            <p>（6）「法令に基づく場合」「人命、身体または財産の保護」「国の機関等への協力」に該当する場合は、前記利用目的の範囲外であっても事前の同意を得ずして個人情報を取得し、また利用させていただく場合があります。</p>
+        </div>
 
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
@@ -151,7 +236,7 @@
 
                 <div class="support-button">
                     <a href="#" class="btn-custom btn-green">
-                        個人情報保護方針
+                        沿革
                         <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
                     </a>
                 </div>

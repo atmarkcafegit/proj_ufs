@@ -1745,9 +1745,10 @@ h2.block-header.block-brown {
 }
 .recruit-caption .recruit-title span {
     position: absolute;
-    bottom: 0;
+    width: 70%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
 }
 
 .recruit-caption .recruit-desc {
@@ -1759,8 +1760,32 @@ h2.block-header.block-brown {
 }
 
 @media only screen and (max-width : 768px) {
+    .recruit-container {
+        margin: 20px 0 0;
+    }
+
     .recruit-caption {
-        top: 70px;
+        top: 10px;
+    }
+
+    .recruit-title {
+        font-size: 18px;
+    }
+
+    .recruit-caption .recruit-desc {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .recruit-caption {
+        top: 40px;
+    }
+
+    .recruit-caption .recruit-desc {
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 }
 
@@ -2381,10 +2406,97 @@ h2.block-header.block-brown {
         width: 70%;
     }
 }
-
-
-
 /* End page 46 */
+
+/* Begin page 48 */
+.privacy-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin: 50px 0 100px;
+}
+
+.privacy-list li {
+    padding: 15px 0;
+    border-top: 1px solid #999999;
+    position: relative;
+}
+
+.privacy-list li:last-child {
+    border-bottom: 1px solid #999999;
+}
+
+.privacy-list li a {
+    color: #666666;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.privacy-list li a .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+}
+
+.privacy-number {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+}
+
+.privacy-content {
+    padding-bottom: 20px;
+}
+
+.privacy-content h3 {
+    font-size: 20px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+
+.privacy-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+
+.privacy-sub-content {
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .privacy-list {
+        margin: 20px 0;
+    }
+
+    .privacy-list li {
+        padding: 8px 0;
+    }
+
+    .privacy-list li a {
+        font-size: 14px;
+    }
+
+    .privacy-number {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .privacy-number, .privacy-text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .privacy-text {
+        width: 85%;
+    }
+}
+
+
+
+/* Begin page 48 */
 
 /* Begin common for some pages (14, 17, 23, 27, 31, 35) */
 
