@@ -3062,10 +3062,6 @@ h2.block-header.block-brown {
     font-size: 18px;
 }
 
-.menu-info-detail .block-item .label-item-info {
-    min-width: 100px;
-}
-
 @media screen and (max-width: 767px) {
     .menu-info-detail .block-list .block-item {
         padding-bottom: 50px;
@@ -3091,6 +3087,10 @@ h2.block-header.block-brown {
 
     .menu-info-detail .block-item .label-item-time {
         font-size: 14px;
+    }
+
+    .menu-info-detail .block-item .label-item-info {
+        min-width: 100px;
     }
 }
 
