@@ -2471,7 +2471,7 @@ h2.block-header.block-brown {
 
 @media screen and (max-width: 768px) {
     .privacy-list {
-        margin: 20px 0;
+        margin: 20px 0 40px;
     }
 
     .privacy-list li {
@@ -2484,6 +2484,26 @@ h2.block-header.block-brown {
 
     .privacy-number {
         margin-right: 5px;
+    }
+
+    .privacy-content {
+        padding-bottom: 5px;
+    }
+
+    .privacy-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .privacy-content h3 {
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .privacy-sub-content {
+        padding-left: 20px;
     }
 }
 
