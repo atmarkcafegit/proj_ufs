@@ -937,6 +937,18 @@ footer .back-to-top img {
     .navbar-nav > li > a img {
         width: 10px;
     }
+
+    .carousel-caption h1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .carousel-caption p.text-large .large {
+        font-size: 24px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -954,18 +966,6 @@ footer .back-to-top img {
 
     .menu-xs .pull-right {
         margin-right: 20px;
-    }
-
-    .carousel-caption h1 {
-        font-size: 22px;
-        letter-spacing: 2px;
-    }
-
-    .carousel-caption p.text-large .large {
-        font-size: 24px;
-    }
-    .carousel-caption p {
-        font-size: 16px;
     }
 
     .recruit-text {
