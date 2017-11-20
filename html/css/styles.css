@@ -795,7 +795,7 @@ footer .back-to-top img {
     }
 
     .navbar-nav li.last-item {
-        border-bottom: none;
+        border-bottom: none !important;
     }
 
     .navbar-nav li a {
