@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(document).on('click', '.visible-xs .btn-share-text', function() {
@@ -48,6 +49,19 @@
                 } else {
                     $('#register-member').css('display', 'none');
                 }
+            });
+
+            //Enable swiping...
+            $(".carousel-inner").swipe( {
+                //Generic swipe handler for all directions
+                swipeLeft:function(event, direction, distance, duration, fingerCount) {
+                    $(this).parent().carousel('next');
+                },
+                swipeRight: function() {
+                    $(this).parent().carousel('prev');
+                },
+                //Default is 75px, set to 0 for demo so any distance triggers swipe
+                threshold:0
             });
         })
     </script>
