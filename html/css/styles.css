@@ -3185,3 +3185,31 @@ h2.block-header.block-brown {
 }
 
 /* End common menu info fin */
+
+/* Begin page 21_cafemercad_beanslist_fin */
+
+.block-container.beanslist-fin .main-menu-image .menu-title {
+    margin-bottom: 35px;
+}
+
+.block-container.beanslist-fin .main-menu-image:last-of-type .menu-title {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .block-container.beanslist-fin .main-menu-image .menu-title {
+        margin: 13px 0 20px 0;
+    }
+
+    .block-container.beanslist-fin .main-menu-image:last-of-type .menu-title {
+        margin-bottom: 25px;
+    }
+
+    .block-container .main-menu-image .menu-image img {
+        width: auto;
+        max-width: unset;
+        height: 150px;
+    }
+}
+
+/* End page 21_cafemercad_beanslist_fin */
