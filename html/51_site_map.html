@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ユーシーシーフードサービスシステムズ株式会社</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.back-to-top', function() {
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+                return false;
+            });
+
+            $(document).on('mouseover', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'block');
+                return false;
+            });
+
+            $(document).on('mouseout', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'none');
+                return false;
+            });
+
+            $(document).on('click', '.block-tab a', function() {
+                var target = $(this).data('target');
+                $('.block-tab .col-xs-4').removeClass('active');
+                $(this).parent('div').addClass('active');
+
+                $('.franchise-content').removeClass('active');
+                $('#' + target).addClass('active');
+                return false;
+            });
+
+            $(document).on('click', '.block-more-info a', function() {
+                if ($(this).hasClass('active')) {
+                    $('.block-more-info-content').hide();
+                    $(this).removeClass('active');
+                    $('.block-more-info .fa-minus').hide();
+                    $('.block-more-info .fa-plus').show();
+                } else {
+                    $('.block-more-info-content').show();
+                    $(this).addClass('active');
+                    $('.block-more-info .fa-minus').show();
+                    $('.block-more-info .fa-plus').hide();
+                }
+            });
+
+            $(window).scroll(function (event) {
+                var scroll = $(document).scrollTop();
+                if (scroll >= 900) {
+                    $('#register-member').css('display', 'block');
+                } else {
+                    $('#register-member').css('display', 'none');
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="navbar-header">
+            <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
+                    data-target="#bs-navbar" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-align-justify fa-fw" aria-hidden="true"></i>
+                <i class="fa fa-times fa-fw" aria-hidden="true"></i>
+            </button>
+            <div class="visible-xs pull-right menu-xs">
+                <div class="pull-right btn-cup">
+                    <div><img src="image/icon_cup.png" class="icon-cup"></div>
+                    店舗検索
+                </div>
+                <div class="pull-right btn-share">SHARE</div>
+            </div>
+            <a href="#" class="navbar-brand">
+                <img src="image/ufs_logo.png" class="img-responsive logo-ufs">
+            </a>
+        </div>
+        <nav class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-xs">
+                    <a href="#">
+                        <img src="image/icon_cup.png">
+                        店舗検索
+                    </a>
+                </li>
+
+                <li class="visible-xs"><a href="#">最新ニュース<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li><a href="#">採用情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li><a href="#">フランチャイズビジネス<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="hidden-xs"><a href="#">会社概要</a></li>
+                <li class="visible-xs"><a href="#">店舗情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">公式アプリ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">プレシャスメンバーズ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">ENGLISH<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs last-item">
+                    <div class="btn-menu">
+                        <a href="#">会員登録 / ログイン</a>
+                    </div>
+                </li>
+                <li class="share-button hidden-xs">
+                    <div class="btn-menu">
+                        <a href="#">Share</a>
+                    </div>
+                    <div class="btn-social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+                <li class="login-button hidden-xs">
+                    <div class="btn-language">
+                        <a href="#" class="active">JAPANESE</a>
+                        /
+                        <a href="#">ENGLISH</a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="#">会員登録 / ログイン</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container last-block-container menu-category-container" id="content">
+    <div class="">
+        <div class="block-green">
+            <h3 class="block-title text-center">SITE MAP</h3>
+            <p class="block-note text-center">サイトマップ</p>
+        </div>
+
+        <div class="sitemap-header">
+            UFSグループ店
+        </div>
+        <div class="sitemap-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sitemap-row"><span>•</span> <a href="#">上島珈琲店<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sitemap-row"><span>•</span> <a href="#"> 珈琲館 <i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-sm-6">
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> 珈琲館のこだわり・豆のご紹介<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> シーズンメニュー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> スペシャルティコーヒー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> オリジナルコーヒー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> バリエーションコーヒー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> ソフトドリンク<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> フード<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> デザート<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> モーニング<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> ギフトコレクション<i class="fa fa-angle-right fa-lg"></i></a></div>
+
+                    <div class="sitemap-row"><span>•</span> <a href="#"> カフェ・ディ・エスプレッソ珈琲館<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> カフェ・ディ・エスプレッソ珈琲館とは<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> シーズンメニュー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> エスプレッソバリエーション<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> ブレンドコーヒー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> フローズンドリンク<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> ソフトドリンク<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="sitemap-row"><span>•</span> <a href="#"> UCCカフェメルカード<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> UCCカフェメルカードとは<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> BEANS LIST<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> 喫茶メニュー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> ギフト<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> フェア・マンスリーコーヒー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> イベントコーヒー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> UCCカフェクラブ<i class="fa fa-angle-right fa-lg"></i></a></div>
+
+                    <div class="sitemap-row"><span>•</span> <a href="#"> UCCカフェプラザ<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> シーズンメニュー<i class="fa fa-angle-right fa-lg"></i></a></div>
+
+                    <div class="sitemap-row"><span>•</span> <a href="#"> ウィーンの森<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> シーズンメニュー<i class="fa fa-angle-right fa-lg"></i></a></div>
+
+                    <div class="sitemap-row"><span>•</span> <a href="#"> カフェラ<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> シーズンメニュー<i class="fa fa-angle-right fa-lg"></i></a></div>
+
+                    <div class="sitemap-row"><span>•</span> <a href="#"> 珈楽庵<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> 珈琲茶寮 珈楽庵とは<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> 珈楽庵メニュー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sitemap-header">
+            店舗検索
+        </div>
+        <div class="sitemap-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sitemap-row"><span>•</span> <a href="#">店舗検索<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sitemap-header">
+            フランチャイズについて
+        </div>
+        <div class="sitemap-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sitemap-row"><span>•</span> <a href="#">フランチャイズビジネスについて<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-sm-6">
+                    <div class="sitemap-row"><span>•</span> <a href="#">フランチャイズビジネスの概要<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">開店までの流れ<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">加盟条件と開店資金<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">研修システムとサポート<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="sitemap-row"><span>•</span> <a href="#">出店事例紹介<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">よくあるご質問<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">フランチャイズ事業説明会<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">資料請求<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sitemap-header">
+            採用情報
+        </div>
+        <div class="sitemap-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sitemap-row"><span>•</span> <a href="#">採用について<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-sm-6">
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> UFSの仕事について<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> 店長<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> マネージャー<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> エリアマネージャー<i class="fa fa-angle-right fa-lg"></i></a></div>
+
+                    <div class="sitemap-row"><span>•</span> <a href="#">FAQ<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">人事担当者メッセージ<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">新卒採用募集情報<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="sitemap-row"><span>•</span> <a href="#">キャリアアップ制度<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> コーヒーマイスター<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> バリスタコンテスト<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> S1サーバーグランプリ<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> 社内表彰制度<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row-sub"><img src="image/sitemap-icon.png"><a href="#"> 社内研修制度<i class="fa fa-angle-right fa-lg"></i></a></div>
+
+                    <div class="sitemap-row"><span>•</span> <a href="#">中途採用募集情報<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sitemap-header">
+            会社概要
+        </div>
+        <div class="sitemap-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sitemap-row"><span>•</span> <a href="#">フランチャイズビジネスについて<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-sm-6">
+                    <div class="sitemap-row"><span>•</span> <a href="#">会社概要<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">沿革<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="sitemap-row"><span>•</span> <a href="#">個人情報保護方針<i class="fa fa-angle-right fa-lg"></i></a></div>
+                    <div class="sitemap-row"><span>•</span> <a href="#">サイトマップ<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sitemap-header">
+            お問い合わせ
+        </div>
+        <div class="sitemap-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sitemap-row"><span>•</span> <a href="#">採用について<i class="fa fa-angle-right fa-lg"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="back-to-top pull-right">
+            <a href="#">
+                <div><img src="image/icon_back_to_top.png"></div>
+                トップへ戻る
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <ul>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">個人情報保護方針</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li><a href="#">ソーシャルメディア一覧</a></li>
+                    <li><a href="#">サイトマップ</a></li>
+                    <li><a href="#">UCCグループのご案内</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="col-md-12">
+                <p>ユーシーシーフードサービスシステムズ株式会社</p>
+                <p class="text-cp">© UCC Foodservise Systems Inc. all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
