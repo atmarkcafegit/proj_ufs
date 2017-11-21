@@ -2828,6 +2828,14 @@ h2.block-header.block-brown {
     #navbar-brown li {
         border-bottom: 1px solid #c7bfb2;
     }
+
+    .block-brown .block-list .block-item {
+        border-top: 1px solid #c7bfb2;
+    }
+
+    .block-brown .block-list li:last-child {
+        border-bottom: 1px solid #c7bfb2;
+    }
 }
 
 @media screen and (max-width: 374px) {
