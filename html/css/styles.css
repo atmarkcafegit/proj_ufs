@@ -3216,3 +3216,17 @@ h2.block-header.block-brown {
 }
 
 /* End page 21_cafemercad_beanslist_fin */
+
+/* Begin page 31 */
+
+.block-list.block-list-large-item .block-item .label-item-info {
+    min-width: 185px;
+}
+
+@media screen and (max-width: 767px) {
+    .block-list.block-list-large-item .block-item .label-item-info {
+        min-width: 165px;
+    }
+}
+
+/* End page 31 */
