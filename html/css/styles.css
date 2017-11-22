@@ -2504,6 +2504,7 @@ and (orientation:portrait) {
 .privacy-number {
     font-family: 'Montserrat', sans-serif;
     margin-right: 20px;
+    font-weight: bold;
 }
 
 .privacy-content {
