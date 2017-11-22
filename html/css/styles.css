@@ -2399,14 +2399,13 @@ h2.block-header.block-brown {
 }
 
 @media screen and (max-width: 768px) {
-    .company-content  .row .no-float {
-        display: block;
+    .company-content {
+        border-right: none;
     }
 
     .company-content .row [class*='col-'] {
         padding: 10px 15px;
     }
-
 
     .col-th {
         text-align: left;
@@ -2421,6 +2420,13 @@ h2.block-header.block-brown {
         width: 70%;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .company-content  .row .no-float {
+        display: block;
+    }
+}
+
 /* End page 46 */
 
 /* Begin page 48 */
