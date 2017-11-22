@@ -2371,6 +2371,7 @@ h2.block-header.block-brown {
 .company-content {
     border: 1px solid #999999;
     border-right: none;
+    border-bottom: none;
 }
 
 .company-content .row [class*='col-'] {
