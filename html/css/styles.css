@@ -2452,7 +2452,17 @@ h2.block-header.block-brown {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen
+and (max-device-width: 480px)
+and (orientation:landscape) {
+    .company-content  .row .no-float {
+        display: block !important;
+    }
+}
+
+@media only screen
+and (max-device-width: 480px)
+and (orientation:portrait) {
     .company-content  .row .no-float {
         display: block !important;
     }
