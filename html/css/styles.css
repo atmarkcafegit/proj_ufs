@@ -1845,6 +1845,7 @@ h2.block-header.block-brown {
     text-align: center;
     padding: 35px 75px;
     background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
     font-size: 26px;
     top: 50%;
     left: 50%;
