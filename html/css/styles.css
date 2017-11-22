@@ -1610,7 +1610,7 @@ h2.block-header.block-brown {
 @media only screen and (max-width : 320px) {
     .support-button .btn-custom .fa-angle-right.fa-lg {
         position: absolute;
-        right: 25px;
+        right: 10px;
         top: 50%;
         transform: translateY(-50%);
         margin-top: 0;
@@ -1620,6 +1620,7 @@ h2.block-header.block-brown {
     .support-button .btn-custom {
         padding-left: 24px;
         padding-right: 24px;
+        position: relative;
     }
 }
 
