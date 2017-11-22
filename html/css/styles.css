@@ -2447,7 +2447,7 @@ h2.block-header.block-brown {
 
 @media screen and (max-width: 480px) {
     .company-content  .row .no-float {
-        display: block;
+        display: block !important;
     }
 }
 
