@@ -2363,6 +2363,10 @@ h2.block-header.block-brown {
     .calorie-content .support-button {
         margin-top: 20px;
     }
+
+    .calorie-content .calorie-list {
+        -webkit-padding-start: 20px;
+    }
 }
 
 /* End page 44 */
