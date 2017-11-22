@@ -1607,6 +1607,22 @@ h2.block-header.block-brown {
     }
 }
 
+@media only screen and (max-width : 320px) {
+    .support-button .btn-custom .fa-angle-right.fa-lg {
+        position: absolute;
+        right: 21px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .support-button .btn-custom {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 /* End page 08 */
 
 /* Begin page 09 */
