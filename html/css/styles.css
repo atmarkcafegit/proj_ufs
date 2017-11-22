@@ -2370,6 +2370,7 @@ h2.block-header.block-brown {
 /* Begin page 46 */
 .company-content {
     border: 1px solid #999999;
+    border-right: none;
 }
 
 .company-content .row [class*='col-'] {
@@ -2420,10 +2421,6 @@ h2.block-header.block-brown {
 }
 
 @media screen and (max-width: 768px) {
-    .company-content {
-        border-right: none;
-    }
-
     .company-content .row [class*='col-'] {
         padding: 10px 15px;
     }
