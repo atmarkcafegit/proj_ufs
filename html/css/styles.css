@@ -2325,6 +2325,9 @@ h2.block-header.block-brown {
 /* End page 42 */
 
 /* Begin page 44 */
+.small-text {
+    font-size: 12px;
+}
 .calorie-content {
     margin-top: 50px;
 }
