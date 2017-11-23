@@ -1050,7 +1050,7 @@ and (orientation:landscape) {
 and (max-device-width: 667px)
 and (orientation:landscape) {
     #bs-navbar {
-        height: 320px;
+        height: 300px;
     }
 }
 
