@@ -1038,6 +1038,39 @@ footer .back-to-top img {
     }
 }
 
+@media only screen
+and (max-device-width: 736px)
+and (orientation:landscape) {
+    #bs-navbar {
+        height: 340px;
+    }
+}
+
+@media only screen
+and (max-device-width: 667px)
+and (orientation:landscape) {
+    #bs-navbar {
+        height: 300px;
+    }
+}
+
+@media only screen
+and (max-device-width: 568px)
+and (orientation:landscape) {
+    #bs-navbar {
+        height: 250px;
+    }
+}
+
+/*@media only screen*/
+/*and (max-device-width: 480px)*/
+/*and (orientation:portrait) {*/
+    /*#bs-navbar {*/
+        /*height: 250px;*/
+    /*}*/
+/*}*/
+
+
 /* End page 01 */
 
 /* Begin page 02 */
