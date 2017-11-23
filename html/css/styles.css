@@ -1055,6 +1055,14 @@ and (orientation:landscape) {
 }
 
 @media only screen
+and (max-device-width: 640px)
+and (orientation:landscape) {
+    #bs-navbar {
+        height: 280px;
+    }
+}
+
+@media only screen
 and (max-device-width: 568px)
 and (orientation:landscape) {
     #bs-navbar {
