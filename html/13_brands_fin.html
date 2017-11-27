@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ユーシーシーフードサービスシステムズ株式会社</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(document).on('click', '.back-to-top', function() {
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+                return false;
+            });
+
+            $(document).on('mouseover', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'block');
+                return false;
+            });
+
+            $(document).on('mouseout', '.share-button', function() {
+                $('.share-button .btn-social').css('display', 'none');
+                return false;
+            });
+
+            $(document).on('click', '.block-tab a', function() {
+                var target = $(this).data('target');
+                $('.block-tab .col-xs-4').removeClass('active');
+                $(this).parent('div').addClass('active');
+
+                $('.franchise-content').removeClass('active');
+                $('#' + target).addClass('active');
+                return false;
+            });
+
+            $(document).on('click', '.block-more-info a', function() {
+                if ($(this).hasClass('active')) {
+                    $('.block-more-info-content').hide();
+                    $(this).removeClass('active');
+                    $('.block-more-info .fa-minus').hide();
+                    $('.block-more-info .fa-plus').show();
+                } else {
+                    $('.block-more-info-content').show();
+                    $(this).addClass('active');
+                    $('.block-more-info .fa-minus').show();
+                    $('.block-more-info .fa-plus').hide();
+                }
+            });
+
+            $(document).on('click', '.brands-load-more', function() {
+                if ($(this).hasClass('active')) {
+                    $(this).closest('.brands-block').find('.brands-more').hide();
+                    $(this).removeClass('active');
+                } else {
+                    $(this).closest('.brands-block').find('.brands-more').show();
+                    $(this).addClass('active');
+                }
+            });
+
+
+
+            $(window).scroll(function (event) {
+                var scroll = $(document).scrollTop();
+                if (scroll >= 900) {
+                    $('#register-member').css('display', 'block');
+                } else {
+                    $('#register-member').css('display', 'none');
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="navbar-header">
+            <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
+                    data-target="#bs-navbar" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-align-justify fa-fw" aria-hidden="true"></i>
+                <i class="fa fa-times fa-fw" aria-hidden="true"></i>
+            </button>
+            <div class="visible-xs pull-right menu-xs">
+                <div class="pull-right btn-cup">
+                    <div><img src="image/icon_cup.png" class="icon-cup"></div>
+                    店舗検索
+                </div>
+                <div class="pull-right btn-share">SHARE</div>
+            </div>
+            <a href="#" class="navbar-brand">
+                <img src="image/ufs_logo.png" class="img-responsive logo-ufs">
+            </a>
+        </div>
+        <nav class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-xs">
+                    <a href="#">
+                        <img src="image/icon_cup.png">
+                        店舗検索
+                    </a>
+                </li>
+
+                <li class="visible-xs"><a href="#">最新ニュース<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li><a href="#">採用情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li><a href="#">フランチャイズビジネス<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="hidden-xs"><a href="#">会社概要</a></li>
+                <li class="visible-xs"><a href="#">店舗情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">公式アプリ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">プレシャスメンバーズ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">ENGLISH<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs last-item">
+                    <div class="btn-menu">
+                        <a href="#">会員登録 / ログイン</a>
+                    </div>
+                </li>
+                <li class="share-button hidden-xs">
+                    <div class="btn-menu">
+                        <a href="#">Share</a>
+                    </div>
+                    <div class="btn-social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+                <li class="login-button hidden-xs">
+                    <div class="btn-language">
+                        <a href="#" class="active">JAPANESE</a>
+                        /
+                        <a href="#">ENGLISH</a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="#">会員登録 / ログイン</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container last-block-container menu-category-container" id="content">
+    <div class="">
+        <div class="block-green">
+            <h3 class="block-title text-center">BRANDS</h3>
+            <p class="block-note text-center">ブランド一覧</p>
+            <p class="block-desc">ユーシーシーフードサービスシステムズ株式会社が展開するブランドをご紹介します。</p>
+        </div>
+
+        <div class="brands-content">
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_1.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">上島珈琲店</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>UCC上島珈琲株式会社の創業者　上島忠雄が生まれて初めて知ったコーヒーの甘くて苦味のある不思議な味わい。その時感じた感動に似た想い。</p>
+                    <p>～一人でも多くの人に、一杯でも多くのおいしいコーヒーをお届けしたい～ 創業の初志を今までも、これからも私たちはお客様にお届けし続けます。</p>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_2.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">珈琲館</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>一杯のコーヒーに心をこめて。</p>
+                    <p>私たち珈琲館は、このスローガンから始まりました。</p>
+                    <p>以来、一貫して品質本位・お客様最優先の経営姿勢を貫いています。</p>
+                    <p>くつろぎのひとときや楽しい語らい・静かな思索、そして味の良さ・もてなしのやわらかさ・空間ののびやかさ…</p>
+                    <p>他店とは一線を画すサービスでお迎えしております。</p>
+                    <p>すぐそばにある「珈琲館」とゆったりとした「ロードサイド珈琲館」。</p>
+                    <p>本物の美味しさをお楽しみください。</p>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_3.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">MELLOW BROWN COFFEE</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>こだわり抜いた美味しいコーヒーだけが醸し出す魅惑の味わいと芳醇で香り高いアロマが楽しめる店。</p>
+                    <p>そこには、プロのコーヒーギャルソンがいる。毎日が当たり前の時間では無く、毎日を幸せと感じさせる時間を作ってくれる店。365日変わらず美味しいコーヒーを楽しむライフスタイル空間を提供する場所。それがメロウブラウンコーヒーです。</p>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_4.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">CAFÉ DI ESPRESSO</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>エスプレッソをもてなすプロ・バリスタが、忙しい時間を解きほぐす。</p>
+                    <p>イタリアの“エスプレッソコーヒー”をテーマとする『カフェ・ディ・エスプレッソ珈琲館』は、セルフサービスの珈琲館です。</p>
+                    <p>エスプレッソ文化の普及に貢献していきたいという思いを込め、商店街立地のほかに、ショッピングセンターのフードコート内・駅構内・高速道路ＳＡ内、書店内・大学キャンパス内・病院内など新たな立地開発にも積極的に取り組んでいます。</p>
+                    <p>時代の多様なニーズに合わせ、さまざまなショップ展開を行いながら成長していく、珈琲館のニューフェイスです。</p>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_5.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">UCC Café Plaza</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>UCCカフェプラザは、香り高いコーヒーが味わえるコーヒー専門店です。</p>
+                    <p>抽出されたコーヒーが宝石のように澄んだ輝きを醸し出し、白い陶器に注ぐ一滴が金色の透明感を主張したなら、それがおいしいコーヒーの証です。</p>
+                    <p>オーダーごとに豆を挽き、一杯ずつ丁寧にたてられるUCCカフェプラザのコーヒーはまさにこだわりの逸品です。</p>
+                    <p>また、フードメニューでは、オーダーごとに焼き上げられ、 外はカリッ、中はふわっとした食感の焼きたてワッフルがおすすめです。</p>
+                    <p>プレーンタイプをはじめ、季節のフルーツやあずきを使用したデザートワッフルも楽しみください。</p>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_6.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">CAFFÈRA</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>「カフェラ」は本場イタリアの伝統を守り抜いた中に新しいものを巧みに融合させ、格調高い空間を持たせたミラノスタイルのイタリアンバールです。</p>
+                    <p>店名の『CAFFERA』とは、“CAFE”と、時代を超えるといった意味の“ERA”を組み合わせた名前で、「古き良きもの・流行に流されない本当にいいものを残していきたい」という想いが込められています。</p>
+                    <p>“バリスタ（エスプレッソ職人）”が一杯ずつ丹念に抽出したエスプレッソは、豆のうまみが凝縮された当店自慢のメニューです。</p>
+                    <p>中でも、カフェ・カプチーノやカプチーノ・コン・カカオは、エスプレッソカップの中にきめ細かく泡立てられたフォームドミルクで、「ハート」や「リーフ」等を描き、おいしさとアートが一緒に楽しめます。</p>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_7.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">UCC CAFÉ MERCADO</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>「UCCカフェメルカード」は良質で新鮮なコーヒーの販売をしている挽き売り店です。</p>
+                    <p>クラシフィカドール（コーヒー鑑定士）により、粒の大きさや均一性などの外観や、味覚、香りに至るまで徹底的な品質テストをしたコーヒーだけを取り揃えていますので、安心してお召し上がりいただけます。</p>
+                    <p>飲みやすくアレンジされたカフェメルカードオリジナルのブレンドや、こだわりの単一農園産ストレートコーヒーまで数多くのコーヒーをラインナップしていますので、お気軽にスタッフにご相談ください。</p>
+                    <p>お好みのコーヒーを探すお手伝いをさせていただきます。</p>
+                    <p>またおいしいコーヒーを味わうためのコーヒー関連商品も取り揃えています。</p>
+                    <p>カラフルなサーバー＆ドリッパーやクラシックなコーヒーミル、シーズンごとに入れ替わるコーヒーカップやグラスなどより楽しいコーヒータイムを楽しむための商品も充実していますので、どうぞお気軽にお立ち寄りください。</p>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_8.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">ウィーンの森</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>ウィーンにコーヒーハウスが誕生したのは1683年。上流社会の社交場から、19世紀には大衆にも広がり、音楽家に愛されていたことで有名です。</p>
+                    <p>『ウィーンの森』はそんな偉大な音楽家達に思いを馳せる贅沢な時間を楽しむウィーンの伝統的コーヒーハウススタイルメニューはウィーンのアレンジコーヒーを中心に、コーヒーのバリエーションが楽しめます。</p>
+                    <p>おすすめは「コーヒーとケーキとおしゃべりを楽しむ」ウィーンの伝統的な習慣、“ヤウゼ”スタイル。</p>
+                    <p>ウィーンの代表的なケーキ「ザッハトルテ」はチョコレートの濃厚な味わいで、コーヒーとの相性はぴったりです。</p>
+                    <p>季節のフルーツやあずきを使用したデザートワッフルも楽しみください。</p>
+                </div>
+            </div>
+
+            <div class="brands-block">
+                <div class="brands-header">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="image/brand_9.png" class="img-responsive">
+                        </div>
+                        <div class="col-xs-7 col-xs-offset-1 brands-caption">
+                            <div class="brands-name">珈楽庵</div>
+                            <div class="brands-load-more">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-plus"></i>
+                                    <i class="fa fa-minus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands-more">
+                    <div class="row brands-image">
+                        <div class="col-sm-7 col-xs-6">
+                            <img src="image/brand-image.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-5 col-xs-6">
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    ブランドサイトへ
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <div class="support-button">
+                                <a href="#" class="btn-custom btn-green">
+                                    近くの店舗を探
+                                    <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>日本古来の蔵をイメージした珈楽庵。</p>
+                    <p>ほっと、くつろげる空間に、異国の食文化につなげる新しい雰囲気で、ゆったりと一杯の珈琲を心ゆくまでお楽しみくださいませ。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="back-to-top pull-right">
+            <a href="#">
+                <div><img src="image/icon_back_to_top.png"></div>
+                トップへ戻る
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <ul>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">個人情報保護方針</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li><a href="#">ソーシャルメディア一覧</a></li>
+                    <li><a href="#">サイトマップ</a></li>
+                    <li><a href="#">UCCグループのご案内</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="col-md-12">
+                <p>ユーシーシーフードサービスシステムズ株式会社</p>
+                <p class="text-cp">© UCC Foodservise Systems Inc. all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -567,6 +567,10 @@ footer .back-to-top img {
     text-align: center;
 }
 
+.brands-link {
+    margin-top: 50px;
+}
+
 .contact-block .col-md-3, .contact-block .col-md-6 {
     text-align: center;
 }
@@ -1872,6 +1876,142 @@ h2.block-header.block-brown {
 
 /* End page 12 */
 
+/* Begin page 13 */
+.brands-content {
+    margin-top: 50px;
+}
+
+.brands-block {
+    border: 1px solid #999;
+    margin-bottom: 20px;
+}
+
+.brands-header {
+    padding: 30px 30px;
+}
+
+.brands-header .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands-header .row [class*='col-'] {
+    float: none;
+}
+
+.brands-caption {
+    position: relative;
+}
+
+.brands-load-more {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 12px 14px;
+    font-size: 18px;
+}
+
+.brands-load-more a {
+    color: #666;
+    text-decoration: none;
+}
+
+.brands-load-more .fa-minus {
+    display: none;
+}
+
+.brands-load-more.active .fa-minus {
+    display: block;
+}
+
+.brands-load-more .fa-plus {
+    display: block;
+}
+
+.brands-load-more.active .fa-plus {
+    display: none;
+}
+
+.brands-name {
+    font-size: 22px;
+}
+
+.brands-more {
+    display: none;
+    border-top: 1px solid #999;
+    padding: 30px 30px;
+}
+
+.brands-more .support-button {
+    margin-top: 30px;
+}
+
+.brands-image {
+    margin-bottom: 20px;
+}
+
+.brands-header .img-responsive {
+    margin: 0 auto;
+}
+
+.brands-more p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width : 768px) {
+    .brands-more .support-button {
+        margin-top: 10px;
+    }
+
+    .brands-more .support-button .btn-custom {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .brands-header {
+        padding: 20px;
+    }
+
+    .brands-more {
+        padding: 20px;
+    }
+
+    .brands-name {
+        font-size: 16px;
+    }
+
+    .brands-more .support-button {
+        margin-top: 0;
+    }
+
+    .brands-load-more {
+        font-size: 14px;
+    }
+
+    .brands-more .support-button .btn-custom {
+        font-size: 12px;
+        margin-bottom: 5px;
+        padding: 5px 0;
+    }
+
+    .brands-more p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .brands-more .support-button .btn-custom {
+        font-size: 10px;
+    }
+}
+
+/* End page 13 */
 
 /* Begin page 39 */
 .block-title {
