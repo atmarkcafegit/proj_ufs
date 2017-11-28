@@ -42,14 +42,14 @@
                 return false;
             });
 
-//            $(window).scroll(function (event) {
-//                var scroll = $(document).scrollTop(); console.log(scroll);
-//                if (scroll >= 900) {
-//                    $('#register-member').css('display', 'block');
-//                } else {
-//                    $('#register-member').css('display', 'none');
-//                }
-//            });
+            $(window).scroll(function (event) {
+                var scroll = $(document).scrollTop(); console.log(scroll);
+                if (scroll >= 900) {
+                    $('#register-member').css('display', 'block');
+                } else {
+                    $('#register-member').css('display', 'none');
+                }
+            });
 
             //Enable swiping...
             $(".carousel-inner").swipe( {
