@@ -36,6 +36,13 @@ header {
     position: relative;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
+
 .mobile-share {
     display: none;
     position: absolute;
