@@ -39,6 +39,14 @@
                 $('.share-button .btn-social').css('display', 'none');
                 return false;
             });
+
+            $(".listitem").hide();
+            $(".listitem").slice(0, 2).show();
+
+            $(".more").click(function(){
+                var showing = $(".listitem:visible").length;
+                $(".listitem").slice(showing - 1, showing + 2).show();
+            });
         })
     </script>
 </head>
@@ -131,49 +139,49 @@
                     <h3 class="block-title text-center">NEWS</h3>
                     <p class="block-note text-center">最新ニュース</p>
                     <ul class="block-list block-list-has-label">
-                        <li class="block-item">
+                        <li class="block-item listitem">
                             <span class="label-item-info text-center">お知らせ</span>
                             <span class="label-item-time">2017.9.1</span>
                             <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
                             <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                         </li>
-                        <li class="block-item">
+                        <li class="block-item listitem">
                             <span class="label-item-info text-center">プレスリリース</span>
                             <span class="label-item-time">2017.9.1</span>
                             <div class="block-item-title"><a href="#">【お客様窓口　受付について】8月14日（月）はお休みをいただきます。</a></div>
                             <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                         </li>
-                        <li class="block-item">
+                        <li class="block-item listitem">
                             <span class="label-item-info text-center">新店舗</span>
                             <span class="label-item-time">2017.9.1</span>
                             <div class="block-item-title"><a href="#">プレシャスカード入金ポイント2倍キャンペーン</a></div>
                             <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                         </li>
-                        <li class="block-item">
+                        <li class="block-item listitem">
                             <span class="label-item-info text-center">新商品</span>
                             <span class="label-item-time">2017.9.1</span>
                             <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
                             <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                         </li>
-                        <li class="block-item">
+                        <li class="block-item listitem">
                             <span class="label-item-info text-center">キャンペーン＆イベン</span>
                             <span class="label-item-time">2017.9.1</span>
                             <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
                             <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                         </li>
-                        <li class="block-item">
+                        <li class="block-item listitem">
                             <span class="label-item-info text-center">採用情報</span>
                             <span class="label-item-time">2017.9.1</span>
                             <div class="block-item-title"><a href="#">【お客様窓口　受付について】8月14日（月）はお休みをいただきます。</a></div>
                             <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                         </li>
-                        <li class="block-item">
+                        <li class="block-item listitem">
                             <span class="label-item-info text-center">その他</span>
                             <span class="label-item-time">2017.9.1</span>
                             <div class="block-item-title"><a href="#">プレシャスカード入金ポイント2倍キャンペーン</a></div>
                             <a href="#" class="link-arrow"><span class="pull-right arrow-item-detail"><img src="image/icon_arrow.png"></span></a>
                         </li>
-                        <li class="block-item">
+                        <li class="block-item listitem">
                             <span class="label-item-info text-center">プレスリリース</span>
                             <span class="label-item-time">2017.9.1</span>
                             <div class="block-item-title"><a href="#">MELLOW BROWN COFFEE 自由ヶ丘本店 イベント開催のお知らせ</a></div>
@@ -182,7 +190,7 @@
                     </ul>
                     <div class="">
                         <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
-                            <a href="#" class="btn-custom btn-green">
+                            <a href="#" class="btn-custom btn-green more">
                                 さらに読み込む
                                 <i class="fa fa-angle-right fa-lg pull-right" aria-hidden="true"></i>
                             </a>
