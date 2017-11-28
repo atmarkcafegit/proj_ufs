@@ -2004,6 +2004,11 @@ h2.block-header.block-brown {
     .brands-more p {
         font-size: 14px;
     }
+
+    .brands-image [class*='col-'] {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 @media only screen and (max-width : 320px) {
