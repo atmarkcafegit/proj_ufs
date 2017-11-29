@@ -59,6 +59,11 @@
                     $('#register-member').css('display', 'none');
                 }
             });
+
+            var anchor = window.location.hash.substr(1);
+            if (anchor != '') {
+                $('#tab-' + anchor).trigger('click');
+            }
         })
     </script>
 </head>
@@ -146,9 +151,9 @@
         </div>
 
         <div class="row visible-xs block-tab block-tab-custom">
-            <div class="col-xs-4 active"><a href="javascript:void(0);" data-target="precious-1">PRECIOUS MEMBERS<br><span class="small">プレシャスメンバーズ</span></a></div>
-            <div class="col-xs-4"><a href="javascript:void(0);" data-target="precious-2">プレシャスカード</a></div>
-            <div class="col-xs-4"><a href="javascript:void(0);" data-target="precious-3">公式アプリ</a></div>
+            <div class="col-xs-4 active"><a href="javascript:void(0);" id="tab-precious-member-1" data-target="precious-1">PRECIOUS MEMBERS<br><span class="small">プレシャスメンバーズ</span></a></div>
+            <div class="col-xs-4"><a href="javascript:void(0);" id="tab-precious-member-2" data-target="precious-2">プレシャスカード</a></div>
+            <div class="col-xs-4"><a href="javascript:void(0);" id="tab-precious-member-3" data-target="precious-3">公式アプリ</a></div>
         </div>
 
         <h2 class="block-header hidden-xs" id="precious-member">PRECIOUS MEMBERS　プレシャスメンバーズ</h2>

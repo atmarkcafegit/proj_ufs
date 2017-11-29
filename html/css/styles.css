@@ -43,6 +43,13 @@ header {
     visibility: hidden;
 }
 
+@media only screen and (max-width : 480px) {
+    .anchor {
+        display: none;
+    }
+}
+
+
 .mobile-share {
     display: none;
     position: absolute;
