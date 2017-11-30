@@ -3530,4 +3530,10 @@ and (orientation:portrait) {
     }
 }
 
+@media only screen and (max-width: 320px) {
+    #carousel-homepage img.mobile-image{
+        height: 500px;
+    }
+}
+
 /* End Show image slide for mobile */
