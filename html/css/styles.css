@@ -980,6 +980,7 @@ footer .back-to-top img {
     .carousel-caption h1 {
         font-size: 22px;
         letter-spacing: 2px;
+        line-height: 30px;
     }
 
     .carousel-caption p.text-large .large {
@@ -987,6 +988,10 @@ footer .back-to-top img {
     }
     .carousel-caption p {
         font-size: 16px;
+    }
+
+    .carousel-caption p.text-large {
+        margin: 20px 0;
     }
 }
 
@@ -3516,6 +3521,8 @@ and (orientation:portrait) {
 @media only screen and (max-width: 540px) {
     #carousel-homepage img.desktop-image{
         display: none !important;
+        height: 430px;
+        width: auto !important;
     }
 
     #carousel-homepage img.mobile-image{
