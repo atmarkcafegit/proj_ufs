@@ -3521,12 +3521,12 @@ and (orientation:portrait) {
 @media only screen and (max-width: 540px) {
     #carousel-homepage img.desktop-image{
         display: none !important;
-        height: 430px;
-        width: auto !important;
     }
 
     #carousel-homepage img.mobile-image{
         display: block !important;
+        height: 430px;
+        width: auto !important;
     }
 }
 
