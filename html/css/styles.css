@@ -3527,6 +3527,18 @@ and (orientation:portrait) {
 
 /* End Show image slide for mobile */
 
+@media only screen and (max-width: 768px) {
+    .business-block img.img-responsive.image-desktop {
+        display: none !important;
+    }
+
+    .business-block img.img-responsive.image-mobile {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+    }
+}
+
 /* Begin image max with 374 */
 
 @media only screen and (max-width: 375px) {
@@ -3543,18 +3555,6 @@ and (orientation:portrait) {
 }
 
 /* End image max with 374 */
-
-@media only screen and (max-width: 768px) {
-    .business-block img.img-responsive.image-desktop {
-        display: none !important;
-    }
-
-    .business-block img.img-responsive.image-mobile {
-        width: 100% !important;
-        height: auto !important;
-        display: block !important;
-    }
-}
 
 @media only screen and (max-width: 767px) {
     #goog-gt-tt {
