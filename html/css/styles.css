@@ -3561,5 +3561,6 @@ and (orientation:portrait) {
 @media only screen and (max-width: 767px) {
     #goog-gt-tt {
         width: 100% !important;
+        display: none !important;
     }
 }
