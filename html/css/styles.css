@@ -995,7 +995,7 @@ footer .back-to-top img {
     }
 
     .carousel-caption p.text-large {
-        margin: 20px 0;
+        margin: 10px 0;
     }
 }
 
@@ -3541,10 +3541,6 @@ and (orientation:portrait) {
     .carousel-caption {
         left: 5%;
         right: 5%;
-    }
-
-    .carousel-caption p.text-large {
-        margin: 10px 0;
     }
 }
 
