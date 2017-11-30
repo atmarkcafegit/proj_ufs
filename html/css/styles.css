@@ -3547,6 +3547,7 @@ and (orientation:portrait) {
         right: 5%;
     }
 
+    #business-2-container img.img-responsive,
     #business-container img.img-responsive {
         width: auto !important;
         height: 300px !important;
