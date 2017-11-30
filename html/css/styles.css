@@ -892,7 +892,7 @@ footer .back-to-top img {
     }
 
     #business-container img.img-responsive {
-        width: 700px !important;
+        width: auto !important;
         height: 300px !important;
         max-width: none !important;
     }
@@ -904,7 +904,7 @@ footer .back-to-top img {
     }
 
     .business-btn.btn-small {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
     .business-btn.btn-small .small {

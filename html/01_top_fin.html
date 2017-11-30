@@ -65,9 +65,42 @@
             });
         })
     </script>
+    <script>
+        function googleSectionalElementInit() {
+            new google.translate.SectionalElement({
+                sectionalNodeClassName: 'translate',
+                controlNodeClassName: 'translate_control',
+                background: '#f4fa58'
+            }, 'google_sectional_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleSectionalElementInit&ug=section&hl=en"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.btn-lang-ja').prop('disabled',true);
+
+            $(document).on('click', '.btn-trans-en', function () {
+                $(".goog-te-sectional-gadget-link-text").click();
+                $('.btn-lang-ja').removeClass('active');
+                $('.btn-trans-en').addClass('active');
+                $('.btn-trans-en').prop('disabled', true);
+                $('.btn-lang-ja').prop('disabled', false);
+            });
+
+            $(document).on('click', '.btn-lang-ja', function () {
+                $(".goog-te-sectional-gadget-link-text").click();
+                $('.btn-lang-ja').addClass('active');
+                $('.btn-trans-en').removeClass('active');
+                $('.btn-lang-ja').prop('disabled',true);
+                $('.btn-trans-en').prop('disabled', false);
+            });
+        });
+    </script>
 </head>
-<body>
+<body class="translate">
     <header>
+        <div class="translate_control hidden" lang="en"></div>
         <div class="header-container">
             <div class="navbar-header">
                 <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
@@ -137,9 +170,9 @@
                     </li>
                     <li class="login-button hidden-xs">
                         <div class="btn-language">
-                            <a href="#" class="active">JAPANESE</a>
+                            <a href="#" class="active btn-lang-ja">JAPANESE</a>
                             /
-                            <a href="#">ENGLISH</a>
+                            <a href="#" class="btn-trans-en">ENGLISH</a>
                         </div>
                         <div class="btn-menu">
                             <a href="#">会員登録 / ログイン</a>
@@ -316,7 +349,8 @@
 
         <div id="business-container">
             <div class="business-block">
-                <img src="image/franchise.png" class="img-responsive" width="100%">
+                <img src="image/franchise.png" class="img-responsive hidden-xs" width="100%">
+                <img src="image/franchise_mb.png" class="img-responsive visible-xs" width="100%">
                 <a class="business-text" href="#">
                     <h1>FRANCHISE</h1>
                     <div class="business-btn">
@@ -327,7 +361,8 @@
 
             </div>
             <div class="business-block">
-                <img src="image/precious.png" class="img-responsive" width="100%">
+                <img src="image/precious.png" class="img-responsive hidden-xs" width="100%">
+                <img src="image/precious_mb.png" class="img-responsive visible-xs" width="100%">
                 <a class="business-text" href="#">
                     <h1>PRECIOUS MEMBERS</h1>
                     <div class="business-btn btn-small">
@@ -395,7 +430,8 @@
 
         <div id="business-2-container">
             <div class="business-block">
-                <img src="image/shop.png" class="img-responsive" width="100%">
+                <img src="image/shop.png" class="img-responsive hidden-xs" width="100%">
+                <img src="image/shop_mb.png" class="img-responsive visible-xs" width="100%">
                 <a class="business-text" href="#">
                     <h1>SHOP</h1>
                     <div class="business-btn">
