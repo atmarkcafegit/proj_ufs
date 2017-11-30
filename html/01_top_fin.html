@@ -95,12 +95,21 @@
                 $('.btn-lang-ja').prop('disabled',true);
                 $('.btn-trans-en').prop('disabled', false);
             });
+
+            $(document).on('click', '.btn-trans-en-mobile', function () {
+                $(".goog-te-sectional-gadget-link-text").click();
+
+                if ($('.btn-trans-en-mobile').text() == 'ENGLISH') {
+                    $('.btn-trans-en-mobile').text('JAPANESE');
+                } else {
+                    $('.btn-trans-en-mobile').text('ENGLISH');
+                }
+            });
         });
     </script>
 </head>
 <body class="translate">
     <header>
-        <div class="translate_control hidden" lang="en"></div>
         <div class="header-container">
             <div class="navbar-header">
                 <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
@@ -151,7 +160,7 @@
                     <li class="visible-xs"><a href="#">店舗情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
                     <li class="visible-xs"><a href="#">公式アプリ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
                     <li class="visible-xs"><a href="#">プレシャスメンバーズ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
-                    <li class="visible-xs"><a href="#">ENGLISH<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                    <li class="visible-xs"><a href="#" class="btn-trans-en-mobile">ENGLISH<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
                     <li class="visible-xs last-item">
                         <div class="btn-menu">
                             <a href="#">会員登録 / ログイン</a>
@@ -184,6 +193,7 @@
     </header>
 
     <div class="" id="content">
+        <div class="translate_control hidden" lang="en"></div>
         <div class="carousel slide" data-ride="carousel" id="carousel-homepage">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">

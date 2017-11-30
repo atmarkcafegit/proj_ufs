@@ -3563,3 +3563,9 @@ and (orientation:portrait) {
         display: block !important;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    #goog-gt-tt {
+        width: 100% !important;
+    }
+}
