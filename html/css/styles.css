@@ -892,8 +892,8 @@ footer .back-to-top img {
     }
 
     #business-container img.img-responsive {
-        width: auto !important;
-        height: 300px !important;
+        width: 100% !important;
+        height: auto !important;
         max-width: none !important;
     }
 
@@ -3535,13 +3535,19 @@ and (orientation:portrait) {
 
 /* End Show image slide for mobile */
 
-/* Begin style caption slide on 320 */
+/* Begin image max with 374 */
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 375px) {
     .carousel-caption {
         left: 5%;
         right: 5%;
     }
+
+    #business-container img.img-responsive {
+        width: auto !important;
+        height: 300px !important;
+        max-width: none !important;
+    }
 }
 
-/* End style caption slide on 320 */
+/* End image max with 374 */
