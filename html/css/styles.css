@@ -3510,3 +3510,17 @@ and (orientation:portrait) {
 }
 
 /* End page 31 */
+
+/* Begin Show image slide for mobile */
+
+@media only screen and (max-width: 540px) {
+    #carousel-homepage img.desktop-image{
+        display: none !important;
+    }
+
+    #carousel-homepage img.mobile-image{
+        display: block !important;
+    }
+}
+
+/* End Show image slide for mobile */
