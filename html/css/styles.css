@@ -3540,27 +3540,37 @@ and (orientation:portrait) {
     }
 }
 
-/* Begin image max with 374 */
+/* Begin image max with mobile */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
     .carousel-caption {
         left: 5%;
         right: 5%;
     }
+}
 
+@media only screen and (max-width: 480px) {
     #business-2-container img.img-responsive,
     #business-container img.img-responsive {
         width: auto !important;
         height: 300px !important;
         max-width: none !important;
     }
+
+    #business-2-container img.img-responsive {
+        width: auto !important;
+        height: 250px !important;
+        max-width: none !important;
+    }
+
+    .business-block .image-arrow {
+        width: 30px;
+    }
 }
 
-/* End image max with 374 */
+/* End image max with mobile */
 
-@media only screen and (max-width: 767px) {
-    #goog-gt-tt {
-        width: 100% !important;
-        display: none !important;
-    }
+#goog-gt-tt {
+    width: 100% !important;
+    display: none !important;
 }
