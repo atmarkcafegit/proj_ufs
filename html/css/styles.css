@@ -3584,6 +3584,6 @@ and (orientation:portrait) {
     display: none !important;
 }
 
-.block-item-title a:visited {
+a:visited {
     text-decoration: none !important;
 }
