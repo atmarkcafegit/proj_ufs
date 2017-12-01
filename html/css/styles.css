@@ -1028,6 +1028,7 @@ footer .back-to-top img {
         height: 40px;
         font-size: 16px;
         vertical-align: middle;
+        line-height: 20px;
     }
 
     .recruit-block p {
@@ -3554,7 +3555,6 @@ and (orientation:portrait) {
 
     .recruit-block h3 {
         font-size: 14px;
-        line-height: 20px;
     }
 }
 
