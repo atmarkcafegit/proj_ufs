@@ -266,7 +266,7 @@ header {
     border: 1px solid #472c00;
 }
 
-.btn-brown:hover, .btn-brown:active {
+.btn-brown:hover {
     color: #fff;
     background-color: #472c00;
 }
@@ -276,7 +276,7 @@ header {
     border: 1px solid #009844;
 }
 
-.btn-green:hover, .btn-green:active {
+.btn-green:hover {
     color: #fff;
     background-color: #009844;
 }
