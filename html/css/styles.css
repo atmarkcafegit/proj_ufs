@@ -3543,6 +3543,16 @@ and (orientation:portrait) {
     .block-caption {
         width: 80%;
     }
+
+    .btn-brown:hover {
+        color: #472c00;
+        background-color: #ffffff;
+    }
+
+    .btn-green:hover {
+        color: #009844;
+        background-color: #ffffff;
+    }
 }
 
 /* Begin image max with mobile */
