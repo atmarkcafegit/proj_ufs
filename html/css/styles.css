@@ -3583,3 +3583,7 @@ and (orientation:portrait) {
     width: 100% !important;
     display: none !important;
 }
+
+.block-item-title a:visited {
+    text-decoration: none !important;
+}
