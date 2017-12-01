@@ -900,7 +900,7 @@ footer .back-to-top img {
     .business-btn {
         padding: 20px 10px;
         margin-top: 20px;
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .business-btn.btn-small {
@@ -2279,7 +2279,7 @@ h2.block-header.block-brown {
     }
 
     .block-img img {
-        height: 200px;
+        height: auto;
     }
 
     .block-item .label-item-time,
@@ -2314,7 +2314,7 @@ h2.block-header.block-brown {
     .block-caption {
         width: 300px;
         padding: 10px 20px;
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
@@ -3537,6 +3537,10 @@ and (orientation:portrait) {
         width: 100% !important;
         height: auto !important;
         display: block !important;
+    }
+
+    .block-caption {
+        width: 80%;
     }
 }
 
