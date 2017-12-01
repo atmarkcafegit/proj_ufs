@@ -261,7 +261,7 @@ header {
     margin-right: 20px;
 }
 
-.btn-brown, .btn-brown:visited {
+.btn-brown {
     color: #472c00;
     border: 1px solid #472c00;
 }
@@ -271,7 +271,7 @@ header {
     background-color: #472c00;
 }
 
-.btn-green, .btn-green:visited {
+.btn-green {
     color: #009844;
     border: 1px solid #009844;
 }
