@@ -3553,6 +3553,13 @@ and (orientation:portrait) {
         color: #009844;
         background-color: #ffffff;
     }
+
+    a:focus,
+    a:hover,
+    a:active,
+    a:visited {
+        text-decoration: none !important;
+    }
 }
 
 /* Begin image max with mobile */
@@ -3592,9 +3599,4 @@ and (orientation:portrait) {
 #goog-gt-tt {
     width: 100% !important;
     display: none !important;
-}
-
-a:focus,
-a:visited {
-    text-decoration: none !important;
 }
