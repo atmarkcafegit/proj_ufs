@@ -3611,3 +3611,10 @@ and (orientation:portrait) {
         font-size: 20px;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    #carousel-homepage img.mobile-image {
+        width: auto !important;
+        height: 450px;
+    }
+}
