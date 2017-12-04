@@ -3573,6 +3573,15 @@ and (orientation:portrait) {
     .recruit-block h3 {
         font-size: 14px;
     }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .carousel-caption p.text-large .large,
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
