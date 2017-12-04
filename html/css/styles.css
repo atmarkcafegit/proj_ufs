@@ -3573,6 +3573,11 @@ and (orientation:portrait) {
     .recruit-block h3 {
         font-size: 14px;
     }
+
+    #carousel-homepage img.mobile-image {
+        width: auto !important;
+        height: 450px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -3609,12 +3614,5 @@ and (orientation:portrait) {
     .carousel-caption p.text-large .large,
     .carousel-caption h1 {
         font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    #carousel-homepage img.mobile-image {
-        width: auto !important;
-        height: 450px;
     }
 }
