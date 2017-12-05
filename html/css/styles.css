@@ -3659,4 +3659,9 @@ and (orientation:portrait) {
     .carousel-caption p.text-large {
         margin: 10px 0;
     }
+
+    .carousel-caption {
+        left: 15%;
+        right: 15%;
+    }
 }
