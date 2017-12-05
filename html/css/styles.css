@@ -3305,6 +3305,10 @@ and (orientation:portrait) {
     width: 100%;
 }
 
+.menu-image-detail .carousel {
+    margin-bottom: 0;
+}
+
 @media (min-width : 768px) {
     .menu-image-detail {
         width: 54%;
