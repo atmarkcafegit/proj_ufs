@@ -3564,26 +3564,7 @@ and (orientation:portrait) {
 
 /* Begin image max with mobile */
 
-@media only screen and (max-width: 374px) {
-    .recruit-block h3 {
-        font-size: 14px;
-    }
-}
-
 @media only screen and (max-width: 480px) {
-    #business-2-container img.img-responsive,
-    #business-container img.img-responsive {
-        width: auto !important;
-        height: 300px !important;
-        max-width: none !important;
-    }
-
-    #business-2-container img.img-responsive {
-        width: auto !important;
-        height: 250px !important;
-        max-width: none !important;
-    }
-
     .business-block .image-arrow {
         width: 30px;
     }
@@ -3591,6 +3572,25 @@ and (orientation:portrait) {
     .carousel-caption {
         left: 5%;
         right: 5%;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .carousel-caption p.text-large .large,
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .recruit-block h3 {
+        font-size: 14px;
+    }
+
+    .business-btn {
+        padding: 10px 10px;
     }
 }
 
@@ -3602,13 +3602,9 @@ and (orientation:portrait) {
 }
 
 @media only screen and (max-width: 480px) {
-    .carousel-caption p {
-        font-size: 14px;
-    }
-
     .carousel-caption p.text-large .large,
     .carousel-caption h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
