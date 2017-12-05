@@ -3396,7 +3396,9 @@ and (orientation:portrait) {
         margin-bottom: 25px;
     }
 
-
+    .menu-image-detail .carousel {
+        margin-bottom: 65px;
+    }
 }
 
 /* End common menu fin */
