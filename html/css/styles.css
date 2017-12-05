@@ -3577,11 +3577,6 @@ and (orientation:portrait) {
     .carousel-caption p {
         font-size: 14px;
     }
-
-    .carousel-caption p.text-large .large,
-    .carousel-caption h1 {
-        font-size: 20px;
-    }
 }
 
 @media only screen and (max-width: 374px) {
@@ -3595,6 +3590,11 @@ and (orientation:portrait) {
 
     .business-block .image-arrow {
         width: 25px;
+    }
+
+    .carousel-caption p.text-large .large,
+    .carousel-caption h1 {
+        font-size: 20px;
     }
 }
 
