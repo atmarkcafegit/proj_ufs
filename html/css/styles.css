@@ -3613,7 +3613,7 @@ and (orientation:portrait) {
 }
 
 @media only screen and (max-width: 375px) {
-    #carousel-homepage img.mobile-image {
+    #carousel-homepage.carousel-long-text img.mobile-image {
         width: auto !important;
         height: 450px;
     }
