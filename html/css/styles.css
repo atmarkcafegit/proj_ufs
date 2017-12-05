@@ -3619,7 +3619,7 @@ and (orientation:portrait) {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1366px) {
+@media (min-width: 992px) and (max-width: 1366px) {
     .carousel-caption h1 {
         font-size: 30px;
         line-height: 40px;
@@ -3635,5 +3635,28 @@ and (orientation:portrait) {
 
     .carousel-caption p.text-large {
         margin: 15px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption h1 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .carousel-caption p.text-large .large {
+        font-size: 28px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .carousel-caption p {
+        margin-bottom: 5px;
+    }
+
+    .carousel-caption p.text-large {
+        margin: 10px 0;
     }
 }
