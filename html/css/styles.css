@@ -3661,7 +3661,7 @@ and (orientation:portrait) {
     }
 
     .carousel-caption {
-        left: 15%;
-        right: 15%;
+        left: 12%;
+        right: 12%;
     }
 }
