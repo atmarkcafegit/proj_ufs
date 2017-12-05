@@ -3618,3 +3618,17 @@ and (orientation:portrait) {
         height: 450px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p.text-large .large {
+        font-size: 32px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
