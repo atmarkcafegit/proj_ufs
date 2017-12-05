@@ -3565,11 +3565,6 @@ and (orientation:portrait) {
 /* Begin image max with mobile */
 
 @media only screen and (max-width: 374px) {
-    .carousel-caption {
-        left: 5%;
-        right: 5%;
-    }
-
     .recruit-block h3 {
         font-size: 14px;
     }
@@ -3591,6 +3586,11 @@ and (orientation:portrait) {
 
     .business-block .image-arrow {
         width: 30px;
+    }
+
+    .carousel-caption {
+        left: 5%;
+        right: 5%;
     }
 }
 
