@@ -3619,7 +3619,7 @@ and (orientation:portrait) {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1366px) {
+@media (min-width: 992px) and (max-width: 1280px) {
     .carousel-caption h1 {
         font-size: 30px;
         line-height: 40px;
