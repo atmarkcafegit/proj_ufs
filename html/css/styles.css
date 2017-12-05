@@ -3592,6 +3592,10 @@ and (orientation:portrait) {
     .business-btn {
         padding: 10px 10px;
     }
+
+    .business-block .image-arrow {
+        width: 25px;
+    }
 }
 
 /* End image max with mobile */
