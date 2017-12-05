@@ -443,7 +443,7 @@ footer .back-to-top img {
 }
 
 .carousel img {
-    width: 1920px !important;
+    width: 100% !important;
     overflow-x: hidden;
     max-width: none !important;
 }
@@ -3516,7 +3516,7 @@ and (orientation:portrait) {
 
 /* Begin Show image slide for mobile */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     #carousel-homepage img.desktop-image{
         display: none !important;
     }
