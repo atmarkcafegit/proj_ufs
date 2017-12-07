@@ -1346,7 +1346,7 @@ h2.block-header.block-brown {
     font-size: 22px;
     text-align: center;
     border: 1px solid #472c00;
-    padding: 20px 40px;
+    padding: 20px 34px;
     margin-bottom: 20px;
     min-height: 105px;
     display: flex;
@@ -1365,7 +1365,7 @@ h2.block-header.block-brown {
 
 @media only screen and (max-width : 768px) {
     .franchise-outline-flow {
-        font-size: 22px;
+        font-size: 18px;
         padding: 20px 10px;
         min-height: 130px;
     }
