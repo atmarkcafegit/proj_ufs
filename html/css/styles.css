@@ -759,6 +759,10 @@ footer .back-to-top img {
     .recruit-text {
         padding: 20px;
     }
+
+    .register-member {
+        top: 75%;
+    }
 }
 
 @media screen and (max-width: 767px) {
