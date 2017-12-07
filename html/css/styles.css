@@ -2553,7 +2553,8 @@ h2.block-header.block-brown {
 
 @media screen and (max-width: 767px) {
     .precious-content .row-point span.text-same-width {
-        min-width: 150px;
+        min-width: 175px;
+        display: inline-block;
     }
 }
 
