@@ -2551,6 +2551,12 @@ h2.block-header.block-brown {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .precious-content .row-point span.text-same-width {
+        min-width: 150px;
+    }
+}
+
 /* End page 42 */
 
 /* Begin page 44 */
