@@ -2140,8 +2140,8 @@ h2.block-header.block-brown {
 .block-item .label-item-time {
     font-family: "Yu Gothic";
     font-size: 16px;
-    padding: 0 20px 0 15px;
-    min-width: 105px;
+    padding: 0 0px 0 15px;
+    min-width: 95px;
     display: inline-block;
 }
 
