@@ -3734,7 +3734,7 @@ and (orientation:portrait) {
 /*====================================================== FQA Page =====================================================*/
 #qa-block{
     margin-top: 40px;
-    font-size: 16px;
+    font-size: 18px;
 }
 #qa-block .panel-body{
     padding: 0;
@@ -3742,16 +3742,31 @@ and (orientation:portrait) {
 #qa-block .content{
     border-bottom: solid 1px #ddd;
 }
-#qa-block .title, #qa-block .content{
+#qa-block .title, #qa-block .content, #qa-block .panel-default>.panel-heading{
     padding: 20px 30px;
 }
-#qa-block .panel-default>.panel-heading{
+#qa-block .title{
+    font-size: 22px;
+}
+#qa-block .panel-default>.panel-heading {
     background-color: #999999;
     border-color: #999999;
-    padding: 20px 30px;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
 }
 #qa-block .title:first-child{
     border-bottom: solid 1px #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    #qa-block{
+        font-size: 16px;
+    }
+
+    #qa-block .title, #qa-block .panel-default>.panel-heading{
+        font-size: 20px;
+    }
+    #qa-block .title, #qa-block .content, #qa-block .panel-default>.panel-heading{
+        padding: 10px 20px;
+    }
 }
