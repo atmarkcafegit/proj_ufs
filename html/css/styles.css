@@ -3730,3 +3730,27 @@ and (orientation:portrait) {
         display: block !important;
     }
 }
+
+/*====================================================== FQA Page =====================================================*/
+#qa-block{
+    margin-top: 40px;
+}
+#qa-block .panel-body{
+    padding: 0;
+}
+#qa-block .content{
+    border-bottom: solid 1px #ddd;
+}
+#qa-block .title, #qa-block .content{
+    padding: 20px 30px;
+}
+#qa-block .panel-default>.panel-heading{
+    background-color: #999999;
+    border-color: #999999;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 20px;
+}
+#qa-block .title:first-child{
+    border-bottom: solid 1px #ddd;
+}
