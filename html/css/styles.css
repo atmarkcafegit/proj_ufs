@@ -2007,6 +2007,10 @@ h2.block-header.block-brown {
     .brands-name {
         font-size: 18px;
     }
+
+    .brands-header .row {
+        height: 100px;
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -2044,6 +2048,10 @@ h2.block-header.block-brown {
     .brands-image [class*='col-'] {
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    .brands-header .row {
+        height: 50px;
     }
 }
 
