@@ -3734,6 +3734,7 @@ and (orientation:portrait) {
 /*====================================================== FQA Page =====================================================*/
 #qa-block{
     margin-top: 40px;
+    font-size: 16px;
 }
 #qa-block .panel-body{
     padding: 0;
