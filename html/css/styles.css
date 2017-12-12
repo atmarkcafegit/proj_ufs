@@ -3803,3 +3803,10 @@ and (orientation:portrait) {
         padding: 10px 20px;
     }
 }
+/*============================================== 08_franchise_support_fin ============================================*/
+@media screen and (max-width: 768px) {
+    .support-time.time{
+        display: block;
+        margin-left: 0;
+    }
+}
