@@ -3745,6 +3745,14 @@ and (orientation:portrait) {
     color: #009844 !important;
 }
 
+#navbar-brown .btn-menu.register-button:hover {
+    background-color: #fff;
+}
+
+#navbar-brown .btn-menu.register-button a {
+    color: #472c00 !important;
+}
+
 /*====================================================== FQA Page =====================================================*/
 #qa-block{
     margin-top: 40px;
