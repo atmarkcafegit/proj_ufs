@@ -626,6 +626,10 @@ footer .back-to-top img {
     color: #666666;
 }
 
+.contact-block a {
+    text-decoration: none;
+}
+
 .register-member {
     width: 130px;
     display: inline-block;
