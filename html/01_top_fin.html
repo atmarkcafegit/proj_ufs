@@ -42,6 +42,16 @@
                 return false;
             });
 
+            $(document).on('mouseover', '.register-button-container', function() {
+                $('.login-button .register-button').css('display', 'block');
+                return false;
+            });
+
+            $(document).on('mouseout', '.register-button-container', function() {
+                $('.login-button .register-button').css('display', 'none');
+                return false;
+            });
+
 //            $(window).scroll(function (event) {
 //                var scroll = $(document).scrollTop(); console.log(scroll);
 //                if (scroll >= 900) {
@@ -62,6 +72,14 @@
                 },
                 //Default is 75px, set to 0 for demo so any distance triggers swipe
                 threshold:0
+            });
+
+            $(document).on('click', '.navbar-toggle', function() { var x = ('.navbar-toggle').attr('aria-expanded'); console.log(x);
+                if ($('.navbar-toggle').attr('aria-expanded') == true) {
+                    $('body').css('overflow', 'hidden');
+                } else {
+                    $('body').css('overflow', 'auto');
+                }
             });
         })
     </script>
@@ -183,8 +201,14 @@
                             /
                             <a href="#" class="btn-trans-en">ENGLISH</a>
                         </div>
-                        <div class="btn-menu">
-                            <a href="#">会員登録 / ログイン</a>
+
+                        <div class="register-button-container">
+                            <div class="btn-menu precious-button">
+                                <a href="#">プレシャスメンバーズ</a>
+                            </div>
+                            <div class="btn-menu register-button">
+                                <a href="http://dev09.ux.neoscorp.ne.jp/login.html" target="_blank">会員登録・ログイン</a>
+                            </div>
                         </div>
                     </li>
                 </ul>
