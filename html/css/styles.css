@@ -1088,41 +1088,9 @@ footer .back-to-top img {
 and (max-device-width: 736px)
 and (orientation:landscape) {
     #bs-navbar {
-        height: 340px;
+        height: calc(100vh - 80px);
     }
 }
-
-@media only screen
-and (max-device-width: 667px)
-and (orientation:landscape) {
-    #bs-navbar {
-        height: 300px;
-    }
-}
-
-@media only screen
-and (max-device-width: 640px)
-and (orientation:landscape) {
-    #bs-navbar {
-        height: 280px;
-    }
-}
-
-@media only screen
-and (max-device-width: 568px)
-and (orientation:landscape) {
-    #bs-navbar {
-        height: 250px;
-    }
-}
-
-/*@media only screen*/
-/*and (max-device-width: 480px)*/
-/*and (orientation:portrait) {*/
-    /*#bs-navbar {*/
-        /*height: 250px;*/
-    /*}*/
-/*}*/
 
 
 @media only screen and (max-width: 374px) {
