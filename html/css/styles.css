@@ -2390,6 +2390,11 @@ h2.block-header.block-brown {
     color: #999999;
 }
 
+.charge-content .text-link {
+    color: #666666;
+    text-decoration: none;
+}
+
 @media only screen and (max-width : 767px) {
     .step-number {
         height: 60px;
