@@ -3733,7 +3733,7 @@ and (orientation:portrait) {
 
 .register-button {
     display: none;
-    border: none;
+    border: none !important;
     margin-top: 5px;
 }
 
