@@ -2846,7 +2846,7 @@ and (orientation:portrait) {
 
 /* Begin page 50 */
 .social-container {
-    margin: 40px 0;
+    margin: 40px 0 75px 0;
 }
 
 .social-content {
@@ -2878,6 +2878,10 @@ and (orientation:portrait) {
 .social-title {
     font-size: 22px;
     text-align: center;
+}
+
+.btn-sns-privacy {
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
