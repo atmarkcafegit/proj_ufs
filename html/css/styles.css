@@ -261,7 +261,7 @@ header {
     margin-right: 20px;
 }
 
-.btn-brown {
+.btn-brown, .btn-brown:visited {
     color: #472c00;
     border: 1px solid #472c00;
 }
@@ -271,7 +271,7 @@ header {
     background-color: #472c00;
 }
 
-.btn-green {
+.btn-green, .btn-green:visited {
     color: #009844;
     border: 1px solid #009844;
 }
@@ -3566,8 +3566,6 @@ and (orientation:portrait) {
     }
 }
 
-/* Begin image max with mobile */
-
 @media only screen and (max-width: 480px) {
     .business-block .image-arrow {
         width: 30px;
@@ -3608,8 +3606,6 @@ and (orientation:portrait) {
         font-size: 20px;
     }
 }
-
-/* End image max with mobile */
 
 #goog-gt-tt {
     width: 100% !important;
