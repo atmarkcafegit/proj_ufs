@@ -3543,6 +3543,11 @@ and (orientation:portrait) {
 
 /* End Show image slide for mobile */
 
+a:focus,
+a:visited {
+    text-decoration: none !important;
+}
+
 @media only screen and (max-width: 1024px) {
     .block-caption {
         width: 80%;
@@ -3558,10 +3563,8 @@ and (orientation:portrait) {
         background-color: #ffffff;
     }
 
-    a:focus,
     a:hover,
-    a:active,
-    a:visited {
+    a:active {
         text-decoration: none !important;
     }
 }
