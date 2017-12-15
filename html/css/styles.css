@@ -2992,6 +2992,7 @@ and (orientation:portrait) {
 
 .block-brown .menu-detail .product-name {
     color: #472c00;
+    display: block;
 }
 
 .block-container .block-brown .btn-custom.btn-paging.btn-paging {
