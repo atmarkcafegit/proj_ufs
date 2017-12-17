@@ -3807,6 +3807,10 @@ and (orientation:portrait) {
     margin-top: 5px;
 }
 
+.menu-category-container.season-menu-category .season-menu-head img {
+    width: 100%;
+}
+
 @media screen and (max-width: 767px) {
     .menu-category-container .menu-introduce-text {
         margin: 20px 0 35px 0;
