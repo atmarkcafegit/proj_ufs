@@ -3783,3 +3783,48 @@ and (orientation:portrait) {
         margin-left: 0;
     }
 }
+
+
+/* Begin season menu */
+
+.menu-category-container .menu-introduce-text {
+    margin: 60px 0 75px 0;
+    font-size: 26px;
+    color: #472c00;
+}
+
+.menu-category-container .menu-note-text {
+    margin-bottom: 50px;
+}
+
+.menu-category-container.season-menu-category .block-item .block-item-title {
+    font-size: 22px;
+    color: #472c00;
+}
+
+.menu-category-container.season-menu-category .block-item .block-item-description {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-category-container .menu-introduce-text {
+        margin: 20px 0 35px 0;
+        font-size: 18px;
+    }
+
+    .menu-category-container.season-menu-category .block-item .block-item-description,
+    .menu-category-container.season-menu-category .block-item .block-item-title {
+        font-size: 16px;
+    }
+
+    .menu-category-container.season-menu-category .season-menu-head {
+        padding: 0 20px;
+    }
+
+    .menu-category-container .menu-note-text {
+        margin-bottom: 30px;
+    }
+}
+
+/* End season menu */
