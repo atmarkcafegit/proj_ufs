@@ -3811,6 +3811,10 @@ and (orientation:portrait) {
     width: 100%;
 }
 
+.menu-category-container.season-menu-category .block-list .block-item {
+    padding-right: 0;
+}
+
 @media screen and (max-width: 767px) {
     .menu-category-container .menu-introduce-text {
         margin: 20px 0 35px 0;
@@ -3828,6 +3832,11 @@ and (orientation:portrait) {
 
     .menu-category-container .menu-note-text {
         margin-bottom: 30px;
+    }
+
+
+    .menu-category-container.season-menu-category .block-list .block-item {
+        padding-right: 20px;
     }
 }
 
