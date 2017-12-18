@@ -1456,9 +1456,9 @@ h2.block-header.block-brown {
         width: 80%;
     }
 
-    .block-faq-content ul li span.faq-number {
+    /*.block-faq-content ul li span.faq-number {
         width: 10%;
-    }
+    }*/
 
     .block-faq-content ul li span.faq-text.ans {
         width: 89%;
@@ -3852,5 +3852,5 @@ and (orientation:portrait) {
 
 /*=================================================s_faq.html=========================================================*/
 .ans span:not(:first-child), .qst span:not(:first-child){
-    margin-left: 45px;
+    margin-left: 35px;
 }
