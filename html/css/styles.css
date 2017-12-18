@@ -3815,6 +3815,10 @@ and (orientation:portrait) {
     padding-right: 0;
 }
 
+.season-menu-category.cmc-season-menu .menu-item-row:nth-child(3n+1) {
+    clear: left;
+}
+
 @media screen and (max-width: 767px) {
     .menu-category-container .menu-introduce-text {
         margin: 20px 0 35px 0;
