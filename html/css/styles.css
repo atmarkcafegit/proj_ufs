@@ -3856,7 +3856,7 @@ and (orientation:portrait) {
 /* End season menu */
 
 @media screen and (max-width: 767px) {
-    .menu-category-container.cafeclub-container .btn-brown {
+    .menu-category-container.cafeclub-container .block-brown {
         padding: 0 20px;
     }
 }
