@@ -3818,6 +3818,10 @@ and (orientation:portrait) {
     clear: left;
 }
 
+.menu-category-top.cmc-season-menu .menu-item-row:nth-child(2n+1) {
+    clear: unset;
+}
+
 @media screen and (max-width: 767px) {
     .menu-category-container .menu-introduce-text {
         margin: 20px 0 35px 0;
