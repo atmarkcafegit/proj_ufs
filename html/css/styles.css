@@ -3848,3 +3848,15 @@ and (orientation:portrait) {
 }
 
 /* End season menu */
+
+@media screen and (max-width: 767px) {
+    .menu-category-container.cafeclub-container .btn-brown {
+        padding: 0 20px;
+    }
+}
+
+/* Begin cafeclub page */
+
+
+
+/* End cafeclub page */
