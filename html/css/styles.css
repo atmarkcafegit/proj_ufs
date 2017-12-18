@@ -3812,6 +3812,7 @@ and (orientation:portrait) {
 
 .menu-category-container.season-menu-category .block-list .block-item {
     padding-right: 0;
+    min-height: 140px;
 }
 
 .menu-category-top.cmc-season-menu .menu-item-row:nth-child(3n+1) {
@@ -3820,6 +3821,10 @@ and (orientation:portrait) {
 
 .menu-category-top.cmc-season-menu .menu-item-row:nth-child(2n+1) {
     clear: unset;
+}
+
+.menu-category-container.season-menu-category .block-item .block-item-description p:last-child {
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -3844,6 +3849,7 @@ and (orientation:portrait) {
 
     .menu-category-container.season-menu-category .block-list .block-item {
         padding-right: 20px;
+        min-height: 80px;
     }
 }
 
