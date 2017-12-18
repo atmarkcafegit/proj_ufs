@@ -1399,7 +1399,7 @@ h2.block-header.block-brown {
 }
 
 .block-faq-content ul li span {
-    display: inline-block;
+    display: block;
 }
 
 .block-faq-content ul li .fa {
@@ -3851,6 +3851,6 @@ and (orientation:portrait) {
 /* End season menu */
 
 /*=================================================s_faq.html=========================================================*/
-.ans span:not(:first-child) {
+.ans span:not(:first-child), .qst span:not(:first-child){
     margin-left: 45px;
 }
