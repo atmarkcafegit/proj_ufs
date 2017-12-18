@@ -3814,7 +3814,7 @@ and (orientation:portrait) {
     padding-right: 0;
 }
 
-.season-menu-category.cmc-season-menu .menu-item-row:nth-child(3n+1) {
+.menu-category-top.cmc-season-menu .menu-item-row:nth-child(3n+1) {
     clear: left;
 }
 
