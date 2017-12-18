@@ -1434,6 +1434,7 @@ h2.block-header.block-brown {
     width: 35px;
     vertical-align: top;
     font-weight: bold;
+    float: left;
 }
 
 .block-faq-content ul li span.faq-text {
@@ -3840,3 +3841,8 @@ and (orientation:portrait) {
 }
 
 /* End season menu */
+
+/*=================================================s_faq.html=========================================================*/
+.ans span:not(:first-child) {
+    margin-left: 45px;
+}
