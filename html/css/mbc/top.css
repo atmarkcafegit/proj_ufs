@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* 珈琲館・topページ用CSS */
+
+/* ------------------------------------------------------------ */
+/* topページ・コンテンツレイアウト */
+#indContent {
+	width: 900px;
+	}
+
+/* ------------------------------------------------------------ */
+/* フラッシュ */
+#indFlash {
+	width: 900px;
+	}
+
+/* ------------------------------------------------------------ */
+/* メインエリア */
+#indMain {
+	width: 900px;
+	margin: 7px 0 0 0;
+	padding: 0;
+	overflow: hidden;
+	zoom: 1;
+	}
+
+#btnFirst {
+	width: 357px;
+	margin: 0 10px 0 0;
+	padding: 0;
+	float: left;
+	}
+
+#btnSecond {
+	width: 357px;
+	margin: 0 10px 0 0;
+	padding: 0;
+	float: left;
+	}
+
+#btnThird {
+	width: 165px;
+	margin: 10px 0 0 0;
+	padding: 0;
+	float: left;
+	}
+
+#btnThird2 {
+	width: 165px;
+	margin: 10px 10px 0 0;
+	padding: 0;
+	float: left;
+	}
+
+/* ------------------------------------------------------------ */
+/* サブエリア */
+#indSub {
+	width: 900px;
+	/* height: 140px; */
+	margin: 10px 0 0 0;
+	padding: 0;
+	/* overflow: hidden; */
+	/* zoom: 1; */
+	}
+
+/* ------------------------------------------------------------ */
+/* whats new・Topics */
+#whatsBox {
+	margin: 0 5px 0 0;
+	padding: 0;
+	width: 240px;
+	height: 80px;
+	border: #ccc solid 1px;
+	background: #fff;
+	float: left;
+	}
+
+#baitoBox {
+	margin: 0;
+	padding: 0;
+	width: 321px;
+	float: left;
+	}
+	
+	#bannerList {
+	width: 321px;
+	margin: 0 0 0 5px;
+	padding: 0;
+	float: right;
+	}
+
+
+#topicsBox {
+	margin: 0;
+	padding: 0;
+	width: 266px;
+	height: 58px;
+	border: #b72928 solid 1px;
+	background: #fff;
+	}
+
+#whatsBox table,
+#topicsBox table {
+	width: 230px;
+	margin: 5px 5px 5px;
+	padding: 0;
+	font-size: 11px;
+	line-height: 1.2;
+	}
+
+#whatsBox table td,
+#topicsBox table td {
+	margin: 0;
+	padding: 3px 0;
+	vertical-align: top;
+	}
+
+#whatsBox table td.date {
+	width: 60px;
+	padding-right:3px;
+	
+	}
+
+
+
+
+/* ------------------------------------------------------------ */
+/* トップページ・QRコード・バナー */
+
+#bannerList .listBox {
+	width: 343px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	}
+
+#bannerList .listBox .listLeft {
+	width: 166px;
+	margin: 0 11px 0 0;
+	padding: 0;
+	float: left;
+	}
+
+#bannerList .listBox .listRight {
+	width: 166px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	}
+
+#bannerList .listBox .bn {
+	margin: 0 0 10px 0;
+	padding: 0;
+	}
+
+#bannerList .listBox .bnLast {
+	margin: 0;
+	padding: 0;
+	}

@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+/* 珈琲館・コンテンツページ用共通CSS */
+
+/* ------------------------------------------------------------ */
+/* パンクズ */
+#pankuzu {
+	width: 900px;
+	margin: 7px 0;
+	padding: 0;
+	font-size: 11px;
+	}
+
+/* ページトップへ */
+.backtop {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	text-align: right;
+	}
+
+.backtop a:link { color: #000; text-decoration: none; }
+.backtop a:visited { color: #000; text-decoration: none; }
+.backtop a:active { color: #666; text-decoration: underline; }
+.backtop a:hover { color: #666; text-decoration: underline; }
+
+.sankaku {
+	color: rgba(7,152,109,1.00);
+	}
+
+/* 共通ページ内ネームリンク */
+#pageNavi {
+	width: 713px;
+	margin: 0;
+	padding: 0;
+	}
+
+#pageNavi ul {
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+#pageNavi li {
+	margin: 0;
+	padding: 0 0 0 15px;
+	font-size: 12px;
+	background: #ffffff url(http://img.ufs.co.jp/brand/mbc/image/icon_arrow.gif) no-repeat 5px 50%; 
+	display: inline;
+	}
+
+/* ------------------------------------------------------------ */
+/* コンテンツページ・コンテンツレイアウト */
+#mainContent {
+	width: 900px;
+	}
+
+#mainContentLeft {
+	width: 167px;
+	margin: 0 20px 0 0;
+	padding: 0;
+	float: left;
+	}
+
+#mainContentLeft h1 {
+	width:167px;
+	height:20px;
+	background-color:#736F6F;
+	font-size:12px;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+}
+
+#mainContentLeft h1.br {
+	width:167px;
+	height:20px;
+	background-color:#673204;
+	font-size:12px;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+}
+
+
+
+#mainContentLeft.menu {
+	width: 167px;
+	background: #C7E4C3;
+	line-height:20px;
+	}
+
+#mainContentRight {
+	width: 713px;
+	margin: 0;
+	padding: 0;
+	float: right;
+	}
+
+#mainContentRight h2 {
+	line-height:43px;
+	background-image:url(http://img.ufs.co.jp/brand/mbc/image/contents_h2.jpg);
+	padding: 5px 0 0 15px;
+	}
+
+/*#mainContentRight#about h3 {
+	width:715px;
+	height:30px;
+	line-height:30px;
+	background-color:rgba(63,27,3,1.00);
+	}*/
+
+#mainContentRight ul li {
+	float:left;
+	list-style-type: none;
+	list-style:none;
+	}
+
+
+
+#mainContentRight2 {
+	width: 713px;
+	float: right;
+	}
+
+#mainContentRight2 h2 {
+	line-height:43px;
+	background-image:url(http://img.ufs.co.jp/brand/mbc/image/contents_h2.jpg);
+	padding: 0 15px;
+	}
+
+#mainContentRight2 ul li {
+	float:left;
+	list-style-type: none;
+	list-style:none;
+	padding:10px 2px;
+	font-size:12px;
+	text-align:right;
+	margin-bottom:5px;
+	}
+
+#mainContentRight2 ul li span {
+	font-size:12px;
+	font-weight:bold;
+	text-align:right;
+	}
+
+.clr {
+	clear:both;
+	}
+
+/* 強調テキスト */
+em {
+	color: #333;
+	font-style: normal;
+	font-weight: bold;
+	}
+
+#mainContentRight h3{
+	width:705px;
+	height:30px;
+	line-height:30px;
+	margin-left:10px;
+	padding-left:10px;
+	background-color:#C7E4C3;
+	font-size:13px;
+	font-weight:bold;
+}
+
+/* ------------------------------------------------------------ */
+/* 左・ナビ */
+#leftImg {
+	margin: 0 0 7px 0;
+	padding: 0;
+	}
+
+.sideNavi {
+	margin: 1px 0 0 0;
+	padding: 0;
+	}
+
+.sideNavi ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+.sideNavi ul li p {
+	padding: 5px 5px 5px 18px;
+	font-size: 12px;
+	line-height: 1.3em;
+	}
+
+.sideNavi ul li a {
+	display: block;
+	width: 167px;
+	height: 44px;	
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg.gif) no-repeat 0 0;
+	}
+
+.sideNavi ul li a:hover {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg.gif) no-repeat 0 -44px;
+	}
+
+.sideNavi ul li a.selected {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg.gif) no-repeat 0 -88px;
+	}
+/*sideNavi 2*/
+
+.sideNavi2 {
+	margin: 1px 0 0 0;
+	padding: 0;
+	}
+
+.sideNavi2 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+.sideNavi2 ul li p {
+	padding: 5px 5px 5px 18px;
+	font-size: 12px;
+	line-height: 1.3em;
+	}
+
+.sideNavi2 ul li a {
+	display: block;
+	width: 167px;
+	height: 44px;	
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat 0 0;
+	}
+
+.sideNavi2 ul li a:hover {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat 0 -44px;
+	}
+
+.sideNavi2 ul li a.selected {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat 0 -88px;
+	}
+
+/* ------------------------------------------------------------ */
+/* 左・ナビ 分岐 */
+
+.sideNaviChild {
+	margin: 3px 0 0 0;
+	padding: 0;
+	}
+
+.sideNaviChild ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+.sideNaviChild ul li p {
+	padding: 5px 5px 5px 18px;
+	font-size: 12px;
+	line-height: 1.3em;
+	}
+
+.sideNaviChild ul li a {
+	display: block;
+	width: 167px;
+	height: 30px;
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat -167px 0;
+	}
+
+.sideNaviChild ul li a:hover {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat -167px -30px;
+	}
+
+.sideNaviChild ul li a.selected {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat -167px -60px;
+	}
+
+/* ページ分岐・リスト最初 */
+.sideNaviChild ul li.stt a {
+	display: block;
+	width: 167px;
+	height: 30px;	
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat 0 0;
+	}
+
+.sideNaviChild ul li.stt a:hover {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat 0 -30px;
+	}
+
+.sideNaviChild ul li.stt a.selected {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2.gif) no-repeat 0 -60px;
+	}
+
+/* ページ分岐・リスト最後 */
+.sideNaviChild ul li.last a {
+	display: block;
+	width: 167px;
+	height: 34px;	
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2_last.gif) no-repeat 0 0;
+	}
+
+.sideNaviChild ul li.last a:hover {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2_last.gif) no-repeat 0 -36px;
+	}
+
+.sideNaviChild ul li.last a.selected {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2_last.gif) no-repeat 0 -71px;
+	}
+
+
+/* ページ分岐・2行 */
+.sideNaviChild ul li.towline a {
+	display: block;
+	width: 167px;
+	height: 42px;	
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2_2line.gif) no-repeat 0 0;
+	}
+
+.sideNaviChild ul li.towline a:hover {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2_2line.gif) no-repeat 0 -42px;
+	}
+
+.sideNaviChild ul li.towline a.selected {
+	background: url(http://img.ufs.co.jp/brand/mbc/image/brand_sidemenu_bg2_2line.gif) no-repeat 0 -84px;
+	}
+
+
+.mbc_map { margin:0 auto;}

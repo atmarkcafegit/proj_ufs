@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+/* 珈琲館・共通CSS */
+
+/* ------------------------------------------------------------ */
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin: 0;
+	padding: 0 0 10px 0;
+	color: #333;
+	background: #fff;
+	text-align: center;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+	border: 0;
+	vertical-align: top;
+	}
+
+hr {
+	display: none;
+	}
+
+p {
+	margin: 0;
+	padding: 0;
+	}
+
+/* 基本リンクカラー */
+a:link { color: #00569a; text-decoration: none; }
+a:visited { color: #00569a; text-decoration: none; }
+a:hover { color: #009fc6; text-decoration: underline; }
+a:active { color: #009fc6; text-decoration: underline; }
+
+ /* ------------------------------------------------------------ */
+/* 全体固定サイズ */
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	}
+
+/* ------------------------------------------------------------ */
+/* ヘッダ */
+#header {
+	width: 900px;
+	height: 70px;
+	background: #ffffff url(http://img.ufs.co.jp/brand/mbc/image/topnavi.jpg) no-repeat left top;
+	position: relative;
+	overflow: hidden;
+	}
+
+#header h1 {
+	margin: 0 0 0 23px;
+	padding: 0;
+	}
+
+#header p {
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	right: 13px;
+	}
+
+/* ナビ */
+#navi {
+	width: 680px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 30px;
+	left: 207px;
+	}
+
+#navi ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+	}
+
+#navi ul li,
+#navi ul li a {
+	float: right;
+	display: block;
+	width: 170px;
+	height: 38px;
+	text-indent: -7777px;
+	background: url(http://img.ufs.co.jp/brand/mbc/image/topnavi_05.png) left top;
+	}
+
+#navi ul li.home { background-position: -170px -38px; }
+#navi ul li.home a { background-position: -170px 0; }
+#navi ul li.home a:hover { background-position: -170px -38px; }
+
+#navi ul li.shopsearch { background-position: -340px -38px; }
+#navi ul li.shopsearch a { background-position: -340px 0; }
+#navi ul li.shopsearch a:hover { background-position: -340px -38px; }
+
+/*#navi ul li.franchisechain { background-position: -340px -38px; }
+#navi ul li.franchisechain a { background-position: -340px 0; }
+#navi ul li.franchisechain a:hover { background-position: -340px -38px; }*/
+
+#navi ul li.saiyoujouhou { background-position: -510px -38px; }
+#navi ul li.saiyoujouhou a { background-position: -510px 0; }
+#navi ul li.saiyoujouhou a:hover { background-position: -510px -38px; }
+
+/*ナビメイン*/
+
+#navi_main ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+	}
+
+#navi_main ul li {
+	float: right;
+	display: block;
+	width: 178px;
+	height: 35px;
+	margin-bottom:10px;
+	}
+	
+#navi_main ul li {
+	padding:0 1px;
+}
+
+
+#navi_main.bnR {
+	margin-right:3px;
+}
+
+#navi_main.bnL {
+	margin-left:3px;
+}
+
+
+	
+/*修正前*/
+/*#navi ul li.home { background-position: 0 -38px; }
+#navi ul li.home a { background-position: 0 0; }
+#navi ul li.home a:hover { background-position: 0 -38px; }
+
+#navi ul li.shopsearch { background-position: -170px -38px; }
+#navi ul li.shopsearch a { background-position: -170px 0; }
+#navi ul li.shopsearch a:hover { background-position: -170px -38px; }
+
+/*#navi ul li.franchisechain { background-position: -340px -38px; }
+#navi ul li.franchisechain a { background-position: -340px 0; }
+#navi ul li.franchisechain a:hover { background-position: -340px -38px; }
+
+#navi ul li.saiyoujouhou { background-position: -510px -38px; }
+#navi ul li.saiyoujouhou a { background-position: -510px 0; }
+#navi ul li.saiyoujouhou a:hover { background-position: -510px -38px; }*/
+
+/* ------------------------------------------------------------ */
+/* フッタナビ */
+#footer {
+	width: 900px;
+	margin: 15px 0 0 0;
+	padding: 7px 0 0 0;
+	border-top: 2px solid #ccc;
+	overflow: hidden;
+	zoom: 1;
+	}
+
+#copyright {
+	width: 339px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	}
+
+#footerNavi {
+	width: 561px;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	float: right;
+	}
+
+#footerNavi ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+#footerNavi li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	}
+
+#共通フッター用
+.ucc-portal-footer {
+	overflow:hidden;
+/*	padding:8px 14px 6px 17px;
+	background:#f2f2f2; */
+}
+.ucc-portal-footer p {
+	margin:0;
+	padding:0;
+}
+.ucc-portal-footer p.logo {
+	float:left;
+}
+.ucc-portal-footer p.link {
+	float:right;
+	font-weight:bold;
+	font-size:10px;
+}
+.ucc-portal-footer p.link a {
+margin:0 auto;
+width:960px;
+	padding-right:12px;
+	background:url(/image/icon_arrow.gif) no-repeat right center;
+	text-decoration:none;
+	line-height:21px;
+	color:#666;
+}
+.ucc-portal-footer p.link a:hover {
+	text-decoration:underline;
+}
+
+ /* ------------------------------------------------ */
+/* 情報 */
+.notes {
+	margin: 20px 0 0 0;
+	padding: 0;
+	}
+
+.notes p {
+	margin: 7px 0 0 0;
+	padding: 0;
+	font-size: 10px;
+	line-height: 1.5;
+	text-align: left;
+	}
+
+.notesRight p {
+	margin: 0;
+	padding: 0 0 7px 0;
+	font-size: 10px;
+	text-align: right;
+	}
+
+ /* ------------------------------------------------ */
+/* clearfix指定 */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	} /*IE7以外のモダンブラウザ向け*/
+.clearfix {
+	display: inline-block;
+	} /*IE7およびMacIE5向け*/
+/*Hides from IE-mac¥*/
+* html .clearfix {
+	height: 1%;
+	}
+.clearfix {
+	display:block;
+	}
+/*End hide from IE-m
+
+/* ------------------------------------------------------------ */
+/* OSX Firefox3用 フラッシュ位置修正 */
+html>/**/body, x:-moz-any-link, x:default {
+	position: relative;
+	left: -0.1px;
+	}
