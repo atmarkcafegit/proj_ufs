@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* ================================================
+common
+================================================ */
+body{
+  font-size: 12px;
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3", Meiryo, sans-serif;
+}
+*{
+  background-repeat: no-repeat;
+}
+h1 img{
+  width: 52px;
+  position: absolute;
+  top:33px;
+  left:38px;
+  z-index: 1;
+}
+.intro{
+  background-image: url(../../image/campaign/bg.jpg);
+  background-size: cover;
+  padding: 75px 0 70px;
+  margin-bottom: 80px;
+}
+.mv{
+  background-image: url(../../image/campaign/mv.png);
+  background-size: 904px auto;
+  width:904px;
+  height: 854px;
+  margin: auto;
+  position: relative;
+}
+.mv .badge{
+	position:absolute;
+	top:220px;
+	right:-55px;
+	width:101px;
+}
+.btn_box a{
+  display: inline-block;
+}
+@media screen and (min-width: 751px) {
+	.btn_box a {
+		transition: 0.1s;
+	}
+	.btn_box a:hover {
+		transform: scale(1.04);
+		opacity: 0.8;
+	}
+}
+@media screen and (max-width: 750px) {
+	body{
+		width:750px;
+	}
+  h1 img{
+    top:37px;
+    right:0;
+    left:0;
+    margin: auto;
+    width: 64px;
+  }
+  .intro{
+    background: url(../../image/campaign/sp-bg.jpg) no-repeat;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    margin-bottom: 0;
+  }
+  .mv{
+    background-image: url(../../image/campaign/sp-mv.png);
+    background-size: 650px auto;
+    width:650px;
+    height: 1788px;
+  }
+	.mv .badge{
+		display:none;
+	}
+}
+/**************************************************/
+.intro .dl{
+  position: absolute;
+  top: 498px;
+  right:20px;
+}
+.intro .dl .btn_box a:nth-of-type(2){
+  margin-left: 20px;
+}
+.btn_box a img{
+  width: 177px;
+}
+@media screen and (max-width: 750px) {
+  .intro .dl{
+    top: 975px;
+    left:0;
+    width:650px;
+  }
+  .intro .dl .btn_box a:nth-of-type(2){
+    margin-left: 25px;
+  }
+  .btn_box a img{
+    width: 310px;
+  }
+}
+/*****************************************/
+.spec{
+  position: absolute;
+  top: 604px;
+  right:4px;
+  width: 520px;
+}
+.spec strong{
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.spec strong img{
+  width: 431px;
+}
+.spec .badges img{
+  width:160px;
+}
+.spec .badges img:nth-of-type(2){
+  margin: 0 14px;
+}
+@media screen and (max-width: 750px) {
+  .spec{
+    position: absolute;
+    top: 1154px;
+    right:0;
+    left: 0;
+    margin: auto;
+    width: 630px;
+    text-align: center;
+  }
+  .spec strong{
+    margin-bottom: 38px;
+  }
+  .spec strong img{
+    width: 588px;
+  }
+  .spec .badges img{
+    width:300px;
+  }
+  .spec .badges img:nth-of-type(2){
+    margin: 0 0 0 22px;
+  }
+  .spec .badges img:nth-of-type(3){
+    margin-top: -20px;
+  }
+}
+/*****************************************/
+.card{
+  width: 916px;
+  height: 197px;
+  margin: auto;
+  background-image: url(../../image/campaign/card.jpg);
+  background-size: 916px 197px;
+  position: relative;
+  margin-bottom: 70px;
+}
+.card img{
+  position: absolute;
+  width: 108px;
+  height:108px;
+  top: 42px;
+  left: 54px;
+}
+@media screen and (max-width: 750px) {
+  .card{
+    width: 750px;
+    height:445px;
+    background-image: url(../../image/campaign/sp-card.jpg);
+    background-size: 750px auto;
+    margin-bottom: 75px;
+  }
+  .card img{
+    display: none;
+  }
+}
+/*****************************************/
+.dl.bottom{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.dl.bottom strong{
+  display: block;
+  margin-bottom: 38px;
+}
+.dl.bottom strong img{
+  width: 386px;
+}
+.dl.bottom .btn_box a img{
+  width: 225px;
+}
+.dl.bottom .btn_box a:nth-of-type(2){
+  margin-left: 30px;
+}
+@media screen and (max-width: 750px) {
+
+  .dl.bottom strong{
+    margin-bottom: 42px;
+  }
+  .dl.bottom strong img{
+    width: 580px;
+  }
+  .dl.bottom .btn_box a img{
+    width: 310px;
+  }
+}
+/*****************************************/
+.caution{
+  width: 1000px;
+  margin: 0 auto 80px;
+}
+.caution dl{
+  display: table;
+  width: 100%;
+  margin-bottom:25px;
+}
+.caution dl dt,
+.caution dl dd{
+  display: table-cell;
+  height: 37px;
+  vertical-align: middle;
+}
+.caution dl dt{
+  font-size: 16px;
+  background: #efeceb;
+  width: 60px;
+  text-align: center;
+}
+.caution dl dd{
+  padding-left: 20px;
+}
+.caution dl dd p:not(:last-child){
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 750px) {
+  .caution{
+    width: auto;
+    margin: 0 50px 90px;
+    font-size: 22px;
+  }
+  .caution dl{
+    display: block;
+    margin-bottom: 55px;
+  }
+  .caution dl dt,
+  .caution dl dd{
+    display: block;
+    height: auto;
+  }
+  .caution dl dt{
+    width: auto;
+    text-align: left;
+    padding: 10px 20px;
+		font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .caution dl dd {
+    padding: 0;
+    font-size: 14px;
+  }
+  .caution dl dd span{
+    display: block;
+    margin-bottom: 24px;
+    font-feature-settings : "palt";
+    line-height: 140%;
+		margin-right:-20px;
+  }
+}
+/*****************************************/
+footer{
+  background: #2c1b13;
+  color: #fff;
+  text-align: center;
+  padding: 37px;
+}
+@media screen and (max-width: 750px) {
+  footer{
+		font-size: 12px;
+		letter-spacing: 0.05em;
+		font-weight: 300;
+  }
+}

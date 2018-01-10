@@ -3860,3 +3860,13 @@ and (orientation:portrait) {
         padding: 0 20px;
     }
 }
+
+/*============================================== 42_precious_members ============================================*/
+.precious-text-note{
+    color: red;
+}
+.precious-text{
+    padding: 5px;
+    color: #333;
+    font-size: 16px;
+}

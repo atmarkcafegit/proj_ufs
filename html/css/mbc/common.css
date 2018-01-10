@@ -52,7 +52,7 @@ a:active { color: #009fc6; text-decoration: underline; }
 #header {
 	width: 900px;
 	height: 70px;
-	background: #ffffff url(http://img.ufs.co.jp/brand/mbc/image/topnavi.jpg) no-repeat left top;
+	background: #ffffff url(../../image/mbc/topnavi.jpg) no-repeat left top;
 	position: relative;
 	overflow: hidden;
 	}
@@ -97,7 +97,7 @@ a:active { color: #009fc6; text-decoration: underline; }
 	width: 170px;
 	height: 38px;
 	text-indent: -7777px;
-	background: url(http://img.ufs.co.jp/brand/mbc/image/topnavi_05.png) left top;
+	background: url(../../image/mbc/topnavi_05.png) left top;
 	}
 
 #navi ul li.home { background-position: -170px -38px; }
@@ -225,7 +225,7 @@ a:active { color: #009fc6; text-decoration: underline; }
 margin:0 auto;
 width:960px;
 	padding-right:12px;
-	background:url(/image/icon_arrow.gif) no-repeat right center;
+	background:url(../../image/mbc/icon_arrow.gif) no-repeat right center;
 	text-decoration:none;
 	line-height:21px;
 	color:#666;
