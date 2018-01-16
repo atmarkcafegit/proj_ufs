@@ -39,7 +39,7 @@ header {
 .anchor {
     display: block;
     position: relative;
-    top: -200px;
+    top: -125px;
     visibility: hidden;
 }
 
@@ -977,7 +977,10 @@ footer .back-to-top img {
     }
 
     .register-member {
-        display: none !important;
+        top: auto;
+        bottom: 0;
+        padding: 10px;
+        width: 110px;
     }
 
     .logo-ufs {
@@ -3869,4 +3872,28 @@ and (orientation:portrait) {
     padding: 5px;
     color: #333;
     font-size: 16px;
+}
+.precious-text .point-text{
+    float: left;
+    display: block;
+}
+.precious-text .content{
+    display: block;
+    margin-left: 16px;
+}
+.precious-members-block .redirect-link{
+    margin-top: 20px;
+}
+.precious-members-block .redirect-link a{
+    color: #666666;
+}
+.precious-members-block .redirect-link a:hover{
+    text-decoration: none;
+}
+.precious-members-block .redirect-link + h2.block-header, .precious-members-block .redirect-link + h3.block-title{
+    margin-top: 10px;
+}
+/*============================================== 57_precious_faq ============================================*/
+.precious-faq-block .block-faq-info:not(:first-child){
+    margin-top: 50px;
 }

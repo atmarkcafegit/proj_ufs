@@ -1,0 +1,593 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ユーシーシーフードサービスシステムズ株式会社</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(document).on('click', '.block-faq-content a', function() {
+                var target = $(this).data('target');
+                $('.block-faq-info a').removeClass('active');
+
+                if ($(this).hasClass('active')) {
+                    $('#' + target).hide('fast');
+                    $(this).removeClass('active');
+                } else {
+                    $('#' + target).show('fast');
+                    $(this).addClass('active');
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="navbar-header">
+            <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle"
+                    data-target="#bs-navbar" data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-align-justify fa-fw" aria-hidden="true"></i>
+                <i class="fa fa-times fa-fw" aria-hidden="true"></i>
+            </button>
+            <div class="visible-xs pull-right menu-xs">
+                <div class="pull-right btn-cup">
+                    <div><img src="image/icon_cup.png" class="icon-cup"></div>
+                    店舗検索
+                </div>
+                <div class="pull-right btn-share">SHARE</div>
+            </div>
+            <a href="#" class="navbar-brand">
+                <img src="image/ufs_logo.png" class="img-responsive logo-ufs">
+            </a>
+        </div>
+        <nav class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-xs">
+                    <a href="#">
+                        <img src="image/icon_cup.png">
+                        店舗検索
+                    </a>
+                </li>
+
+                <li class="visible-xs"><a href="#">最新ニュース<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li><a href="#">採用情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li><a href="#">フランチャイズビジネス<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="hidden-xs"><a href="#">会社概要</a></li>
+                <li class="visible-xs"><a href="#">店舗情報<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">公式アプリ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">プレシャスメンバーズ<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs"><a href="#">ENGLISH<span class="pull-right visible-xs"><img src="image/icon_arrow.png"></span></a></li>
+                <li class="visible-xs last-item">
+                    <div class="btn-menu">
+                        <a href="#">会員登録 / ログイン</a>
+                    </div>
+                </li>
+                <li class="share-button hidden-xs">
+                    <div class="btn-menu">
+                        <a href="#">Share</a>
+                    </div>
+                    <div class="btn-social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </li>
+                <li class="login-button hidden-xs">
+                    <div class="btn-language">
+                        <a href="#" class="active">JAPANESE</a>
+                        /
+                        <a href="#">ENGLISH</a>
+                    </div>
+                    <div class="btn-menu">
+                        <a href="#">会員登録 / ログイン</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container last-block-container menu-category-container precious-faq-block" id="content">
+    <div class="">
+        <div class="block-green">
+            <a class="anchor" id="precious-faq-title"></a>
+            <h3 class="block-title text-center">PRECIOUS MEMBERS FAQ</h3>
+            <p class="block-note text-center">プレシャスメンバーズのよくある質問</p>
+        </div>
+
+        <div class="franchise-faq">
+            <a class="anchor" id="faq-tab1"></a>
+            <div class="block-faq-info">
+                プレシャスカードについて
+            </div>
+            <div class="block-faq-content">
+                <ul>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-1">
+                            <span class="faq-number">Q1</span>
+                            <span class="faq-text">PRECIOUS MEMBERS　とは何ですか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-1">
+                        <span class="faq-number">A1</span>
+                        <span class="faq-text ans">"UCCグループのお店をより便利にご利用いただくための会員サービスです。 新商品情報や店舗検索、eGiftなどの機能をご利用いただきます。<br>
+また、PRECIOUS MEMBERSにご登録いただいた会員様のみにお届けするクーポン等があります。<br>
+サービス詳細はこちら　（http://www.ufs.co.jp/precious/members.html#precious-member-1　へリンクを貼る）<br>
+PRECIOUS　MEMBERSご利用規約はこちら　（https://precious-members.ufs.co.jp/mypage/terms）"
+</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-2">
+                            <span class="faq-number">Q2</span>
+                            <span class="faq-text">会費はかかりますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-2">
+                        <span class="faq-number">A2</span>
+                        <span class="faq-text ans">登録および登録費は無料です。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-3">
+                            <span class="faq-number">Q3</span>
+                            <span class="faq-text">GmailやYahoo!メールなどのフリーメールアドレスで登録することはできますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-3">
+                        <span class="faq-number">A3</span>
+                        <span class="faq-text ans">登録可能です。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-4">
+                            <span class="faq-number">Q4</span>
+                            <span class="faq-text">フィーチャーフォンから登録することはできますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-4">
+                        <span class="faq-number">A4</span>
+                        <span class="faq-text ans">フィーチャーフォンには対応しておりません。パソコンまたはスマートフォンから登録ください。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-5">
+                            <span class="faq-number">Q5</span>
+                            <span class="faq-text">入会手続きのメールアドレスを登録しても新規入会登録URL記載のメールが届きません。</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-5">
+                        <span class="faq-number">A5</span>
+                        <span class="faq-text ans">メールが届かない場合、以下の原因が考えられます。<br>
+
+・迷惑メールとして自動振り分け・受信拒否されている。
+パソコンメールアドレスやフリーメールアドレスの場合は、迷惑メールボックスなどすべての受信ボックスを今一度ご確認ください。携帯キャリアメールアドレスの場合、各携帯会社の迷惑メール防止機能により、受信拒否されている可能性がございます。「パソコンからのメール受信設定」や「URL付きメール拒否設定」などをご確認いただき、受信できるよう変更してください。ドメイン指定受信・アドレス指定受信を設定している場合は、「@ucc.co.jp」からのメールを受信できるように設定してください。 ドメイン指定、解除方法は各キャリアページよりご確認ください。<br>
+
+・メールアドレスが正しく入力されていない。<br>
+ご自身でメールアドレスをご入力されている場合は、メールアドレスに誤りがないか今一度ご確認の上、再度お手続きください。<br>
+※メール受信設定に関しましては、ご自身で設定したお心当たりがない場合でも、携帯電話会社によっては初期設定でセキュリティが高く設定されている場合がございます。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-6">
+                            <span class="faq-number">Q6</span>
+                            <span class="faq-text">新規登録時、メールアドレスを入力すると、「既に認証済みのアカウントです」と表示されます。</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-6">
+                        <span class="faq-number">A6</span>
+                        <span class="faq-text ans">ご家族、親しい方など、メールアドレスを共有されている方が先に入会されているなどの理由が考えられます。同一メールアドレスのご登録はできませんので、その場合は別のメールアドレスをご用意ください。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-7">
+                            <span class="faq-number">Q7</span>
+                            <span class="faq-text">会員登録のご案内メールにある、会員登録手続URLにつながりません。</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-7">
+                        <span class="faq-number">A7</span>
+                        <span class="faq-text ans">アプリでメールアドレスを登録した後、パソコンなど他の端末で登録手続きを進めようとしている可能性があります。<br>
+「上島珈琲店・珈琲館」アプリでメールアドレスを登録した場合、他の端末からの登録手続きはできません。<br>
+アプリをインストールしたスマートフォンで、会員登録のご案内メールを受信し、登録をしてください。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-8">
+                            <span class="faq-number">Q8</span>
+                            <span class="faq-text">会員登録情報の変更はできますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-8">
+                        <span class="faq-number">A8</span>
+                        <span class="faq-text ans">ログイン後、「会員情報管理」画面より、お手続きください。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-9">
+                            <span class="faq-number">Q9</span>
+                            <span class="faq-text">パスワードを忘れました。</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-9">
+                        <span class="faq-number">A9</span>
+                        <span class="faq-text ans">パスワード再設定画面より、再登録をお願いいたします。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-10">
+                            <span class="faq-number">Q10</span>
+                            <span class="faq-text">パスワード入力がエラーになります。</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-10">
+                        <span class="faq-number">A10</span>
+                        <span class="faq-text ans">パスワードは8文字以上16文字以内、英字と数字を組み合わせたものになります。正しく入力できているか、またキーボードの全角半角設定など入力環境もご確認ください。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-11">
+                            <span class="faq-number">Q11</span>
+                            <span class="faq-text">パスワードの変更はできますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-11">
+                        <span class="faq-number">A11</span>
+                        <span class="faq-text ans">ログイン後、「会員情報管理」画面より、変更できます。パスワードは個人の責任において大切に管理ください。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-12">
+                            <span class="faq-number">Q12</span>
+                            <span class="faq-text">パスワードを忘れてしまいました。教えてもらうことはできますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-12">
+                        <span class="faq-number">A12</span>
+                        <span class="faq-text ans">いかなる理由があっても、セキュリティ上、お教えすることはできません。パスワードの再設定画面より再度登録をお願いします。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-13">
+                            <span class="faq-number">Q13</span>
+                            <span class="faq-text">MYクーポンとは何ですか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-13">
+                        <span class="faq-number">A13</span>
+                        <span class="faq-text ans">PRECIOUS MEMBERS会員様のみにお届けする限定クーポンです。</span>
+                    </li>
+
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-14">
+                            <span class="faq-number">Q14</span>
+                            <span class="faq-text">メール配信設定を「on」にしているのに、メールが届きません。</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-14">
+                        <span class="faq-number">A14</span>
+                        <span class="faq-text ans">以下の原因が考えられます。<br>
+①メールアドレスを変更した。⇒「会員情報管理」画面より、現在お使いのメールアドレスに変更してください。<br>
+②プロバイダなどのメールボックスが容量を超えて受け取りができなくなっている。⇒メール受信ボックスから不要なメールを削除してください。<br>
+③ドメイン指定受信、アドレス指定受信を設定していた。⇒ドメインが「@ucc.co.jp」からのメールを受信できるように設定してください。<br>
+④迷惑メール設定をしていた。⇒迷惑メール防止機能を利用している場合、メールが届かない可能性があります。迷惑メール防止機能の解除方法については、
+各携帯電話会社によって異なります。ご利用端末の取扱説明書や携帯電話会社の窓口でご確認ください。<br>
+⑤メールを受信するサーバーがトラブルを起こしていた。⇒ご利用のプロバイダ（インターネット接続業者）のカスタマーセンターにお問い合わせください。<br>
+</span>
+                    </li>
+                </ul>
+            </div>
+            <a class="anchor" id="faq-tab2"></a>
+            <div class="block-faq-info">
+                プレシャスメンバーズについて
+            </div>
+            <div class="block-faq-content">
+                <ul>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-15">
+                            <span class="faq-number">Q1</span>
+                            <span class="faq-text">プレシャスカードとは何ですか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-15">
+                        <span class="faq-number">A1</span>
+                        <span class="faq-text ans">全国のUCCグループの店舗（一部除く）でご利用いただける、繰り返し入金可能なプリペイドカードです。<br>
+詳しくはこちら　（http://www.ufs.co.jp/precious/members.html#precious-member-2　へリンクを貼る）<br>
+ご利用規約はこちら　（https://www.vcsys.com/s/images/ucc/yakkan.htm　へリンクを貼る）</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-16">
+                            <span class="faq-number">Q2</span>
+                            <span class="faq-text">プレシャスカードの有効期限はありますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-16">
+                        <span class="faq-number">A2</span>
+                        <span class="faq-text ans">最後のご利用から１年間ご利用・ご入金が無い場合、当該本カードは無効となります。返金等はいたしません。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-17">
+                            <span class="faq-number">Q3</span>
+                            <span class="faq-text">プレシャスカードはどこで購入できますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-17">
+                        <span class="faq-number">A3</span>
+                        <span class="faq-text ans">日本全国のUCCグループ、プレシャスカード取扱店にて購入いただけます。（一部対象外店舗がございます。）</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-18">
+                            <span class="faq-number">Q4</span>
+                            <span class="faq-text">クレジットカードを使ってチャージすることはできますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-18">
+                        <span class="faq-number">A4</span>
+                        <span class="faq-text ans">オンライン入金サービスをご利用いただけば、いつでもお好きな時に、パソコンまたはスマートフォンからクレジットカード決済でチャージすることが可能です。<br>
+※店頭では、現金でのチャージのみとなります。<br>
+詳しくはこちら　（http://www.ufs.co.jp/precious/index.html　へリンクを貼る）
+</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-19">
+                            <span class="faq-number">Q5</span>
+                            <span class="faq-text">オンライン入金とは何ですか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-19">
+                        <span class="faq-number">A5</span>
+                        <span class="faq-text ans">クレジットカードもしくはスマホ決済でプレシャスカードにチャージできるサービスです。ご利用は弊社ホームページもしくは弊社アプリからとなります。<br>
+詳しくはこちら　（http://www.ufs.co.jp/precious/index.html　へリンクを貼る）</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-20">
+                            <span class="faq-number">Q6</span>
+                            <span class="faq-text">プレシャスカードを使用しなくなりました。返金できますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-20">
+                        <span class="faq-number">A6</span>
+                        <span class="faq-text ans">本カード残高の換金、返金および払い戻しはいたしません。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-21">
+                            <span class="faq-number">Q7</span>
+                            <span class="faq-text">プレシャスカードを紛失してしまいました。再発行できますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-21">
+                        <span class="faq-number">A7</span>
+                        <span class="faq-text ans">本カードを紛失・盗難された場合、返金・再発行はいたしませんのでご了承ください。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-22">
+                            <span class="faq-number">Q8</span>
+                            <span class="faq-text">カードを自宅に忘れてしまいました。<br>
+PRECIOUS　MEMBERS画面で決済できますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-22">
+                        <span class="faq-number">A8</span>
+                        <span class="faq-text ans">画面での決済はできません。利用にはカード現物が必要となります。</span>
+                    </li>
+                </ul>
+            </div>
+            <a class="anchor" id="faq-tab3"></a>
+            <div class="block-faq-info">
+                公式アプリについて
+            </div>
+            <div class="block-faq-content">
+                <ul>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-23">
+                            <span class="faq-number">Q1</span>
+                            <span class="faq-text">公式アプリとは何ですか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-23">
+                        <span class="faq-number">A1</span>
+                        <span class="faq-text ans">UCCグループのお店をより便利にご利用いただくための会員サービスです。 新商品情報や店舗検索、eGiftなどの機能をご利用いただきます。<br>
+また、PRECIOUS MEMBERSにご登録いただいた会員様のみにお届けするクーポン等があります。 <br>
+サービス詳細はこちら　（http://www.ufs.co.jp/precious/members.html#precious-member-3　へリンクを貼る）
+</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-24">
+                            <span class="faq-number">Q2</span>
+                            <span class="faq-text">アプリはどうすればインストールできますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-24">
+                        <span class="faq-number">A2</span>
+                        <span class="faq-text ans">ご自身のスマートフォンでインストールできます。アプリストアにて「上島珈琲店・珈琲館公式アプリ」と検索ください。<br>
+サービス詳細はこちら　（http://www.ufs.co.jp/precious/members.html#precious-member-3　へリンクを貼る）
+</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-25">
+                            <span class="faq-number">Q3</span>
+                            <span class="faq-text">本アプリの規約を確認できますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-25">
+                        <span class="faq-number">A3</span>
+                        <span class="faq-text ans">アプリ内に掲載しております。「設定」内ご利用規約をご確認ください。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-26">
+                            <span class="faq-number">Q4</span>
+                            <span class="faq-text">アプリで現在地が表示されません。</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-26">
+                        <span class="faq-number">A4</span>
+                        <span class="faq-text ans">位置情報の通知を「許可しない」に設定している場合や、位置情報が正常に取得できない場合、現在地が表示されません。<br>
+ご自身のスマートフォンの設定内容をご確認ください。
+</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-27">
+                            <span class="faq-number">Q5</span>
+                            <span class="faq-text">利用料はかかりますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-27">
+                        <span class="faq-number">A5</span>
+                        <span class="faq-text ans">無料でインストールできます。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-28">
+                            <span class="faq-number">Q6</span>
+                            <span class="faq-text">パケット通信料はかかりますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-28">
+                        <span class="faq-number">A6</span>
+                        <span class="faq-text ans">パケット通信料はお客様のご負担となりますので、予めご了承ください。<br>
+ ※通信料はご利用の携帯会社・ご契約状況により内容が異なるため、詳細は携帯電話会社へお問い合せください。
+</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-29">
+                            <span class="faq-number">Q7</span>
+                            <span class="faq-text">タブレット端末でも利用できますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-29">
+                        <span class="faq-number">A7</span>
+                        <span class="faq-text ans">本アプリは、スマートフォン用のアプリケーションです。 タブレット端末では動作保証ができず、正常に動作しない可能性があります。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-30">
+                            <span class="faq-number">Q8</span>
+                            <span class="faq-text">対象OSは何ですか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-30">
+                        <span class="faq-number">A8</span>
+                        <span class="faq-text ans">iOS9以上、Android5以上です。 ただし一部機種では正常に動作しない場合もあります。</span>
+                    </li>
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-31">
+                            <span class="faq-number">Q9</span>
+                            <span class="faq-text">フィーチャーフォンでも利用できますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-31">
+                        <span class="faq-number">A9</span>
+                        <span class="faq-text ans">本アプリは、スマートフォン用のアプリケーションです。フィーチャーフォンには対応しておりません。</span>
+                    </li>
+
+                    <li class="qst">
+                        <a href="javascript:void(0)" data-target="ans-32">
+                            <span class="faq-number">Q10</span>
+                            <span class="faq-text">日本以外の国でも利用できますか？</span>
+                            <i class="fa fa-plus fa-lg pull-right"></i>
+                            <i class="fa fa-minus fa-lg pull-right"></i>
+                        </a>
+                    </li>
+                    <li class="ans" id="ans-32">
+                        <span class="faq-number">A10</span>
+                        <span class="faq-text ans">日本国内のみでの使用となります。</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="back-to-top pull-right">
+            <a href="#">
+                <div><img src="image/icon_back_to_top.png"></div>
+                トップへ戻る
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <ul>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">個人情報保護方針</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <ul>
+                    <li><a href="#">ソーシャルメディア一覧</a></li>
+                    <li><a href="#">サイトマップ</a></li>
+                    <li><a href="#">UCCグループのご案内</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="col-md-12">
+                <p>ユーシーシーフードサービスシステムズ株式会社</p>
+                <p class="text-cp">© UCC Foodservise Systems Inc. all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
