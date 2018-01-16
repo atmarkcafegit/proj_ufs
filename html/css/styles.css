@@ -643,6 +643,7 @@ footer .back-to-top img {
     position: fixed;
     right: 0;
     top: 70%;
+    z-index: 1;
 }
 
 .register-member img {
