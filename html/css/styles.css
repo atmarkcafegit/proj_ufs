@@ -1401,7 +1401,7 @@ h2.block-header.block-brown {
     position: relative;
 }
 
-.block-faq-content ul li a {
+.block-faq-content ul li.qst a {
     font-size: 16px;
     color: #666666;
     text-decoration: none;
@@ -3902,4 +3902,9 @@ and (orientation:portrait) {
 /*============================================== 57_precious_faq ============================================*/
 .precious-faq-block .block-faq-info:not(:first-child){
     margin-top: 50px;
+}
+/*============================================== 58_precious_tradelaw ============================================*/
+.precious-tradelaw .col-th{
+    background-color: green;
+    color: #fff;
 }
