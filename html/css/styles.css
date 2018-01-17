@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Yu Gothic";
-    src: url("../fonts/YuGothic-Medium.ttf");
+    src: url("../fonts/YuGothic-Medium.woff");
 }
 
 body {
@@ -3905,6 +3905,6 @@ and (orientation:portrait) {
 }
 /*============================================== 58_precious_tradelaw ============================================*/
 .precious-tradelaw .col-th{
-    background-color: green;
+    background-color: #009844;
     color: #fff;
 }
