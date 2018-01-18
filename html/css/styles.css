@@ -2955,6 +2955,13 @@ and (orientation:portrait) {
     }
 
 }
+
+.sitemap-row a[target="_blank"]:after {
+    margin: 0 3px;
+    font-family: FontAwesome;
+    vertical-align: middle;
+    content: '\f08e';
+}
 /* End page 51 */
 
 /* Begin common for some pages (14, 17, 23, 27, 31, 35) */
@@ -3897,7 +3904,7 @@ and (orientation:portrait) {
     text-decoration: none;
 }
 .precious-members-block .redirect-link + h2.block-header, .precious-members-block .redirect-link + h3.block-title{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 /*============================================== 57_precious_faq ============================================*/
 .precious-faq-block .block-faq-info:not(:first-child){
